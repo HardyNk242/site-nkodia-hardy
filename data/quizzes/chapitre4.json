@@ -1,0 +1,275 @@
+{
+  "chapter": 4,
+  "title": {
+    "fr": "La rhéologie et les mécanismes de déformation",
+    "en": "Rheology and deformation mechanisms"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "fr": "Qu'étudie la rhéologie ?",
+        "en": "What does rheology study?"
+      },
+      "options": {
+        "fr": [
+          "La relation entre la contrainte appliquée et la déformation des matériaux",
+          "La classification des fossiles",
+          "La datation des roches volcaniques",
+          "La chimie des eaux souterraines"
+        ],
+        "en": [
+          "The relationship between applied stress and the deformation of materials",
+          "The classification of fossils",
+          "The dating of volcanic rocks",
+          "The chemistry of groundwater"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "La rhéologie décrit comment les matériaux répondent aux contraintes : déformation, écoulement, rupture, en fonction des conditions imposées.",
+        "en": "Rheology describes how materials respond to stress: deformation, flow and failure, depending on the imposed conditions."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "fr": "Qu'appelle-t-on taux de déformation (strain rate) ?",
+        "en": "What is the strain rate?"
+      },
+      "options": {
+        "fr": [
+          "La quantité de déformation accumulée par unité de temps",
+          "La masse de roche déformée",
+          "La profondeur de la déformation",
+          "La couleur de la roche déformée"
+        ],
+        "en": [
+          "The amount of strain accumulated per unit of time",
+          "The mass of deformed rock",
+          "The depth of the deformation",
+          "The colour of the deformed rock"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Le taux de déformation exprime la vitesse de la déformation ; il s'exprime en s⁻¹ et influence fortement le comportement rhéologique.",
+        "en": "Strain rate expresses the speed of deformation; it is given in s⁻¹ and strongly influences rheological behaviour."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "fr": "Le comportement élastique d'un matériau se caractérise par :",
+        "en": "Elastic behaviour of a material is characterised by:"
+      },
+      "options": {
+        "fr": [
+          "Une déformation irréversible et permanente",
+          "Une déformation réversible qui disparaît quand la contrainte cesse",
+          "Une fusion immédiate du matériau",
+          "L'absence totale de déformation"
+        ],
+        "en": [
+          "An irreversible, permanent deformation",
+          "A reversible deformation that disappears when the stress is removed",
+          "Immediate melting of the material",
+          "A complete absence of deformation"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "La déformation élastique est instantanée et réversible : le matériau retrouve sa forme initiale dès que la contrainte est supprimée.",
+        "en": "Elastic deformation is instantaneous and reversible: the material returns to its original shape as soon as the stress is removed."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "fr": "Dans un comportement visqueux (newtonien), la déformation :",
+        "en": "In viscous (Newtonian) behaviour, the deformation:"
+      },
+      "options": {
+        "fr": [
+          "Est réversible et instantanée",
+          "Est irréversible, et sa vitesse est proportionnelle à la contrainte appliquée",
+          "N'a jamais lieu",
+          "Ne dépend pas du temps"
+        ],
+        "en": [
+          "Is reversible and instantaneous",
+          "Is irreversible, and its rate is proportional to the applied stress",
+          "Never occurs",
+          "Does not depend on time"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Un matériau visqueux flue de façon irréversible ; sa vitesse de déformation croît avec la contrainte (loi de viscosité).",
+        "en": "A viscous material flows irreversibly; its strain rate increases with stress (viscosity law)."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "fr": "Le comportement plastique apparaît :",
+        "en": "Plastic behaviour appears:"
+      },
+      "options": {
+        "fr": [
+          "Dès la moindre contrainte, de façon réversible",
+          "Au-delà d'un seuil de contrainte (limite d'élasticité), avec une déformation permanente",
+          "Uniquement dans les liquides",
+          "Seulement à contrainte nulle"
+        ],
+        "en": [
+          "At the slightest stress, reversibly",
+          "Beyond a stress threshold (yield strength), with permanent deformation",
+          "Only in liquids",
+          "Only at zero stress"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Le comportement plastique se manifeste lorsque la contrainte dépasse la limite d'élasticité : la déformation devient permanente (irréversible).",
+        "en": "Plastic behaviour occurs once stress exceeds the yield strength: the deformation becomes permanent (irreversible)."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "fr": "Comment qualifie-t-on un matériau combinant un comportement élastique et un comportement visqueux ?",
+        "en": "How is a material combining elastic and viscous behaviour described?"
+      },
+      "options": {
+        "fr": ["Purement fragile", "Viscoélastique", "Parfaitement rigide", "Strictement liquide"],
+        "en": ["Purely brittle", "Viscoelastic", "Perfectly rigid", "Strictly liquid"]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Les modèles combinés (Maxwell, Kelvin-Voigt) décrivent les corps viscoélastiques, qui associent une réponse élastique et un fluage visqueux.",
+        "en": "Combined models (Maxwell, Kelvin-Voigt) describe viscoelastic bodies, which combine an elastic response with viscous creep."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "fr": "Que désigne la cataclase, mécanisme de déformation fragile ?",
+        "en": "What does cataclasis, a brittle deformation mechanism, refer to?"
+      },
+      "options": {
+        "fr": [
+          "La fusion partielle de la roche",
+          "La fragmentation de la roche par microfracturation, avec rotation et glissement des fragments",
+          "La croissance de gros cristaux",
+          "Le dépôt de nouveaux sédiments"
+        ],
+        "en": [
+          "Partial melting of the rock",
+          "Fragmentation of the rock by microfracturing, with rotation and sliding of fragments",
+          "The growth of large crystals",
+          "The deposition of new sediments"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "La cataclase est un processus fragile : la roche est broyée en fragments qui glissent et tournent les uns par rapport aux autres (cataclasites).",
+        "en": "Cataclasis is a brittle process: the rock is crushed into fragments that slide and rotate relative to one another (cataclasites)."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "fr": "Dans le fluage par dislocations (mécanisme ductile), la déformation résulte :",
+        "en": "In dislocation creep (a ductile mechanism), deformation results from:"
+      },
+      "options": {
+        "fr": [
+          "Du déplacement de défauts (dislocations) au sein du réseau cristallin",
+          "De la rupture brutale des minéraux",
+          "Du simple empilement de sédiments",
+          "De la dissolution totale de la roche"
+        ],
+        "en": [
+          "The movement of defects (dislocations) within the crystal lattice",
+          "The sudden fracturing of minerals",
+          "The simple stacking of sediments",
+          "The complete dissolution of the rock"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Le fluage par dislocations déforme les cristaux de l'intérieur, par migration de dislocations, sans perte de cohésion : c'est un mécanisme ductile.",
+        "en": "Dislocation creep deforms crystals internally by the migration of dislocations, without loss of cohesion: it is a ductile mechanism."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "fr": "Une augmentation de la température favorise généralement un comportement :",
+        "en": "An increase in temperature generally favours behaviour that is:"
+      },
+      "options": {
+        "fr": ["Plus fragile", "Plus ductile", "Strictement inchangé", "Toujours élastique"],
+        "en": ["More brittle", "More ductile", "Strictly unchanged", "Always elastic"]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "La chaleur active les mécanismes ductiles (fluage, recristallisation) : à température élevée, les roches se déforment plutôt par écoulement que par rupture.",
+        "en": "Heat activates ductile mechanisms (creep, recrystallisation): at high temperature, rocks deform by flow rather than by fracture."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "fr": "Quel est l'effet d'une forte pression de fluide dans les pores d'une roche ?",
+        "en": "What is the effect of a high pore-fluid pressure in a rock?"
+      },
+      "options": {
+        "fr": [
+          "Elle empêche toute déformation",
+          "Elle diminue la contrainte normale effective et facilite la rupture fragile",
+          "Elle augmente fortement la densité de la roche",
+          "Elle n'a aucun effet mécanique"
+        ],
+        "en": [
+          "It prevents any deformation",
+          "It reduces the effective normal stress and promotes brittle failure",
+          "It strongly increases the rock's density",
+          "It has no mechanical effect"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "La pression de fluide réduit la contrainte normale effective sur les plans de fracture, rapprochant la roche de la rupture (principe de la contrainte effective).",
+        "en": "Fluid pressure reduces the effective normal stress on fracture planes, bringing the rock closer to failure (effective stress principle)."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "fr": "Que désigne la transition fragile-ductile dans la croûte terrestre ?",
+        "en": "What does the brittle-ductile transition in the crust refer to?"
+      },
+      "options": {
+        "fr": [
+          "La limite entre deux plaques tectoniques",
+          "La profondeur au-delà de laquelle, sous l'effet de la pression et de la température croissantes, la roche se déforme de manière ductile plutôt que fragile",
+          "La surface du sol",
+          "La limite entre deux strates sédimentaires"
+        ],
+        "en": [
+          "The boundary between two tectonic plates",
+          "The depth beyond which, under increasing pressure and temperature, rock deforms ductilely rather than brittly",
+          "The ground surface",
+          "The boundary between two sedimentary beds"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Avec la profondeur, l'augmentation de la pression et de la température fait passer les roches d'un domaine fragile (failles, séismes) à un domaine ductile (fluage).",
+        "en": "With depth, increasing pressure and temperature shift rocks from a brittle domain (faults, earthquakes) to a ductile domain (creep)."
+      }
+    }
+  ]
+}

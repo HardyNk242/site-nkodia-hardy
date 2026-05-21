@@ -1,0 +1,179 @@
+{
+  "session": 4,
+  "title": {
+    "fr": "TP 4 — Failles striées et reconstitution des paléocontraintes",
+    "en": "Lab 4 — Striated faults and palaeostress reconstruction"
+  },
+  "placeholder": true,
+  "note": "Quiz provisoire — adapter les questions au contenu réel de la séance de TP.",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "fr": "Que portent les stries observées sur un plan de faille ?",
+        "en": "What information do striations on a fault plane carry?"
+      },
+      "options": {
+        "fr": [
+          "La direction du glissement le long du plan",
+          "L'âge absolu de la faille",
+          "La densité de la roche",
+          "La composition chimique du fluide"
+        ],
+        "en": [
+          "The direction of slip along the plane",
+          "The absolute age of the fault",
+          "The density of the rock",
+          "The chemical composition of the fluid"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Les stries indiquent la direction du déplacement ; associées aux gradins, elles donnent aussi le sens du mouvement.",
+        "en": "Striations indicate the slip direction; combined with steps, they also give the sense of movement."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "fr": "À quoi sert la méthode des dièdres droits (P et T) ?",
+        "en": "What is the right-dihedra (P and T) method used for?"
+      },
+      "options": {
+        "fr": [
+          "À déterminer les domaines en compression et en extension à partir de failles striées",
+          "À dater les roches",
+          "À mesurer la porosité",
+          "À cartographier la végétation"
+        ],
+        "en": [
+          "To determine compressional and extensional domains from striated faults",
+          "To date the rocks",
+          "To measure porosity",
+          "To map vegetation"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "La méthode des dièdres droits délimite, pour chaque faille striée, les zones compatibles avec la compression (P) et l'extension (T), et les combine pour situer les axes de contrainte.",
+        "en": "The right-dihedra method outlines, for each striated fault, the zones compatible with compression (P) and tension (T), then combines them to locate the stress axes."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "fr": "Quelle donnée est indispensable pour inverser un tenseur de paléocontraintes ?",
+        "en": "Which data is essential to invert a palaeostress tensor?"
+      },
+      "options": {
+        "fr": [
+          "Un ensemble de failles striées avec le sens de jeu connu",
+          "Une seule mesure de pendage",
+          "La couleur des minéraux",
+          "Le nom des fossiles"
+        ],
+        "en": [
+          "A set of striated faults with a known sense of slip",
+          "A single dip measurement",
+          "The colour of the minerals",
+          "The names of the fossils"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "L'inversion exige une population de failles striées dont on connaît l'orientation, la strie et le sens du mouvement.",
+        "en": "Inversion requires a population of striated faults with known orientation, striation and sense of movement."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "fr": "En régime tectonique compressif, quel type de faille domine ?",
+        "en": "In a compressional tectonic regime, which fault type dominates?"
+      },
+      "options": {
+        "fr": ["Les failles inverses", "Les failles normales", "Les seuls joints", "Aucune faille"],
+        "en": ["Reverse faults", "Normal faults", "Joints only", "No faults"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "En compression, σ3 est vertical et σ1 horizontal : la croûte se raccourcit et s'épaissit le long de failles inverses.",
+        "en": "In compression σ3 is vertical and σ1 horizontal: the crust shortens and thickens along reverse faults."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "fr": "Lorsque σ1 (contrainte maximale) est vertical, le régime tectonique est :",
+        "en": "When σ1 (the maximum stress) is vertical, the tectonic regime is:"
+      },
+      "options": {
+        "fr": ["Extensif (failles normales)", "Compressif (failles inverses)", "Décrochant pur", "Indéterminé"],
+        "en": ["Extensional (normal faults)", "Compressional (reverse faults)", "Purely strike-slip", "Undetermined"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "σ1 vertical correspond au régime extensif d'Anderson : la croûte s'amincit par jeu de failles normales.",
+        "en": "A vertical σ1 corresponds to Anderson's extensional regime: the crust thins through normal faulting."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "fr": "Que renseigne un crochon de faille (entraînement des couches au contact du plan) ?",
+        "en": "What does a fault drag fold (bending of layers near the plane) indicate?"
+      },
+      "options": {
+        "fr": ["Le sens du mouvement de la faille", "L'âge des roches", "La profondeur de l'érosion", "La nature du fluide"],
+        "en": ["The sense of movement of the fault", "The age of the rocks", "The depth of erosion", "The nature of the fluid"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Le crochon traduit l'entraînement des couches le long du plan : sa courbure donne le sens du déplacement relatif.",
+        "en": "The drag fold reflects the bending of layers along the plane: its curvature gives the sense of relative displacement."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "fr": "Les fentes de tension associées à un système de failles s'ouvrent dans la direction de :",
+        "en": "Tension gashes associated with a fault system open in the direction of:"
+      },
+      "options": {
+        "fr": ["σ3 (contrainte minimale)", "σ1 (contrainte maximale)", "σ2 uniquement", "La verticale toujours"],
+        "en": ["σ3 (minimum stress)", "σ1 (maximum stress)", "σ2 only", "Always the vertical"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Les fentes de tension s'ouvrent perpendiculairement à σ3 : leur orientation aide à reconstituer la direction d'extension.",
+        "en": "Tension gashes open perpendicular to σ3: their orientation helps reconstruct the extension direction."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "fr": "Que caractérise le rapport de forme du tenseur des contraintes (Φ ou R) ?",
+        "en": "What does the shape ratio of the stress tensor (Φ or R) characterise?"
+      },
+      "options": {
+        "fr": [
+          "La position relative de σ2 entre σ1 et σ3",
+          "L'âge de la déformation",
+          "La profondeur du forage",
+          "La densité de la roche"
+        ],
+        "en": [
+          "The relative position of σ2 between σ1 and σ3",
+          "The age of the deformation",
+          "The depth of the borehole",
+          "The density of the rock"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Le rapport de forme situe σ2 par rapport à σ1 et σ3 ; il décrit la forme de l'ellipsoïde des contraintes (de uniaxial à triaxial).",
+        "en": "The shape ratio locates σ2 relative to σ1 and σ3; it describes the shape of the stress ellipsoid (from uniaxial to triaxial)."
+      }
+    }
+  ]
+}

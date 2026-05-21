@@ -1,0 +1,199 @@
+{
+  "session": 2,
+  "title": {
+    "fr": "TP 2 — Coupes géologiques et règle des « V »",
+    "en": "Lab 2 — Geological cross-sections and the rule of V's"
+  },
+  "placeholder": true,
+  "note": "Quiz provisoire — adapter les questions au contenu réel de la séance de TP.",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "fr": "Pour que les pendages soient représentés sans déformation sur une coupe, il faut que :",
+        "en": "For dips to be shown without distortion on a cross-section, it is necessary that:"
+      },
+      "options": {
+        "fr": [
+          "L'échelle verticale soit égale à l'échelle horizontale",
+          "L'échelle verticale soit cinq fois l'échelle horizontale",
+          "La coupe soit orientée nord-sud",
+          "La coupe soit toujours horizontale"
+        ],
+        "en": [
+          "The vertical scale equals the horizontal scale",
+          "The vertical scale is five times the horizontal scale",
+          "The section is oriented north-south",
+          "The section is always horizontal"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Toute exagération verticale fausse les pendages ; une coupe sans exagération (échelles égales) conserve les angles réels.",
+        "en": "Any vertical exaggeration distorts dips; a section without exaggeration (equal scales) preserves true angles."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "fr": "Le pendage apparent d'une couche sur une coupe est :",
+        "en": "The apparent dip of a layer on a section is:"
+      },
+      "options": {
+        "fr": [
+          "Toujours supérieur au pendage réel",
+          "Inférieur ou égal au pendage réel",
+          "Toujours nul",
+          "Sans relation avec le pendage réel"
+        ],
+        "en": [
+          "Always greater than the true dip",
+          "Less than or equal to the true dip",
+          "Always zero",
+          "Unrelated to the true dip"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Le pendage apparent est au plus égal au pendage réel ; il l'égale lorsque la coupe est perpendiculaire à la direction de la couche.",
+        "en": "The apparent dip is at most equal to the true dip; it equals it when the section is perpendicular to the layer's strike."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "fr": "Le pendage apparent égale le pendage réel lorsque la coupe est :",
+        "en": "The apparent dip equals the true dip when the section is:"
+      },
+      "options": {
+        "fr": [
+          "Parallèle à la direction de la couche",
+          "Perpendiculaire à la direction de la couche",
+          "Inclinée à 45° de la direction",
+          "Verticale uniquement"
+        ],
+        "en": [
+          "Parallel to the strike of the layer",
+          "Perpendicular to the strike of the layer",
+          "Inclined at 45° to the strike",
+          "Vertical only"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Une coupe perpendiculaire à la direction de la couche montre le pendage réel ; parallèle à la direction, elle montrerait une couche horizontale.",
+        "en": "A section perpendicular to the strike shows the true dip; parallel to the strike it would show a horizontal layer."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "fr": "Une couche horizontale recoupée par une vallée dessine sur la carte un « V » qui pointe :",
+        "en": "A horizontal layer cut by a valley draws on the map a V that points:"
+      },
+      "options": {
+        "fr": ["Vers l'amont de la vallée", "Vers l'aval de la vallée", "Vers le nord", "Aucun V n'apparaît"],
+        "en": ["Upstream", "Downstream", "Toward the north", "No V appears"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Pour une couche horizontale, la trace suit les courbes de niveau : le « V » pointe vers l'amont de la vallée.",
+        "en": "For a horizontal layer the trace follows the contour lines: the V points upstream."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "fr": "Une couche verticale recoupée par une vallée :",
+        "en": "A vertical layer cut by a valley:"
+      },
+      "options": {
+        "fr": [
+          "Dessine un « V » très marqué",
+          "Présente une trace rectiligne, non déviée par la vallée",
+          "Disparaît de la carte",
+          "Forme un cercle"
+        ],
+        "en": [
+          "Draws a very pronounced V",
+          "Shows a straight trace, not deflected by the valley",
+          "Disappears from the map",
+          "Forms a circle"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "La trace d'une couche verticale est indépendante du relief : elle reste rectiligne et ne dessine aucun « V ».",
+        "en": "The trace of a vertical layer is independent of relief: it stays straight and draws no V."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "fr": "Sur quel support reporte-t-on les contacts géologiques pour construire une coupe ?",
+        "en": "On what base are geological contacts plotted to build a cross-section?"
+      },
+      "options": {
+        "fr": ["Le profil topographique", "Une feuille vierge horizontale", "Le stéréogramme", "Le diagramme de Mohr"],
+        "en": ["The topographic profile", "A blank horizontal sheet", "The stereonet", "The Mohr diagram"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "On trace d'abord le profil topographique le long du trait de coupe, puis on y reporte les contacts et les pendages.",
+        "en": "One first draws the topographic profile along the section line, then plots the contacts and dips on it."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "fr": "L'épaisseur vraie d'une couche se mesure :",
+        "en": "The true thickness of a layer is measured:"
+      },
+      "options": {
+        "fr": [
+          "Perpendiculairement aux limites de la couche",
+          "Verticalement, quel que soit le pendage",
+          "Horizontalement",
+          "Le long de la pente topographique"
+        ],
+        "en": [
+          "Perpendicular to the boundaries of the layer",
+          "Vertically, whatever the dip",
+          "Horizontally",
+          "Along the topographic slope"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "L'épaisseur vraie se mesure perpendiculairement au toit et au mur de la couche ; l'épaisseur verticale est généralement plus grande.",
+        "en": "True thickness is measured perpendicular to the top and base of the layer; vertical thickness is generally greater."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "fr": "Pour une couche inclinée, un « V » qui pointe vers l'aval de la vallée indique généralement :",
+        "en": "For a dipping layer, a V pointing downstream generally indicates:"
+      },
+      "options": {
+        "fr": [
+          "Une couche pendant vers l'aval",
+          "Une couche strictement horizontale",
+          "Une couche strictement verticale",
+          "Une absence totale de pendage"
+        ],
+        "en": [
+          "A layer dipping downstream",
+          "A strictly horizontal layer",
+          "A strictly vertical layer",
+          "A complete absence of dip"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Quand la couche pend vers l'aval (avec un pendage supérieur à la pente), son « V » cartographique pointe vers l'aval de la vallée.",
+        "en": "When the layer dips downstream (with a dip steeper than the slope), its mapped V points downstream."
+      }
+    }
+  ]
+}

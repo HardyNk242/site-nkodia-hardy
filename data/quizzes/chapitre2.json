@@ -1,0 +1,269 @@
+{
+  "chapter": 2,
+  "title": {
+    "fr": "Les structures primaires",
+    "en": "Primary structures"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "fr": "Qu'est-ce qu'une structure primaire ?",
+        "en": "What is a primary structure?"
+      },
+      "options": {
+        "fr": [
+          "Une structure formée par déformation tectonique postérieure",
+          "Une structure acquise lors de la mise en place ou du dépôt de la roche",
+          "Une structure visible uniquement au microscope électronique",
+          "Une structure créée par l'altération météorique"
+        ],
+        "en": [
+          "A structure formed by later tectonic deformation",
+          "A structure acquired during the emplacement or deposition of the rock",
+          "A structure visible only under the electron microscope",
+          "A structure created by weathering"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Les structures primaires se forment au moment même de la genèse de la roche (dépôt sédimentaire, mise en place magmatique), contrairement aux structures secondaires dues à la déformation.",
+        "en": "Primary structures form at the very time the rock originates (sedimentary deposition, magmatic emplacement), unlike secondary structures caused by deformation."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "fr": "La stratification correspond à :",
+        "en": "Bedding corresponds to:"
+      },
+      "options": {
+        "fr": [
+          "La disposition des roches sédimentaires en couches superposées",
+          "L'orientation des cristaux dans un granite",
+          "Une fracture remplie de minéraux",
+          "Une surface de faille striée"
+        ],
+        "en": [
+          "The arrangement of sedimentary rocks into superposed layers",
+          "The orientation of crystals in a granite",
+          "A fracture filled with minerals",
+          "A striated fault surface"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "La stratification est l'organisation des sédiments en strates successives, séparées par des surfaces de stratification (joints de strate).",
+        "en": "Bedding is the organisation of sediments into successive layers separated by bedding surfaces."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "fr": "Quelle figure sédimentaire permet de déterminer la polarité verticale d'une série ?",
+        "en": "Which sedimentary feature allows the vertical way-up of a series to be determined?"
+      },
+      "options": {
+        "fr": [
+          "La couleur de la roche",
+          "Le granoclassement (granuloclassement)",
+          "La densité moyenne",
+          "La porosité totale"
+        ],
+        "en": [
+          "The colour of the rock",
+          "Graded bedding",
+          "The average density",
+          "The total porosity"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Le granoclassement, les rides de courant, les fentes de dessiccation ou les figures de charge sont des critères de polarité indiquant le haut et le bas d'origine de la série.",
+        "en": "Graded bedding, current ripples, desiccation cracks and load casts are way-up criteria indicating the original top and bottom of the series."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "fr": "Dans un granoclassement normal, les éléments sont :",
+        "en": "In normal graded bedding, the grains are:"
+      },
+      "options": {
+        "fr": [
+          "Fins à la base et grossiers au sommet",
+          "Grossiers à la base et fins au sommet",
+          "De taille identique partout",
+          "Absents au centre de la couche"
+        ],
+        "en": [
+          "Fine at the base and coarse at the top",
+          "Coarse at the base and fine at the top",
+          "Of identical size throughout",
+          "Absent in the middle of the bed"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Le granoclassement normal montre une décroissance de la taille des grains du bas vers le haut : le sommet de la couche est donc vers les éléments fins.",
+        "en": "Normal graded bedding shows a decrease in grain size from bottom to top: the top of the bed is therefore toward the fine grains."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "fr": "Qu'est-ce qu'une discordance angulaire ?",
+        "en": "What is an angular unconformity?"
+      },
+      "options": {
+        "fr": [
+          "Deux séries sédimentaires strictement parallèles",
+          "Des couches récentes reposant sur des couches anciennes déformées et érodées, avec un angle entre elles",
+          "Une simple variation de couleur dans une strate",
+          "Une faille décrochante"
+        ],
+        "en": [
+          "Two strictly parallel sedimentary series",
+          "Younger beds resting on older deformed and eroded beds, with an angle between them",
+          "A simple colour change within a bed",
+          "A strike-slip fault"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "La discordance angulaire enregistre une phase de déformation et d'érosion suivie d'une reprise de la sédimentation, d'où l'angle entre les deux séries.",
+        "en": "An angular unconformity records a phase of deformation and erosion followed by renewed sedimentation, hence the angle between the two series."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "fr": "Une nonconformité (discordance de socle) sépare :",
+        "en": "A nonconformity separates:"
+      },
+      "options": {
+        "fr": [
+          "Deux coulées basaltiques",
+          "Des roches sédimentaires reposant sur un socle cristallin (igné ou métamorphique)",
+          "Deux strates de même âge",
+          "Deux failles parallèles"
+        ],
+        "en": [
+          "Two basaltic flows",
+          "Sedimentary rocks resting on a crystalline basement (igneous or metamorphic)",
+          "Two beds of the same age",
+          "Two parallel faults"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "La nonconformité met en contact des sédiments avec un socle igné ou métamorphique, témoignant d'une longue lacune d'érosion.",
+        "en": "A nonconformity places sediments in contact with an igneous or metamorphic basement, recording a long erosional gap."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "fr": "Les figures de charge (load casts) résultent de :",
+        "en": "Load casts result from:"
+      },
+      "options": {
+        "fr": [
+          "L'enfoncement d'un sédiment dense dans une couche sous-jacente moins consolidée",
+          "La cristallisation du quartz",
+          "Le passage d'un glacier",
+          "L'action du vent sur une dune"
+        ],
+        "en": [
+          "The sinking of a dense sediment into a softer underlying layer",
+          "The crystallisation of quartz",
+          "The passage of a glacier",
+          "Wind action on a dune"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Liées à la compaction et à l'instabilité de densité, les figures de charge se forment quand un sable dense s'enfonce dans une vase sous-jacente encore molle.",
+        "en": "Linked to compaction and density instability, load casts form when dense sand sinks into a still-soft underlying mud."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "fr": "Pourquoi le sel forme-t-il des diapirs qui traversent les couches sus-jacentes ?",
+        "en": "Why does salt form diapirs that pierce the overlying layers?"
+      },
+      "options": {
+        "fr": [
+          "Parce qu'il est très dense et rigide",
+          "Parce qu'il est peu dense et très ductile, ce qui lui permet de fluer vers le haut",
+          "Parce qu'il fond à basse température",
+          "Parce qu'il est radioactif"
+        ],
+        "en": [
+          "Because it is very dense and rigid",
+          "Because it is low-density and very ductile, allowing it to flow upward",
+          "Because it melts at low temperature",
+          "Because it is radioactive"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Lors de l'halocinèse, le sel, moins dense que ses couvertures et capable de fluer, remonte par instabilité gravitaire et perce les sédiments sus-jacents.",
+        "en": "During halokinesis, salt — being less dense than its cover and able to flow — rises through gravitational instability and pierces the overlying sediments."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "fr": "Quelle est la différence entre un dyke (filon) et un sill ?",
+        "en": "What is the difference between a dyke and a sill?"
+      },
+      "options": {
+        "fr": [
+          "Le dyke recoupe la stratification (discordant), le sill s'injecte parallèlement aux couches (concordant)",
+          "Le dyke est sédimentaire, le sill est métamorphique",
+          "Il n'existe aucune différence",
+          "Le sill est toujours vertical, le dyke toujours horizontal"
+        ],
+        "en": [
+          "A dyke cuts across bedding (discordant); a sill intrudes parallel to bedding (concordant)",
+          "A dyke is sedimentary, a sill is metamorphic",
+          "There is no difference",
+          "A sill is always vertical, a dyke always horizontal"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Le dyke est une intrusion discordante recoupant les structures encaissantes ; le sill est une intrusion concordante, injectée parallèlement à la stratification.",
+        "en": "A dyke is a discordant intrusion cutting host structures; a sill is a concordant intrusion injected parallel to bedding."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "fr": "La disjonction prismatique (orgues basaltiques) est due à :",
+        "en": "Columnar jointing (basalt columns) is caused by:"
+      },
+      "options": {
+        "fr": [
+          "Une compression tectonique",
+          "La contraction thermique lors du refroidissement de la lave ou du magma",
+          "La dissolution chimique de la roche",
+          "L'érosion éolienne"
+        ],
+        "en": [
+          "Tectonic compression",
+          "Thermal contraction during cooling of the lava or magma",
+          "Chemical dissolution of the rock",
+          "Wind erosion"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Le refroidissement d'une coulée ou d'une intrusion provoque une contraction qui fracture la roche en colonnes prismatiques régulières.",
+        "en": "Cooling of a flow or intrusion causes contraction that fractures the rock into regular prismatic columns."
+      }
+    }
+  ]
+}

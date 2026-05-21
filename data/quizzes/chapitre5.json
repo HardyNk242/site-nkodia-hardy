@@ -1,0 +1,285 @@
+{
+  "chapter": 5,
+  "title": {
+    "fr": "Les structures secondaires",
+    "en": "Secondary structures"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "fr": "Qu'est-ce qu'un joint (diaclase) ?",
+        "en": "What is a joint?"
+      },
+      "options": {
+        "fr": [
+          "Une fracture le long de laquelle il n'y a pas de déplacement cisaillant notable",
+          "Une faille à fort rejet",
+          "Un pli couché",
+          "Une couche sédimentaire particulière"
+        ],
+        "en": [
+          "A fracture along which there is no appreciable shear displacement",
+          "A fault with a large offset",
+          "A recumbent fold",
+          "A particular sedimentary bed"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Le joint est une fracture sans déplacement cisaillant significatif ; il se distingue de la faille, qui implique un déplacement le long du plan.",
+        "en": "A joint is a fracture without significant shear displacement; it differs from a fault, which involves displacement along the plane."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "fr": "Que renseignent les structures en plumes (plumose) observées sur un joint ?",
+        "en": "What do plumose structures observed on a joint indicate?"
+      },
+      "options": {
+        "fr": [
+          "L'âge absolu de la roche",
+          "La direction et le sens de propagation de la fracture",
+          "La composition chimique du fluide",
+          "La densité de la roche"
+        ],
+        "en": [
+          "The absolute age of the rock",
+          "The direction and sense of propagation of the fracture",
+          "The chemical composition of the fluid",
+          "The density of the rock"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Les marques en plumes rayonnent depuis le point d'amorçage de la fracture et indiquent la direction selon laquelle le joint s'est propagé.",
+        "en": "Plumose marks radiate from the fracture's initiation point and indicate the direction in which the joint propagated."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "fr": "Un joint d'extension (joint de tension) s'ouvre :",
+        "en": "An extension (tension) joint opens:"
+      },
+      "options": {
+        "fr": [
+          "Perpendiculairement à la contrainte principale minimale σ3",
+          "Parallèlement à σ3",
+          "Perpendiculairement à σ1",
+          "Sans aucune relation avec les contraintes"
+        ],
+        "en": [
+          "Perpendicular to the minimum principal stress σ3",
+          "Parallel to σ3",
+          "Perpendicular to σ1",
+          "With no relation to stresses"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Les joints d'extension s'ouvrent dans la direction de σ3 : leur plan est donc perpendiculaire à la contrainte principale minimale.",
+        "en": "Extension joints open in the σ3 direction: their plane is therefore perpendicular to the minimum principal stress."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "fr": "Qu'est-ce qu'une veine ?",
+        "en": "What is a vein?"
+      },
+      "options": {
+        "fr": [
+          "Une fracture remplie de minéraux précipités à partir de fluides (quartz, calcite…)",
+          "Un pli de grande amplitude",
+          "Une strate riche en fossiles",
+          "Une surface de discordance"
+        ],
+        "en": [
+          "A fracture filled with minerals precipitated from fluids (quartz, calcite…)",
+          "A large-amplitude fold",
+          "A fossil-rich bed",
+          "An unconformity surface"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Une veine est une fracture (souvent un joint ouvert) colmatée par des minéraux déposés par des fluides circulant dans la roche.",
+        "en": "A vein is a fracture (often an opened joint) filled with minerals deposited by fluids circulating through the rock."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "fr": "Des veines en échelon disposées de façon sigmoïde traduisent généralement :",
+        "en": "Sigmoidal en-échelon veins generally reflect:"
+      },
+      "options": {
+        "fr": [
+          "Un cisaillement affectant la zone",
+          "Une simple sédimentation tranquille",
+          "Une fusion partielle",
+          "Une absence totale de déformation"
+        ],
+        "en": [
+          "Shear affecting the zone",
+          "Quiet sedimentation only",
+          "Partial melting",
+          "A complete absence of deformation"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Les veines en échelon sigmoïdes (tension gashes) se forment dans des zones cisaillées ; leur forme et leur disposition donnent le sens du cisaillement.",
+        "en": "Sigmoidal en-échelon veins (tension gashes) form in sheared zones; their shape and arrangement give the shear sense."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "fr": "Dans une faille inclinée, comment nomme-t-on le compartiment situé au-dessus du plan de faille ?",
+        "en": "In an inclined fault, what is the block above the fault plane called?"
+      },
+      "options": {
+        "fr": ["Le mur (foot wall)", "Le toit (hanging wall)", "La charnière", "Le plan axial"],
+        "en": ["The foot wall", "The hanging wall", "The hinge", "The axial plane"]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Le compartiment situé au-dessus du plan de faille est le toit (hanging wall) ; celui situé en dessous est le mur (foot wall).",
+        "en": "The block above the fault plane is the hanging wall; the block below is the foot wall."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "fr": "Dans une faille normale, le toit se déplace :",
+        "en": "In a normal fault, the hanging wall moves:"
+      },
+      "options": {
+        "fr": [
+          "Vers le haut par rapport au mur",
+          "Vers le bas par rapport au mur",
+          "Horizontalement, sans composante verticale",
+          "Il ne se déplace pas"
+        ],
+        "en": [
+          "Upward relative to the foot wall",
+          "Downward relative to the foot wall",
+          "Horizontally, with no vertical component",
+          "It does not move"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "La faille normale accommode une extension : le toit descend par rapport au mur. La faille inverse, en compression, fait monter le toit.",
+        "en": "A normal fault accommodates extension: the hanging wall moves down relative to the foot wall. A reverse fault, in compression, raises the hanging wall."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "fr": "Quels éléments d'un miroir de faille permettent de déterminer le sens du mouvement ?",
+        "en": "Which features of a slickenside allow the sense of movement to be determined?"
+      },
+      "options": {
+        "fr": [
+          "La couleur de la roche",
+          "Les stries et les gradins (cannelures) portés par le plan de faille",
+          "La taille des fossiles",
+          "L'épaisseur des strates voisines"
+        ],
+        "en": [
+          "The colour of the rock",
+          "The striations and steps on the fault plane",
+          "The size of the fossils",
+          "The thickness of nearby beds"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Les stries donnent la direction du glissement, et les gradins (ou cannelures) donnent le sens du mouvement : ce sont des marqueurs cinématiques.",
+        "en": "Striations give the slip direction, and steps give the sense of movement: these are kinematic indicators."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "fr": "La mylonite est une roche de faille caractéristique :",
+        "en": "Mylonite is a fault rock characteristic of:"
+      },
+      "options": {
+        "fr": [
+          "Du domaine ductile, formée par déformation à l'état solide avec recristallisation",
+          "Du domaine fragile de surface",
+          "D'un dépôt sédimentaire récent",
+          "D'une coulée volcanique"
+        ],
+        "en": [
+          "The ductile domain, formed by solid-state deformation with recrystallisation",
+          "The shallow brittle domain",
+          "A recent sedimentary deposit",
+          "A volcanic flow"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "La mylonite, foliée et à grain réduit, se forme dans les zones de cisaillement ductiles ; les gouges, brèches et cataclasites relèvent du domaine fragile.",
+        "en": "Mylonite, foliated and grain-reduced, forms in ductile shear zones; gouges, breccias and cataclasites belong to the brittle domain."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "fr": "Selon Anderson, dans un régime de failles normales, quelle contrainte principale est verticale ?",
+        "en": "According to Anderson, in a normal-faulting regime, which principal stress is vertical?"
+      },
+      "options": {
+        "fr": [
+          "σ1 (contrainte maximale)",
+          "σ2 (contrainte intermédiaire)",
+          "σ3 (contrainte minimale)",
+          "Aucune contrainte n'est verticale"
+        ],
+        "en": [
+          "σ1 (maximum stress)",
+          "σ2 (intermediate stress)",
+          "σ3 (minimum stress)",
+          "No stress is vertical"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "En régime de failles normales, σ1 est vertical et l'extension horizontale est portée par σ3 : la croûte s'amincit.",
+        "en": "In a normal-faulting regime σ1 is vertical and horizontal extension is along σ3: the crust thins."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "fr": "Dans un régime décrochant (coulissant), quelle contrainte principale est verticale ?",
+        "en": "In a strike-slip regime, which principal stress is vertical?"
+      },
+      "options": {
+        "fr": [
+          "σ1 (contrainte maximale)",
+          "σ2 (contrainte intermédiaire)",
+          "σ3 (contrainte minimale)",
+          "Les trois sont horizontales"
+        ],
+        "en": [
+          "σ1 (maximum stress)",
+          "σ2 (intermediate stress)",
+          "σ3 (minimum stress)",
+          "All three are horizontal"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "En régime décrochant, σ2 est vertical tandis que σ1 et σ3 sont horizontales : le mouvement le long des failles est essentiellement horizontal.",
+        "en": "In a strike-slip regime σ2 is vertical while σ1 and σ3 are horizontal: movement along the faults is essentially horizontal."
+      }
+    }
+  ]
+}

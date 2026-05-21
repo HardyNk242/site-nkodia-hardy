@@ -1,0 +1,189 @@
+{
+  "session": 3,
+  "title": {
+    "fr": "TP 3 — Lecture et interprétation des cartes structurales",
+    "en": "Lab 3 — Reading and interpreting structural maps"
+  },
+  "placeholder": true,
+  "note": "Quiz provisoire — adapter les questions au contenu réel de la séance de TP.",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "fr": "Sur une carte, un anticlinal érodé montre en son cœur :",
+        "en": "On a map, an eroded anticline shows in its core:"
+      },
+      "options": {
+        "fr": ["Les terrains les plus anciens", "Les terrains les plus récents", "Toujours des roches volcaniques", "Aucune roche"],
+        "en": ["The oldest rocks", "The youngest rocks", "Always volcanic rocks", "No rock"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "L'érosion d'un anticlinal dégage les couches anciennes au cœur de la structure ; les terrains rajeunissent vers l'extérieur.",
+        "en": "Erosion of an anticline exposes the oldest layers in the core; rocks become younger outward."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "fr": "Un synclinal érodé présente au cœur :",
+        "en": "An eroded syncline shows in its core:"
+      },
+      "options": {
+        "fr": ["Les terrains les plus récents", "Les terrains les plus anciens", "Uniquement du socle", "Une faille"],
+        "en": ["The youngest rocks", "The oldest rocks", "Only basement", "A fault"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Dans un synclinal, les couches les plus récentes occupent le cœur de la structure ; les terrains vieillissent vers les flancs.",
+        "en": "In a syncline the youngest layers occupy the core; rocks become older toward the limbs."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "fr": "Comment repère-t-on l'axe d'un pli sur une carte géologique ?",
+        "en": "How is the axis of a fold identified on a geological map?"
+      },
+      "options": {
+        "fr": [
+          "Par la ligne de symétrie de la répétition des affleurements",
+          "Par la limite de la carte",
+          "Par la rivière la plus proche",
+          "Par la couleur des roches"
+        ],
+        "en": [
+          "By the line of symmetry of the repeated outcrop pattern",
+          "By the edge of the map",
+          "By the nearest river",
+          "By the colour of the rocks"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "La trace axiale joint les charnières : elle correspond à la ligne de symétrie de la disposition répétée des couches de part et d'autre.",
+        "en": "The axial trace joins the hinges: it is the line of symmetry of the repeated layer pattern on either side."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "fr": "Sur une carte, comment se reconnaît un pli déversé ?",
+        "en": "On a map, how is an overturned fold recognised?"
+      },
+      "options": {
+        "fr": [
+          "Les deux flancs pendent dans le même sens",
+          "Les deux flancs pendent en sens opposés",
+          "Il n'y a aucun pendage",
+          "Le pli est strictement circulaire"
+        ],
+        "en": [
+          "Both limbs dip in the same direction",
+          "The two limbs dip in opposite directions",
+          "There is no dip at all",
+          "The fold is strictly circular"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Dans un pli déversé, les deux flancs pendent du même côté ; l'un des flancs est inversé, ce que confirment les critères de polarité.",
+        "en": "In an overturned fold both limbs dip the same way; one limb is inverted, as confirmed by way-up criteria."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "fr": "Une faille normale, observée sur une carte, met en contact :",
+        "en": "A normal fault seen on a map places in contact:"
+      },
+      "options": {
+        "fr": [
+          "Des terrains plus jeunes du côté du compartiment affaissé",
+          "Toujours deux fois la même couche",
+          "Des roches de même âge exactement",
+          "Aucun terrain"
+        ],
+        "en": [
+          "Younger rocks on the side of the downthrown block",
+          "Always the same layer twice",
+          "Rocks of exactly the same age",
+          "No rocks"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "La faille normale fait descendre le toit : les terrains plus jeunes du compartiment affaissé se retrouvent au contact des terrains plus anciens du compartiment soulevé.",
+        "en": "A normal fault drops the hanging wall: younger rocks of the downthrown block come against older rocks of the upthrown block."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "fr": "Que désigne le rejet d'une faille ?",
+        "en": "What does the offset (throw) of a fault refer to?"
+      },
+      "options": {
+        "fr": [
+          "Le déplacement relatif entre les deux compartiments",
+          "L'âge de la faille",
+          "La couleur du plan de faille",
+          "La profondeur du forage"
+        ],
+        "en": [
+          "The relative displacement between the two blocks",
+          "The age of the fault",
+          "The colour of the fault plane",
+          "The depth of the borehole"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Le rejet quantifie le déplacement relatif des deux compartiments le long du plan de faille (rejet vertical, horizontal, total).",
+        "en": "The offset quantifies the relative displacement of the two blocks along the fault plane (vertical, horizontal, net)."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "fr": "Sur une carte, une discordance se reconnaît à :",
+        "en": "On a map, an unconformity is recognised by:"
+      },
+      "options": {
+        "fr": [
+          "Un contact qui recoupe les limites des terrains sous-jacents",
+          "Deux couches strictement parallèles",
+          "Une faille décrochante",
+          "Une simple variation de couleur"
+        ],
+        "en": [
+          "A contact that truncates the boundaries of the underlying units",
+          "Two strictly parallel layers",
+          "A strike-slip fault",
+          "A simple colour change"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "La surface de discordance recoupe les contacts des terrains plus anciens : la série supérieure repose en biseau sur les couches inférieures érodées.",
+        "en": "The unconformity surface truncates the contacts of older units: the upper series rests in onlap on the eroded lower layers."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "fr": "Sur une carte en courbes structurales, des courbes très resserrées indiquent :",
+        "en": "On a structure-contour map, closely spaced contours indicate:"
+      },
+      "options": {
+        "fr": ["Un fort pendage", "Un pendage faible", "Une couche horizontale", "Une absence de structure"],
+        "en": ["A steep dip", "A gentle dip", "A horizontal layer", "An absence of structure"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Comme pour les courbes de niveau topographiques, des courbes structurales resserrées traduisent une forte pente, donc un fort pendage.",
+        "en": "As with topographic contours, closely spaced structure contours reflect a steep gradient, hence a steep dip."
+      }
+    }
+  ]
+}

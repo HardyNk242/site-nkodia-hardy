@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ──────────────────────────────────────────────
+   BASE
+────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: #F7F7F7;
+    color: #212121;
+    line-height: 1.65;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-oswald), Impact, sans-serif;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+  }
+
+  /* Focus visible — keyboard only, clean ring */
+  :focus-visible {
+    outline: 2px solid #F34F4C;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Remove default focus for mouse users */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Smooth transitions for colour-based states */
+  a, button {
+    transition: color 150ms ease, background-color 150ms ease,
+                border-color 150ms ease, opacity 150ms ease,
+                box-shadow 150ms ease;
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ──────────────────────────────────────────────
+   SKIP LINK — accessibility
+────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: #F34F4C;
+  color: #fff;
+  font-family: var(--font-oswald), sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 0 0 4px 4px;
+  text-decoration: none;
+  transition: top 150ms ease;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* ──────────────────────────────────────────────
+   COMPONENTS
+────────────────────────────────────────────── */
+@layer components {
+
+  /* Section title */
+  .titre-section {
+    @apply font-oswald uppercase text-3xl md:text-4xl font-semibold tracking-wide;
+  }
+
+  /* Coral accent bar */
+  .barre-corail {
+    @apply block w-16 h-1 bg-corail mt-3 mb-8;
+  }
+
+  /* Coral inline link */
+  .lien-corail {
+    @apply text-corail font-semibold hover:underline underline-offset-4
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-corail focus-visible:ring-offset-1;
+  }
+
+  /* Primary button */
+  .btn-corail {
+    @apply inline-flex items-center justify-center gap-2 bg-corail text-white
+           font-oswald uppercase tracking-wide text-sm px-5 py-3 min-h-[44px]
+           transition-all duration-150
+           hover:bg-[#d83f3c] active:scale-[0.97] active:bg-[#c23533]
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-corail focus-visible:ring-offset-2
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Outline button */
+  .btn-contour {
+    @apply inline-flex items-center justify-center gap-2 border-2 border-encre text-encre
+           font-oswald uppercase tracking-wide text-sm px-5 py-3 min-h-[44px]
+           transition-all duration-150
+           hover:bg-encre hover:text-white active:scale-[0.97]
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-encre focus-visible:ring-offset-2
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Card */
+  .carte {
+    @apply bg-white shadow-sm border border-black/5 rounded-sm
+           transition-all duration-200
+           hover:shadow-md hover:-translate-y-0.5;
+  }
+
+  /* Tag chip */
+  .tag {
+    @apply inline-block text-xs font-oswald uppercase tracking-wide px-2.5 py-1
+           bg-encre/5 text-encre/60 rounded-sm;
+  }
+
+  /* Coral tag */
+  .tag-corail {
+    @apply inline-block text-xs font-oswald uppercase tracking-wide px-2.5 py-1
+           bg-corail/10 text-corail rounded-sm;
+  }
+}
+
+/* ──────────────────────────────────────────────
+   CAROUSEL — hide scrollbar
+────────────────────────────────────────────── */
+.scroll-cache::-webkit-scrollbar { display: none; }
+.scroll-cache {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ──────────────────────────────────────────────
+   PLACEHOLDER — geological texture pattern
+────────────────────────────────────────────── */
+.placeholder-roche {
+  background-color: #c4b8aa;
+  background-image:
+    repeating-linear-gradient(
+      135deg,
+      rgba(0,0,0,0.07) 0 12px,
+      rgba(0,0,0,0) 12px 24px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,0.04) 0 8px,
+      rgba(255,255,255,0) 8px 16px
+    ),
+    linear-gradient(
+      160deg,
+      #c9a98c 0%,
+      #9a8a78 40%,
+      #6f6a63 75%,
+      #3d3a35 100%
+    );
+}
+
+/* ──────────────────────────────────────────────
+   PAGE FADE-IN — subtle entrance animation
+────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  animation: fadeUp 320ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up { animation: none; }
+}
+
+/* ──────────────────────────────────────────────
+   PROSE — body text rhythm
+────────────────────────────────────────────── */
+.prose-site {
+  @apply text-encre/75 leading-relaxed max-w-3xl;
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+}

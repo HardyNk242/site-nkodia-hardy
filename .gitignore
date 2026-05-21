@@ -1,0 +1,29 @@
+# Next.js
+node_modules/
+.next/
+out/
+build/
+
+# Environment variables
+.env
+.env.local
+.env*.local
+
+# Vercel
+.vercel/
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+
+# Claude Code
+.claude/
+
+# Old site drafts
+My-site-main/

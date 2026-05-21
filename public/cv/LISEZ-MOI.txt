@@ -1,0 +1,4 @@
+Déposez ici le curriculum vitae au format PDF.
+
+Nom de fichier attendu par la page « CV » :
+  cv-nkodia-hardy.pdf

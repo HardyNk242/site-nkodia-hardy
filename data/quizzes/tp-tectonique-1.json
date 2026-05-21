@@ -1,0 +1,139 @@
+{
+  "session": 1,
+  "title": {
+    "fr": "TP 1 — Projection stéréographique",
+    "en": "Lab 1 — Stereographic projection"
+  },
+  "placeholder": true,
+  "note": "Quiz provisoire — adapter les questions au contenu réel de la séance de TP.",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "fr": "Quelle propriété conserve le canevas de Wulff (projection stéréographique) ?",
+        "en": "Which property does the Wulff net (stereographic projection) preserve?"
+      },
+      "options": {
+        "fr": ["Les angles (projection équiangle)", "Les surfaces (projection équisurface)", "Les longueurs réelles", "Les couleurs des roches"],
+        "en": ["Angles (equal-angle projection)", "Areas (equal-area projection)", "True lengths", "Rock colours"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Le canevas de Wulff est équiangle : il conserve les angles. Le canevas de Schmidt, lui, conserve les surfaces.",
+        "en": "The Wulff net is equal-angle: it preserves angles. The Schmidt net preserves areas."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "fr": "Sur un stéréogramme, un plan est représenté par :",
+        "en": "On a stereonet, a plane is represented by:"
+      },
+      "options": {
+        "fr": ["Un point unique", "Un grand cercle (ou son pôle)", "Une droite verticale", "Un carré"],
+        "en": ["A single point", "A great circle (or its pole)", "A vertical line", "A square"]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Un plan se projette en grand cercle ; on peut aussi le représenter de façon synthétique par son pôle.",
+        "en": "A plane projects as a great circle; it can also be represented synthetically by its pole."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "fr": "Le pôle d'un plan correspond à :",
+        "en": "The pole of a plane corresponds to:"
+      },
+      "options": {
+        "fr": ["La projection de la normale au plan", "Le centre du stéréogramme", "Le point le plus pentu du plan", "La direction du plan"],
+        "en": ["The projection of the normal to the plane", "The centre of the stereonet", "The steepest point of the plane", "The strike of the plane"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Le pôle est la projection de la droite perpendiculaire (normale) au plan ; il résume l'orientation du plan en un seul point.",
+        "en": "The pole is the projection of the line perpendicular (normal) to the plane; it summarises the plane's orientation as a single point."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "fr": "Comment représente-t-on une droite (linéation, axe de pli) sur un stéréogramme ?",
+        "en": "How is a line (lineation, fold axis) represented on a stereonet?"
+      },
+      "options": {
+        "fr": ["Par un grand cercle", "Par un point", "Par un petit cercle", "Par un rectangle"],
+        "en": ["By a great circle", "By a point", "By a small circle", "By a rectangle"]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Une droite perce la sphère en un point ; elle se projette donc en un point sur le stéréogramme.",
+        "en": "A line pierces the sphere at one point; it therefore projects as a point on the stereonet."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "fr": "Comment se projette un plan strictement horizontal ?",
+        "en": "How does a strictly horizontal plane project?"
+      },
+      "options": {
+        "fr": ["Selon le cercle primitif (bordure du stéréogramme)", "Selon un diamètre", "En un point au centre", "Il ne se projette pas"],
+        "en": ["As the primitive circle (the edge of the stereonet)", "As a diameter", "As a point at the centre", "It does not project"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Un plan horizontal se projette selon le cercle primitif ; un plan vertical, lui, se projette selon un diamètre.",
+        "en": "A horizontal plane projects as the primitive circle; a vertical plane projects as a diameter."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "fr": "Pour une analyse statistique d'une population de pôles ou de linéations, on utilise de préférence :",
+        "en": "For a statistical analysis of a population of poles or lineations, one preferably uses:"
+      },
+      "options": {
+        "fr": ["Le canevas de Schmidt (équisurface)", "Le canevas de Wulff (équiangle)", "Une carte topographique", "Un diagramme de Mohr"],
+        "en": ["The Schmidt net (equal-area)", "The Wulff net (equal-angle)", "A topographic map", "A Mohr diagram"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Le canevas de Schmidt conserve les surfaces : il évite de fausser les densités de points et convient aux traitements statistiques.",
+        "en": "The Schmidt net preserves areas: it avoids distorting point densities and is suited to statistical processing."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "fr": "Où se projette le pôle d'un plan horizontal ?",
+        "en": "Where does the pole of a horizontal plane project?"
+      },
+      "options": {
+        "fr": ["Au centre du stéréogramme", "Sur le cercle primitif", "À l'extérieur du stéréogramme", "Sur un diamètre"],
+        "en": ["At the centre of the stereonet", "On the primitive circle", "Outside the stereonet", "On a diameter"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "La normale à un plan horizontal est verticale ; elle se projette donc au centre du stéréogramme.",
+        "en": "The normal to a horizontal plane is vertical; it therefore projects at the centre of the stereonet."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "fr": "Plus le pendage d'un plan est fort, plus son grand cercle :",
+        "en": "The steeper the dip of a plane, the more its great circle:"
+      },
+      "options": {
+        "fr": ["Se rapproche du centre du stéréogramme", "S'écarte vers le cercle primitif", "Disparaît complètement", "Devient un point"],
+        "en": ["Approaches the centre of the stereonet", "Moves toward the primitive circle", "Disappears completely", "Becomes a point"]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Un plan vertical se projette en diamètre (passant par le centre) ; plus le pendage augmente, plus le grand cercle se rapproche du centre.",
+        "en": "A vertical plane projects as a diameter (through the centre); the greater the dip, the closer the great circle moves to the centre."
+      }
+    }
+  ]
+}

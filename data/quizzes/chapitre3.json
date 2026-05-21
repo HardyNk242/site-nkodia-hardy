@@ -1,0 +1,269 @@
+{
+  "chapter": 3,
+  "title": {
+    "fr": "Notions de mécanique : forces et contraintes",
+    "en": "Mechanics: forces and stresses"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "fr": "Comment définit-on une contrainte (stress) ?",
+        "en": "How is stress defined?"
+      },
+      "options": {
+        "fr": [
+          "Une force par unité de surface",
+          "Un changement de température",
+          "Une masse par unité de volume",
+          "Une distance parcourue"
+        ],
+        "en": [
+          "A force per unit area",
+          "A change in temperature",
+          "A mass per unit volume",
+          "A distance travelled"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "La contrainte est l'intensité d'une force rapportée à la surface sur laquelle elle s'applique ; elle s'exprime en pascals (Pa) ou en mégapascals (MPa).",
+        "en": "Stress is the intensity of a force divided by the area over which it acts; it is expressed in pascals (Pa) or megapascals (MPa)."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "fr": "Que désigne la déformation (strain) d'un corps rocheux ?",
+        "en": "What does strain of a rock body refer to?"
+      },
+      "options": {
+        "fr": [
+          "Sa composition chimique",
+          "Le changement de forme et/ou de volume résultant de l'application de contraintes",
+          "Sa température de fusion",
+          "Son âge géologique"
+        ],
+        "en": [
+          "Its chemical composition",
+          "The change in shape and/or volume resulting from applied stresses",
+          "Its melting temperature",
+          "Its geological age"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "La déformation traduit la modification de la géométrie d'un corps (changement de forme, de volume ou de position) sous l'effet des contraintes.",
+        "en": "Strain expresses the change in a body's geometry (shape, volume or position) under the effect of stresses."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "fr": "Quelle différence existe-t-il entre contrainte normale et contrainte cisaillante sur un plan ?",
+        "en": "What is the difference between normal stress and shear stress on a plane?"
+      },
+      "options": {
+        "fr": [
+          "La contrainte normale est perpendiculaire au plan, la cisaillante lui est tangentielle",
+          "Les deux sont identiques",
+          "La contrainte normale est tangentielle, la cisaillante perpendiculaire",
+          "La contrainte cisaillante n'existe que dans les liquides"
+        ],
+        "en": [
+          "Normal stress is perpendicular to the plane, shear stress is tangential to it",
+          "The two are identical",
+          "Normal stress is tangential, shear stress is perpendicular",
+          "Shear stress exists only in liquids"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Sur un plan donné, la composante normale agit perpendiculairement à la surface, tandis que la composante cisaillante agit parallèlement à elle.",
+        "en": "On a given plane, the normal component acts perpendicular to the surface, while the shear component acts parallel to it."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "fr": "Dans la convention des contraintes principales, que représente σ1 ?",
+        "en": "In the principal stress convention, what does σ1 represent?"
+      },
+      "options": {
+        "fr": [
+          "La contrainte principale minimale",
+          "La contrainte principale intermédiaire",
+          "La contrainte principale maximale",
+          "La pression atmosphérique"
+        ],
+        "en": [
+          "The minimum principal stress",
+          "The intermediate principal stress",
+          "The maximum principal stress",
+          "Atmospheric pressure"
+        ]
+      },
+      "answer": 2,
+      "explanation": {
+        "fr": "Les trois contraintes principales sont classées σ1 ≥ σ2 ≥ σ3 ; σ1 est donc la contrainte principale maximale et σ3 la minimale.",
+        "en": "The three principal stresses are ranked σ1 ≥ σ2 ≥ σ3; σ1 is therefore the maximum and σ3 the minimum principal stress."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "fr": "Que caractérise un état de contrainte hydrostatique (isotrope) ?",
+        "en": "What characterises a hydrostatic (isotropic) state of stress?"
+      },
+      "options": {
+        "fr": [
+          "σ1, σ2 et σ3 sont égales et il n'y a aucune contrainte cisaillante",
+          "σ1 est très supérieure à σ3",
+          "Il n'existe que des contraintes cisaillantes",
+          "La contrainte est nulle dans toutes les directions"
+        ],
+        "en": [
+          "σ1, σ2 and σ3 are equal and there is no shear stress",
+          "σ1 is much greater than σ3",
+          "Only shear stresses exist",
+          "Stress is zero in all directions"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Dans un état hydrostatique, les trois contraintes principales sont égales : aucune contrainte cisaillante ne s'exerce, quel que soit le plan considéré.",
+        "en": "In a hydrostatic state the three principal stresses are equal: no shear stress acts on any plane."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "fr": "Que représente le cercle de Mohr ?",
+        "en": "What does the Mohr circle represent?"
+      },
+      "options": {
+        "fr": [
+          "L'âge des roches en fonction de la profondeur",
+          "L'état des contraintes normale et cisaillante sur tous les plans possibles passant par un point",
+          "La composition minéralogique d'une roche",
+          "La vitesse des ondes sismiques"
+        ],
+        "en": [
+          "Rock age as a function of depth",
+          "The normal and shear stress on every possible plane through a point",
+          "The mineral composition of a rock",
+          "The velocity of seismic waves"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Le cercle de Mohr est une représentation graphique reliant contrainte normale et contrainte cisaillante pour l'ensemble des orientations de plans en un point.",
+        "en": "The Mohr circle is a graphical representation linking normal and shear stress for all plane orientations at a point."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "fr": "Sur le diagramme de Mohr, à quoi correspond le diamètre du cercle ?",
+        "en": "On the Mohr diagram, what does the diameter of the circle correspond to?"
+      },
+      "options": {
+        "fr": [
+          "À la somme σ1 + σ3",
+          "À la contrainte différentielle σ1 − σ3",
+          "À la pression de fluide",
+          "À la profondeur d'enfouissement"
+        ],
+        "en": [
+          "To the sum σ1 + σ3",
+          "To the differential stress σ1 − σ3",
+          "To the fluid pressure",
+          "To the burial depth"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Le diamètre du cercle de Mohr est égal à la contrainte différentielle (σ1 − σ3) ; plus elle est grande, plus le risque de rupture augmente.",
+        "en": "The diameter of the Mohr circle equals the differential stress (σ1 − σ3); the larger it is, the greater the likelihood of failure."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "fr": "Sur quels plans la contrainte cisaillante est-elle maximale ?",
+        "en": "On which planes is the shear stress at a maximum?"
+      },
+      "options": {
+        "fr": [
+          "Les plans parallèles à σ1",
+          "Les plans perpendiculaires à σ1",
+          "Les plans inclinés à 45° des contraintes principales",
+          "Les plans horizontaux uniquement"
+        ],
+        "en": [
+          "Planes parallel to σ1",
+          "Planes perpendicular to σ1",
+          "Planes inclined at 45° to the principal stresses",
+          "Horizontal planes only"
+        ]
+      },
+      "answer": 2,
+      "explanation": {
+        "fr": "La contrainte cisaillante est maximale sur les plans orientés à 45° de σ1 et σ3, ce qu'illustre le sommet du cercle de Mohr.",
+        "en": "Shear stress is maximal on planes oriented at 45° to σ1 and σ3, as shown by the top of the Mohr circle."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "fr": "Une déformation est dite homogène lorsque :",
+        "en": "A deformation is said to be homogeneous when:"
+      },
+      "options": {
+        "fr": [
+          "Les lignes initialement droites restent droites et les lignes parallèles restent parallèles",
+          "La roche fond entièrement",
+          "Les fossiles disparaissent",
+          "La déformation est nulle partout"
+        ],
+        "en": [
+          "Initially straight lines remain straight and parallel lines remain parallel",
+          "The rock melts entirely",
+          "The fossils disappear",
+          "Deformation is zero everywhere"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Dans une déformation homogène, les droites restent droites et les parallèles restent parallèles ; la déformation hétérogène ne respecte pas ces règles.",
+        "en": "In a homogeneous deformation, straight lines stay straight and parallel lines stay parallel; heterogeneous deformation does not."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "fr": "Quelle méthode permet d'estimer l'orientation des contraintes actuelles de la croûte ?",
+        "en": "Which method estimates the orientation of present-day crustal stresses?"
+      },
+      "options": {
+        "fr": [
+          "L'analyse des mécanismes au foyer des séismes et des breakouts de forage",
+          "La datation au carbone 14",
+          "L'étude des fossiles de l'Ordovicien",
+          "La mesure de la couleur des roches"
+        ],
+        "en": [
+          "Analysis of earthquake focal mechanisms and borehole breakouts",
+          "Carbon-14 dating",
+          "The study of Ordovician fossils",
+          "Measuring rock colour"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Les mécanismes au foyer des séismes, les breakouts de forage et les mesures in situ renseignent sur les directions et intensités des contraintes actuelles.",
+        "en": "Earthquake focal mechanisms, borehole breakouts and in-situ measurements provide the directions and magnitudes of present-day stresses."
+      }
+    }
+  ]
+}

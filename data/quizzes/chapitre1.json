@@ -1,0 +1,259 @@
+{
+  "chapter": 1,
+  "title": {
+    "fr": "Introduction et méthodologie de la géologie structurale",
+    "en": "Introduction and methodology of structural geology"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "fr": "Que la géologie structurale étudie-t-elle principalement ?",
+        "en": "What does structural geology primarily study?"
+      },
+      "options": {
+        "fr": [
+          "La composition chimique des minéraux",
+          "La déformation des roches et les structures qui en résultent",
+          "La datation absolue des roches",
+          "L'évolution des organismes fossiles"
+        ],
+        "en": [
+          "The chemical composition of minerals",
+          "The deformation of rocks and the resulting structures",
+          "The absolute dating of rocks",
+          "The evolution of fossil organisms"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "La géologie structurale décrit et interprète la déformation des roches ainsi que l'architecture (plis, failles, foliations) qui en résulte.",
+        "en": "Structural geology describes and interprets rock deformation and the resulting architecture (folds, faults, foliations)."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "fr": "Comment définit-on une structure géologique ?",
+        "en": "How is a geological structure defined?"
+      },
+      "options": {
+        "fr": [
+          "Une configuration géométrique d'un volume rocheux issue d'un processus géologique",
+          "Un minéral rare contenu dans une roche",
+          "Une couche de sol meuble en surface",
+          "Un type particulier de fossile"
+        ],
+        "en": [
+          "A geometric configuration of a rock volume produced by a geological process",
+          "A rare mineral contained in a rock",
+          "A loose soil layer at the surface",
+          "A particular type of fossil"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Une structure (pli, faille, foliation, stratification…) est une disposition géométrique d'un volume rocheux résultant d'un processus de dépôt ou de déformation.",
+        "en": "A structure (fold, fault, foliation, bedding…) is a geometric arrangement of a rock volume resulting from a depositional or deformational process."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "fr": "À quelle échelle d'observation s'effectue l'étude d'une lame mince au microscope ?",
+        "en": "At which observation scale is a thin section studied under the microscope?"
+      },
+      "options": {
+        "fr": ["Échelle régionale", "Échelle de l'affleurement", "Échelle microscopique", "Échelle planétaire"],
+        "en": ["Regional scale", "Outcrop scale", "Microscopic scale", "Planetary scale"]
+      },
+      "answer": 2,
+      "explanation": {
+        "fr": "L'observation des microstructures en lame mince relève de l'échelle microscopique, complémentaire des échelles de l'affleurement et régionale.",
+        "en": "Observation of microstructures in thin section belongs to the microscopic scale, complementary to the outcrop and regional scales."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "fr": "L'échelle régionale (ou cartographique) concerne les structures :",
+        "en": "The regional (cartographic) scale concerns structures that are:"
+      },
+      "options": {
+        "fr": [
+          "Visibles uniquement au microscope",
+          "De dimensions kilométriques observées sur carte ou image satellite",
+          "Limitées à un seul échantillon de roche",
+          "Inférieures au millimètre"
+        ],
+        "en": [
+          "Visible only under the microscope",
+          "Kilometre-sized, observed on maps or satellite imagery",
+          "Limited to a single rock sample",
+          "Smaller than a millimetre"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "L'échelle régionale traite des structures kilométriques (chaînes plissées, grands accidents) appréhendées par la carte géologique et la télédétection.",
+        "en": "The regional scale deals with kilometre-scale structures (fold belts, major faults) captured through geological maps and remote sensing."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "fr": "Que cherche à reconstituer l'analyse cinématique d'une déformation ?",
+        "en": "What does the kinematic analysis of a deformation aim to reconstruct?"
+      },
+      "options": {
+        "fr": [
+          "L'âge isotopique des roches",
+          "La composition minéralogique initiale",
+          "Les mouvements et déplacements ayant accompagné la déformation",
+          "La température de fusion des roches"
+        ],
+        "en": [
+          "The isotopic age of the rocks",
+          "The initial mineralogical composition",
+          "The movements and displacements that accompanied the deformation",
+          "The melting temperature of the rocks"
+        ]
+      },
+      "answer": 2,
+      "explanation": {
+        "fr": "L'analyse cinématique reconstitue les trajectoires de mouvement (sens de cisaillement, transport tectonique) sans préjuger des forces en cause.",
+        "en": "Kinematic analysis reconstructs movement paths (shear sense, tectonic transport) without addressing the causal forces."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "fr": "L'analyse dynamique d'une structure vise à déterminer :",
+        "en": "The dynamic analysis of a structure aims to determine:"
+      },
+      "options": {
+        "fr": [
+          "Les forces et contraintes responsables de la déformation",
+          "La couleur des minéraux",
+          "Le nom des fossiles présents",
+          "La densité de la roche"
+        ],
+        "en": [
+          "The forces and stresses responsible for the deformation",
+          "The colour of the minerals",
+          "The names of the fossils present",
+          "The density of the rock"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "L'analyse dynamique relie les structures observées aux champs de contraintes et aux forces tectoniques qui les ont engendrées.",
+        "en": "Dynamic analysis links the observed structures to the stress fields and tectonic forces that produced them."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "fr": "Quelle méthode permet d'imager les structures géologiques en profondeur sans excavation ?",
+        "en": "Which method images deep geological structures without excavation?"
+      },
+      "options": {
+        "fr": [
+          "La sismique réflexion",
+          "La loupe de terrain",
+          "La datation au carbone 14",
+          "La diffraction des rayons X"
+        ],
+        "en": [
+          "Seismic reflection",
+          "The field hand lens",
+          "Carbon-14 dating",
+          "X-ray diffraction"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "La sismique réflexion fournit des images du sous-sol (plis, failles, discordances) à partir de la propagation d'ondes élastiques.",
+        "en": "Seismic reflection provides subsurface images (folds, faults, unconformities) from the propagation of elastic waves."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "fr": "Quel est l'apport principal des forages et des carottes en analyse structurale ?",
+        "en": "What is the main contribution of boreholes and cores to structural analysis?"
+      },
+      "options": {
+        "fr": [
+          "Mesurer la température de l'air",
+          "Fournir un échantillonnage direct des roches en profondeur",
+          "Dater les éruptions volcaniques historiques",
+          "Cartographier la végétation"
+        ],
+        "en": [
+          "Measuring air temperature",
+          "Providing direct sampling of rocks at depth",
+          "Dating historical volcanic eruptions",
+          "Mapping vegetation"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Les forages livrent des carottes, c'est-à-dire un échantillonnage physique direct du sous-sol, permettant d'observer la lithologie et les structures en profondeur.",
+        "en": "Boreholes deliver cores, i.e. direct physical sampling of the subsurface, allowing observation of lithology and structures at depth."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "fr": "À quoi sert principalement la télédétection (imagerie satellitaire) en géologie structurale ?",
+        "en": "What is remote sensing (satellite imagery) mainly used for in structural geology?"
+      },
+      "options": {
+        "fr": [
+          "Mesurer la dureté des minéraux",
+          "Identifier et cartographier les linéaments et grandes structures",
+          "Déterminer l'âge absolu des roches",
+          "Analyser la chimie des fluides"
+        ],
+        "en": [
+          "Measuring mineral hardness",
+          "Identifying and mapping lineaments and large structures",
+          "Determining the absolute age of rocks",
+          "Analysing fluid chemistry"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "La télédétection révèle les linéaments (failles, fractures, axes de plis) et facilite la cartographie structurale à l'échelle régionale.",
+        "en": "Remote sensing reveals lineaments (faults, fractures, fold axes) and supports structural mapping at the regional scale."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "fr": "Quelle proposition distingue le mieux la géologie structurale de la tectonique ?",
+        "en": "Which statement best distinguishes structural geology from tectonics?"
+      },
+      "options": {
+        "fr": [
+          "Elles étudient exactement la même chose",
+          "La géologie structurale décrit la déformation à toutes les échelles, la tectonique traite des grands ensembles et de la dynamique des plaques",
+          "La tectonique n'étudie que les minéraux",
+          "La géologie structurale ne concerne que les fossiles"
+        ],
+        "en": [
+          "They study exactly the same thing",
+          "Structural geology describes deformation at all scales; tectonics deals with large units and plate dynamics",
+          "Tectonics studies only minerals",
+          "Structural geology concerns only fossils"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "La géologie structurale décrit et analyse les structures à toutes les échelles ; la tectonique replace ces structures dans la dynamique des grands ensembles lithosphériques et des plaques.",
+        "en": "Structural geology describes and analyses structures at all scales; tectonics places them within the dynamics of large lithospheric units and plates."
+      }
+    }
+  ]
+}

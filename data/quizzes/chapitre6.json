@@ -1,0 +1,295 @@
+{
+  "chapter": 6,
+  "title": {
+    "fr": "Les déformations ductiles",
+    "en": "Ductile deformation"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "fr": "Que désigne la charnière d'un pli ?",
+        "en": "What is the hinge of a fold?"
+      },
+      "options": {
+        "fr": [
+          "La ligne de courbure maximale de la surface plissée",
+          "Le flanc le plus long du pli",
+          "La base de la série sédimentaire",
+          "Une fracture recoupant le pli"
+        ],
+        "en": [
+          "The line of maximum curvature of the folded surface",
+          "The longest limb of the fold",
+          "The base of the sedimentary series",
+          "A fracture cutting the fold"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "La charnière relie les points de courbure maximale d'une surface plissée ; les flancs sont les portions de plus faible courbure de part et d'autre.",
+        "en": "The hinge connects the points of maximum curvature of a folded surface; the limbs are the lower-curvature portions on either side."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "fr": "Le plan axial d'un pli est :",
+        "en": "The axial plane of a fold is:"
+      },
+      "options": {
+        "fr": [
+          "Le plan qui contient les charnières des couches successives et partage le pli aussi symétriquement que possible",
+          "Le plan horizontal de référence",
+          "Une surface de faille",
+          "La surface du sol actuel"
+        ],
+        "en": [
+          "The plane containing the hinges of successive layers and dividing the fold as symmetrically as possible",
+          "The horizontal reference plane",
+          "A fault surface",
+          "The present-day ground surface"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Le plan axial passe par les charnières de toutes les couches plissées ; son inclinaison sert à classer les plis (droit, déversé, couché).",
+        "en": "The axial plane passes through the hinges of all folded layers; its inclination is used to classify folds (upright, overturned, recumbent)."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "fr": "Un pli isoclinal se caractérise par un angle d'ouverture (entre flancs) :",
+        "en": "An isoclinal fold is characterised by an interlimb angle:"
+      },
+      "options": {
+        "fr": [
+          "Proche de 180° (flancs presque alignés)",
+          "Proche de 0° (flancs quasi parallèles)",
+          "Toujours égal à 90°",
+          "Compris entre 120° et 150°"
+        ],
+        "en": [
+          "Close to 180° (limbs almost aligned)",
+          "Close to 0° (limbs nearly parallel)",
+          "Always equal to 90°",
+          "Between 120° and 150°"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Selon l'angle d'ouverture, on distingue plis ouverts, fermés, serrés puis isoclinaux ; ces derniers ont des flancs parallèles (angle ≈ 0°).",
+        "en": "By interlimb angle one distinguishes open, closed, tight and isoclinal folds; the latter have parallel limbs (angle ≈ 0°)."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "fr": "Sur quel critère repose la classification des plis de Ramsay (1967) ?",
+        "en": "On what criterion is Ramsay's (1967) fold classification based?"
+      },
+      "options": {
+        "fr": [
+          "La couleur des couches plissées",
+          "Les trajectoires des isogones de pendage (dip isogons)",
+          "L'âge radiométrique du pli",
+          "Le nombre de fossiles présents"
+        ],
+        "en": [
+          "The colour of the folded layers",
+          "The pattern of dip isogons",
+          "The radiometric age of the fold",
+          "The number of fossils present"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Ramsay (1967) classe les plis d'après la disposition des isogones de pendage, distinguant notamment les plis parallèles (classe 1B) et semblables (classe 2).",
+        "en": "Ramsay (1967) classifies folds by the arrangement of dip isogons, notably distinguishing parallel folds (class 1B) and similar folds (class 2)."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "fr": "Dans la classification de Ramsay, un pli semblable (classe 2) se caractérise par :",
+        "en": "In Ramsay's classification, a similar fold (class 2) is characterised by:"
+      },
+      "options": {
+        "fr": [
+          "Une épaisseur de couche constante mesurée perpendiculairement",
+          "Des isogones parallèles au plan axial et une épaisseur constante mesurée parallèlement au plan axial",
+          "Une absence totale de courbure",
+          "Des couches non déformées"
+        ],
+        "en": [
+          "A constant layer thickness measured perpendicular to the layer",
+          "Isogons parallel to the axial plane and constant thickness measured parallel to the axial plane",
+          "A complete absence of curvature",
+          "Undeformed layers"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "fr": "Le pli semblable (classe 2) garde une épaisseur constante mesurée parallèlement au plan axial ; ses isogones de pendage sont parallèles au plan axial.",
+        "en": "A similar fold (class 2) keeps a constant thickness measured parallel to the axial plane; its dip isogons are parallel to the axial plane."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "fr": "Le flambage (buckling), mécanisme de plissement actif, se produit lorsque :",
+        "en": "Buckling, an active folding mechanism, occurs when:"
+      },
+      "options": {
+        "fr": [
+          "Une couche compétente est comprimée parallèlement à son allongement, au sein d'un encaissant moins compétent",
+          "Une couche est simplement déposée à l'horizontale",
+          "La roche fond entièrement",
+          "Aucune contrainte n'est appliquée"
+        ],
+        "en": [
+          "A competent layer is compressed parallel to its length within a less competent matrix",
+          "A layer is simply deposited horizontally",
+          "The rock melts entirely",
+          "No stress is applied"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Le flambage est un plissement actif lié au contraste de compétence : une couche rigide comprimée dans son plan flambe au sein d'un encaissant plus ductile.",
+        "en": "Buckling is active folding driven by competence contrast: a stiff layer compressed in its plane buckles within a more ductile matrix."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "fr": "Qu'est-ce qu'un pli passif ?",
+        "en": "What is a passive fold?"
+      },
+      "options": {
+        "fr": [
+          "Un pli où les couches ne jouent aucun rôle mécanique et se comportent en simples marqueurs d'un écoulement",
+          "Un pli formé uniquement par le vent",
+          "Un pli qui ne se déforme jamais",
+          "Un pli créé par sédimentation"
+        ],
+        "en": [
+          "A fold where layers play no mechanical role and act as mere markers of flow",
+          "A fold formed only by wind",
+          "A fold that never deforms",
+          "A fold created by sedimentation"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Dans le plissement passif, les couches n'ont pas de contraste de compétence : elles sont déformées de manière passive par l'écoulement (passive flow).",
+        "en": "In passive folding the layers have no competence contrast: they are deformed passively by flow (passive flow)."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "fr": "Les figures d'interférence en « dôme et bassin » résultent :",
+        "en": "Dome-and-basin interference patterns result from:"
+      },
+      "options": {
+        "fr": [
+          "De la superposition de deux familles de plis d'orientations très différentes",
+          "D'une seule phase de plissement",
+          "De la simple érosion d'une surface plane",
+          "Du dépôt de sédiments récents"
+        ],
+        "en": [
+          "The superposition of two fold sets with very different orientations",
+          "A single folding phase",
+          "Simple erosion of a flat surface",
+          "The deposition of recent sediments"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Les figures d'interférence (dôme-et-bassin, croissant, champignon) résultent de la superposition de plusieurs phases de plissement d'orientations distinctes.",
+        "en": "Interference patterns (dome-and-basin, crescent, mushroom) result from the superposition of several folding phases with distinct orientations."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "fr": "Les stylolithes sont des surfaces dentelées qui se forment par :",
+        "en": "Stylolites are serrated surfaces that form by:"
+      },
+      "options": {
+        "fr": [
+          "Dissolution sous contrainte (pression-dissolution)",
+          "Fusion partielle de la roche",
+          "Dépôt éolien",
+          "Cristallisation d'un magma"
+        ],
+        "en": [
+          "Pressure solution (dissolution under stress)",
+          "Partial melting of the rock",
+          "Wind deposition",
+          "Crystallisation of a magma"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "Les stylolithes résultent de la dissolution de la roche sous contrainte ; les pics stylolithiques s'orientent parallèlement à la direction de raccourcissement maximal.",
+        "en": "Stylolites result from pressure solution; the stylolitic peaks align parallel to the direction of maximum shortening."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "fr": "Une schistosité de déformation se développe généralement :",
+        "en": "A deformation cleavage generally develops:"
+      },
+      "options": {
+        "fr": [
+          "Perpendiculairement à la direction de raccourcissement maximal",
+          "Parallèlement à la direction de raccourcissement maximal",
+          "Toujours horizontalement",
+          "Sans aucune relation avec la déformation"
+        ],
+        "en": [
+          "Perpendicular to the direction of maximum shortening",
+          "Parallel to the direction of maximum shortening",
+          "Always horizontally",
+          "With no relation to the deformation"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "La schistosité, plan d'aplatissement, se forme perpendiculairement au raccourcissement maximal ; la linéation est l'élément linéaire associé (étirement).",
+        "en": "Cleavage, the flattening plane, forms perpendicular to maximum shortening; lineation is the associated linear element (stretching)."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "fr": "Qu'est-ce qu'une zone de cisaillement ductile ?",
+        "en": "What is a ductile shear zone?"
+      },
+      "options": {
+        "fr": [
+          "Une bande de déformation intense à l'état solide, sans perte de cohésion, où se forment les mylonites",
+          "Une simple fracture ouverte de surface",
+          "Une couche sédimentaire non déformée",
+          "Une coulée de lave"
+        ],
+        "en": [
+          "A band of intense solid-state deformation, without loss of cohesion, where mylonites form",
+          "A simple open surface fracture",
+          "An undeformed sedimentary bed",
+          "A lava flow"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "fr": "La zone de cisaillement ductile accommode un fort déplacement par écoulement à l'état solide ; les fabriques S/C et les porphyroclastes y donnent le sens de cisaillement.",
+        "en": "A ductile shear zone accommodates large displacement by solid-state flow; S/C fabrics and porphyroclasts give the shear sense."
+      }
+    }
+  ]
+}

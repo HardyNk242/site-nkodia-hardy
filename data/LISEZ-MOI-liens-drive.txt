@@ -1,0 +1,26 @@
+CONFIGURATION DES POLYCOPIÉS PDF (Google Drive)
+================================================
+
+Chaque cours possède UN SEUL polycopié PDF, hébergé sur Google Drive.
+Les liens sont centralisés dans le fichier : data/drive-links.json
+
+POUR CHAQUE COURS, RENSEIGNER L'IDENTIFIANT DU FICHIER ("fileId") :
+
+1. Déposer le PDF sur Google Drive.
+2. Clic droit sur le fichier  ->  Partager  ->  « Tous les utilisateurs
+   disposant du lien »  ->  rôle « Lecteur ». (Indispensable pour que la
+   visionneuse et le téléchargement fonctionnent pour les visiteurs.)
+3. Copier le lien de partage, par exemple :
+      https://drive.google.com/file/d/1A2B3C4D5E6F7G8H9I/view?usp=sharing
+   L'identifiant du fichier est la partie située entre /d/ et /view :
+      1A2B3C4D5E6F7G8H9I
+4. Coller cet identifiant dans data/drive-links.json à la place de
+   "REMPLACER_PAR_ID_GOOGLE_DRIVE".
+
+Le site construit automatiquement les deux liens nécessaires :
+  - Visionneuse intégrée :  https://drive.google.com/file/d/<fileId>/preview
+  - Téléchargement direct :  https://drive.google.com/uc?export=download&id=<fileId>
+
+Tant qu'un identifiant n'est pas renseigné, la page du cours affiche un
+encadré « polycopié à venir » à la place de la visionneuse (comportement
+normal en attendant le PDF définitif).
