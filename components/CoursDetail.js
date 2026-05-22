@@ -94,10 +94,16 @@ export default function CoursDetail({ course }) {
               <p className="text-xs text-encre/45 mt-3">
                 {T(tr.cours.quizInfo).replace("{n}", s.quiz.questions.length)}
               </p>
-              <div className="mt-5">
-                <button onClick={() => setQuizActif(s.quiz)} className="btn-corail">
+              <div className="mt-5 flex flex-col sm:flex-row gap-3">
+                <button onClick={() => setQuizActif(s.quiz)} className="btn-contour text-sm">
                   {T(tr.cours.faireQuiz)}
                 </button>
+                <Link
+                  href={`/cours/${course.slug}/quiz/${s.num}`}
+                  className="btn-corail text-sm text-center"
+                >
+                  {T({ fr: "Quiz surveillé →", en: "Proctored quiz →" })}
+                </Link>
               </div>
             </article>
           ))}
