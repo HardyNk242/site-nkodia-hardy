@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        corail:      "#F34F4C",
-        "corail-dk": "#c23533",
+        corail:      "#1E7A40",   /* vert forêt — thème principal */
+        "corail-dk": "#155530",   /* vert foncé pour hover actif  */
         clair:       "#F7F7F7",
         encre:       "#212121",
         "encre-lt":  "#444444",

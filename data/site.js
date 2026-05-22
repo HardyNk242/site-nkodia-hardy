@@ -18,8 +18,8 @@ export const profil = {
     en: "« Rock preserves the memory of the forces that deformed it: to read a structure is to travel back through the history of stresses. »",
   },
   liens: {
-    researchgate: "https://www.researchgate.net/profile/Nkodia-Hardy-Medry-Dieu-Veil",
-    scholar: "https://scholar.google.com/citations?user=nkodia-hardy",
+    researchgate: "https://www.researchgate.net/profile/Hardy-Medry-Dieu-Veil-Nkodia",
+    scholar: "https://scholar.google.com/citations?user=gYOI-FkAAAAJ&hl=en",
     email: "hardy.nkodia@umng.cg",
   },
 };

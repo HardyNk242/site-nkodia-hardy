@@ -319,9 +319,9 @@ export default function Publications() {
         ))}
         <p className="text-sm text-encre/55 font-bitter italic">
           {T(tr.publications.listeComplete)}{" "}
-          <a href="https://www.researchgate.net/" target="_blank" rel="noopener noreferrer" className="lien-corail">ResearchGate</a>{" "}
+          <a href="https://www.researchgate.net/profile/Hardy-Medry-Dieu-Veil-Nkodia" target="_blank" rel="noopener noreferrer" className="lien-corail">ResearchGate</a>{" "}
           {T({ fr: "et", en: "and" })}{" "}
-          <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" className="lien-corail">Google Scholar</a>.
+          <a href="https://scholar.google.com/citations?user=gYOI-FkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="lien-corail">Google Scholar</a>.
         </p>
       </section>
     </>
