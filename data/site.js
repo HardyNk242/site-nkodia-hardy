@@ -32,6 +32,7 @@ export const publicationsRecentes = [
     revue: "International Journal of Geoheritage and Parks, 14(1), 43–59",
     auteurs: "Bazebizonza Tchiguina N. C., Samba P. R. R., Nkodia H. M. D.-V., Boudzoumou F., Arfaoui I., François C., & Lahogue P.",
     doi: "10.1016/j.ijgeop.2026.02.002",
+    image: "/images/figure-pub-2026.jpg",
   },
   {
     annee: 2025,
@@ -40,6 +41,7 @@ export const publicationsRecentes = [
     revue: "Tectonics, 44(7), e2025TC008815",
     auteurs: "Colet M., Kolawole F., Ajala R., Delvaux D., & Nkodia H. M. D.-V.",
     doi: "10.1029/2025TC008815",
+    image: "/images/figure-pub-2025.jpg",
   },
 ];
 
@@ -62,6 +64,7 @@ export const dansLesJournaux = [
     media: "Les Dépêches de Brazzaville",
     date: "2024",
     url: "#",
+    image: "/images/presse-journal-depeche.jpg",
   },
   {
     titre: {
@@ -102,12 +105,11 @@ export const evenements = [
 ];
 
 export const carrousel = [
-  { legende: { fr: "Plis isoclinaux dans les quartzites du Mayombe", en: "Isoclinal folds in Mayombe quartzites" } },
-  { legende: { fr: "Levé structural sur le terrain — vallée du Niari", en: "Structural field survey — Niari valley" } },
-  { legende: { fr: "Miroir de faille strié, bassin côtier congolais", en: "Striated fault mirror, Congolese coastal basin" } },
-  { legende: { fr: "Zone de cisaillement mylonitique, socle précambrien", en: "Mylonitic shear zone, Precambrian basement" } },
-  { legende: { fr: "Stéréogramme des fractures — campagne de mesures", en: "Fracture stereoplot — measurement campaign" } },
-  { legende: { fr: "Affleurement de discordance, ravin du Djoué", en: "Unconformity outcrop, Djoué ravine" } },
+  { src: "/images/carrousel-1.jpg", legende: { fr: "Plis isoclinaux dans les quartzites du Mayombe", en: "Isoclinal folds in Mayombe quartzites" } },
+  { src: "/images/carrousel-2.jpg", legende: { fr: "Levé structural sur le terrain — vallée du Niari", en: "Structural field survey — Niari valley" } },
+  { src: "/images/carrousel-3.jpg", legende: { fr: "Miroir de faille strié, bassin côtier congolais", en: "Striated fault mirror, Congolese coastal basin" } },
+  { src: "/images/carrousel-4.jpg", legende: { fr: "Zone de cisaillement mylonitique, socle précambrien", en: "Mylonitic shear zone, Precambrian basement" } },
+  { src: "/images/carrousel-5.jpg", legende: { fr: "Stéréogramme des fractures — campagne de mesures", en: "Fracture stereoplot — measurement campaign" } },
 ];
 
 export const themesRecherche = [
@@ -153,16 +155,25 @@ export const equipe = [
     nom: "Pr. Florent Boudzoumou",
     role: { fr: "Professeur titulaire — géologie du Précambrien", en: "Full Professor — Precambrian geology" },
     affiliation: "Université Marien Ngouabi",
+    image: "/images/equipe-florent-boudzoumou.jpg",
   },
   {
     nom: "Pr. Damien Delvaux",
     role: { fr: "Collaborateur — tectonique & paléocontraintes", en: "Collaborator — tectonics & palaeostress" },
     affiliation: "Musée royal de l'Afrique centrale, Tervuren",
+    image: "/images/equipe-damien-delvaux.jpg",
   },
   {
     nom: "Dr. Timothée Miyouna",
     role: { fr: "Maître de conférences — pétrologie & géodynamique", en: "Associate Professor — petrology & geodynamics" },
     affiliation: "Université Marien Ngouabi",
+    image: "/images/equipe-miyouna-timothee.jpg",
+  },
+  {
+    nom: "Nicy C. Bazebizonza Tchiguina",
+    role: { fr: "Doctorante — géologie karstique & patrimoine géologique", en: "PhD candidate — karst geology & geoheritage" },
+    affiliation: "Université Marien Ngouabi",
+    image: "/images/equipe-nicy-bazebizonza.jpg",
   },
   {
     nom: "Pascale Lahogue",
@@ -173,11 +184,6 @@ export const equipe = [
     nom: "Doctorant·e — analyse structurale",
     role: { fr: "Thèse en cours sous la direction du Dr. Nkodia", en: "PhD in progress under Dr. Nkodia's supervision" },
     affiliation: "École doctorale Sciences et Techniques, UMNg",
-  },
-  {
-    nom: "Master 2 — géosciences structurales",
-    role: { fr: "Étudiant·es en mémoire de recherche", en: "Master's research students" },
-    affiliation: "Faculté des Sciences et Techniques, UMNg",
   },
 ];
 

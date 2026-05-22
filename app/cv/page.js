@@ -1,7 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import Hero from "@/components/Hero";
-import Placeholder from "@/components/Placeholder";
 import { useLang } from "@/contexts/LanguageContext";
 import { tr } from "@/data/translations";
 import { profil, cv } from "@/data/site";
@@ -24,7 +24,18 @@ export default function CV() {
       <Hero titre={T(tr.cv.hero)} sousTitre={T(profil.titre)} />
       <section className="max-w-content mx-auto px-5 py-16 grid gap-12 md:grid-cols-[260px_1fr]">
         <aside>
-          <Placeholder label="Photo — Dr. Nkodia Hardy" ratio="aspect-[4/5]" />
+          <div className="group overflow-hidden rounded-sm shadow-md">
+            <div className="relative aspect-[4/5] overflow-hidden">
+              <Image
+                src="/images/photo-nkodia-hardy.jpg"
+                alt="Dr. Nkodia Hardy Medry Dieu-Veil"
+                fill
+                sizes="260px"
+                className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                priority
+              />
+            </div>
+          </div>
           <div className="mt-5 bg-white p-5 border border-black/5">
             <p className="font-oswald uppercase text-sm tracking-wide text-corail mb-2">{T(tr.cv.contact)}</p>
             <p className="text-sm text-encre/75 leading-relaxed">{cv.infos}</p>

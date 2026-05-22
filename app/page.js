@@ -20,12 +20,21 @@ export default function Accueil() {
 
   return (
     <>
-      <Hero titre={profil.nom} sousTitre={T(profil.titre)} />
+      <Hero titre={profil.nom} sousTitre={T(profil.titre)} image="/images/hero-bg.jpg" />
 
       {/* Profil + citation */}
       <section className="max-w-content mx-auto px-5 py-16 grid gap-10 md:grid-cols-[280px_1fr] items-center">
-        <div>
-          <Placeholder label="Photo du Dr. Nkodia Hardy" ratio="aspect-[4/5]" />
+        <div className="group overflow-hidden rounded-sm shadow-md">
+          <div className="relative aspect-[4/5] overflow-hidden">
+            <Image
+              src="/images/photo-nkodia-hardy.jpg"
+              alt="Dr. Nkodia Hardy Medry Dieu-Veil"
+              fill
+              sizes="(max-width:768px) 100vw, 280px"
+              className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+              priority
+            />
+          </div>
         </div>
         <div>
           <h2 className="titre-section">{T(tr.home.profil)}</h2>
@@ -54,8 +63,20 @@ export default function Accueil() {
           <span className="barre-corail" />
           <div className="grid gap-8 md:grid-cols-2">
             {publicationsRecentes.map((p, i) => (
-              <article key={i} className="carte flex flex-col">
-                <Placeholder label={`Figure — ${p.revue}`} ratio="aspect-[16/9]" />
+              <article key={i} className="carte flex flex-col group overflow-hidden">
+                <div className="relative aspect-[16/9] overflow-hidden">
+                  {p.image ? (
+                    <Image
+                      src={p.image}
+                      alt={`Figure — ${p.revue}`}
+                      fill
+                      sizes="(max-width:768px) 100vw, 50vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  ) : (
+                    <Placeholder label={`Figure — ${p.revue}`} ratio="aspect-[16/9]" />
+                  )}
+                </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <span className="font-oswald text-corail text-sm uppercase tracking-wide">
                     {p.annee} · {p.revue}
@@ -89,13 +110,13 @@ export default function Accueil() {
             {dansLesJournaux.map((j, i) => (
               <li key={i} className="border-l-2 border-corail pl-4">
                 {j.image && (
-                  <div className="mb-2 overflow-hidden max-h-32 w-full relative">
+                  <div className="mb-3 overflow-hidden rounded-sm relative h-32 w-full group">
                     <Image
                       src={j.image}
                       alt={T(j.titre)}
-                      width={400}
-                      height={130}
-                      className="w-full object-cover object-top"
+                      fill
+                      sizes="(max-width:1024px) 100vw, 50vw"
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
                 )}
@@ -103,7 +124,7 @@ export default function Accueil() {
                   href={j.url}
                   target={j.url !== "#" ? "_blank" : undefined}
                   rel="noopener noreferrer"
-                  className="font-oswald text-lg hover:text-corail leading-snug"
+                  className="font-oswald text-lg hover:text-corail transition-colors leading-snug"
                 >
                   {T(j.titre)}
                 </a>
@@ -120,7 +141,7 @@ export default function Accueil() {
           <span className="barre-corail" />
           <ul className="space-y-4">
             {evenements.map((e, i) => (
-              <li key={i} className="carte p-5 flex gap-4">
+              <li key={i} className="carte p-5 flex gap-4 hover:shadow-md transition-shadow duration-200">
                 <span className="shrink-0 w-1.5 bg-corail rounded-full" />
                 <div>
                   <h3 className="font-oswald text-lg leading-snug">{T(e.titre)}</h3>

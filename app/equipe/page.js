@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import Placeholder from "@/components/Placeholder";
 import { useLang } from "@/contexts/LanguageContext";
@@ -21,8 +22,20 @@ export default function Equipe() {
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {equipe.map((m, i) => (
-            <article key={i} className="carte overflow-hidden">
-              <Placeholder label="Portrait" ratio="aspect-square" />
+            <article key={i} className="carte overflow-hidden group">
+              <div className="relative aspect-square overflow-hidden">
+                {m.image ? (
+                  <Image
+                    src={m.image}
+                    alt={m.nom}
+                    fill
+                    sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
+                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : (
+                  <Placeholder label="Portrait" ratio="aspect-square" />
+                )}
+              </div>
               <div className="p-5">
                 <h3 className="font-oswald text-lg leading-snug">{m.nom}</h3>
                 <p className="text-corail text-sm font-semibold mt-1">{T(m.role)}</p>

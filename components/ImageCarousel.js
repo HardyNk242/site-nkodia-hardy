@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState, useCallback } from "react";
+import Image from "next/image";
 import Placeholder from "./Placeholder";
 
 /* SVG chevron — no HTML entity, consistent stroke */
@@ -57,11 +58,21 @@ export default function ImageCarousel({ items }) {
           <figure
             key={i}
             data-carte
-            className="snap-start shrink-0 w-[80%] sm:w-[46%] lg:w-[31%]"
+            className="snap-start shrink-0 w-[80%] sm:w-[46%] lg:w-[31%] group"
             aria-label={it.legende}
           >
-            <div className="rounded-sm overflow-hidden">
-              <Placeholder label={it.legende} ratio="aspect-[3/2]" />
+            <div className="rounded-sm overflow-hidden aspect-[3/2] relative">
+              {it.src ? (
+                <Image
+                  src={it.src}
+                  alt={it.legende}
+                  fill
+                  sizes="(max-width:640px) 80vw, (max-width:1024px) 46vw, 31vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              ) : (
+                <Placeholder label={it.legende} ratio="aspect-[3/2]" />
+              )}
             </div>
             <figcaption className="mt-2.5 text-sm text-encre/65 font-bitter italic leading-snug">
               {it.legende}
