@@ -11,7 +11,7 @@ export default function CoursBibliotheque() {
 
   return (
     <>
-      <Hero titre={T(tr.cours.hero)} sousTitre={T(tr.cours.sousTitre)} />
+      <Hero titre={T(tr.cours.hero)} sousTitre={T(tr.cours.sousTitre)} image="/images/hero-bg-courses-pages.jpg" position="center" />
       <section className="max-w-content mx-auto px-5 py-16">
         <h2 className="titre-section">
           {T({ fr: "Cours disponibles", en: "Available courses" })}

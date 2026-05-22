@@ -27,11 +27,11 @@ export default function CV() {
           <div className="group overflow-hidden rounded-sm shadow-md">
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="/images/photo-nkodia-hardy.jpg"
+                src="/images/photo-profil-new.jpg"
                 alt="Dr. Nkodia Hardy Medry Dieu-Veil"
                 fill
                 sizes="260px"
-                className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 priority
               />
             </div>

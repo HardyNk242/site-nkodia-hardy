@@ -20,18 +20,18 @@ export default function Accueil() {
 
   return (
     <>
-      <Hero titre={profil.nom} sousTitre={T(profil.titre)} image="/images/hero-bg.jpg" />
+      <Hero titre={profil.nom} sousTitre={T(profil.titre)} image="/images/hero-bg.jpg" position="center top" />
 
       {/* Profil + citation */}
       <section className="max-w-content mx-auto px-5 py-16 grid gap-10 md:grid-cols-[280px_1fr] items-center">
         <div className="group overflow-hidden rounded-sm shadow-md">
           <div className="relative aspect-[4/5] overflow-hidden">
             <Image
-              src="/images/photo-nkodia-hardy.jpg"
+              src="/images/photo-profil-new.jpg"
               alt="Dr. Nkodia Hardy Medry Dieu-Veil"
               fill
               sizes="(max-width:768px) 100vw, 280px"
-              className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+              className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
               priority
             />
           </div>

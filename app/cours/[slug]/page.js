@@ -22,7 +22,7 @@ export default function CoursPage({ params }) {
 
   return (
     <>
-      <Hero titre={course.titre} sousTitre={course.niveau} />
+      <Hero titre={course.titre} sousTitre={course.niveau} image="/images/hero-bg-courses-pages.jpg" position="center" />
       <CoursDetail course={course} />
     </>
   );

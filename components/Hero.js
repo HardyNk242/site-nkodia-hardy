@@ -1,11 +1,12 @@
 /**
  * Full-width hero banner.
  * Pass `image="/images/my-photo.jpg"` for a real photo background.
+ * Pass `position="top"` / "center" / "bottom" to control the focal point.
  * Without an image, uses the geological gradient pattern.
  */
-export default function Hero({ titre, sousTitre, image }) {
+export default function Hero({ titre, sousTitre, image, position = "center" }) {
   const fond = image
-    ? `linear-gradient(rgba(15,15,15,0.60), rgba(15,15,15,0.75)), url(${image})`
+    ? `linear-gradient(rgba(15,15,15,0.55), rgba(15,15,15,0.72)), url(${image})`
     : [
         "linear-gradient(rgba(12,12,12,0.52), rgba(12,12,12,0.80))",
         "repeating-linear-gradient(135deg, rgba(0,0,0,0.06) 0 14px, rgba(0,0,0,0) 14px 28px)",
@@ -19,7 +20,7 @@ export default function Hero({ titre, sousTitre, image }) {
       style={{
         backgroundImage: fond,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: position,
       }}
     >
       {/* Subtle bottom fade */}
