@@ -83,6 +83,11 @@ export default function Accueil() {
                   </span>
                   <h3 className="font-oswald text-xl mt-2 leading-snug">{p.titre}</h3>
                   <p className="text-sm text-encre/65 mt-2">{p.auteurs}</p>
+                  {p.resume && (
+                    <p className="text-sm text-encre/75 mt-3 leading-relaxed border-l-2 border-corail/30 pl-3 font-bitter italic">
+                      {T(p.resume)}
+                    </p>
+                  )}
                   <a
                     href={`https://doi.org/${p.doi}`}
                     target="_blank"

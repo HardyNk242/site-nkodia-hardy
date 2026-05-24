@@ -28,20 +28,24 @@ export const publicationsRecentes = [
   {
     annee: 2026,
     titre:
+      "Assessing the contemporary stress field and seismogenic structures of the Korean peninsula using focal-mechanism inversion and slip-tendency analysis",
+    revue: "Tectonophysics, art. 231261 — In Press",
+    auteurs: "Nkodia H. M. D.-V., Park K., Naik S. P., Peace A. L., & Kim Y.-S.",
+    doi: "10.1016/j.tecto.2026.231261",
+    image: "/images/figure-pub-2026-korea-stress.png",
+    resume: {
+      fr: "Cette étude détermine les forces qui s'exercent actuellement sur la croûte terrestre sous la péninsule coréenne, une région qui connaît des séismes malgré l'absence de frontière de plaques majeure à proximité. En analysant des centaines de mécanismes au foyer (enregistrements de séismes passés) et en appliquant une analyse de slip-tendency, les auteurs ont identifié quelles failles actives sont les plus susceptibles de se rompre et de provoquer de futurs tremblements de terre. La recherche a été conduite à l'Université Nationale de Pukyong, à Busan (Corée du Sud).",
+      en: "This paper investigated the forces currently acting on the Earth's crust beneath the Korean peninsula — a region that experiences earthquakes despite sitting far from a major plate boundary. By analysing hundreds of earthquake focal mechanisms and applying slip-tendency analysis to known active faults, the team identified which fault systems are most likely to rupture and generate future earthquakes. The study found that southeastern Korea hosts several high-risk faults. The research was carried out at Pukyong National University in Busan, South Korea.",
+    },
+  },
+  {
+    annee: 2026,
+    titre:
       "Inventory of karstic cavities of the Schisto-Calcaire Group, Republic of Congo: Applying a geoheritage promotion approach in the Madingou region",
     revue: "International Journal of Geoheritage and Parks, 14(1), 43–59",
     auteurs: "Bazebizonza Tchiguina N. C., Samba P. R. R., Nkodia H. M. D.-V., Boudzoumou F., Arfaoui I., François C., & Lahogue P.",
     doi: "10.1016/j.ijgeop.2026.02.002",
     image: "/images/figure-pub-2026.jpg",
-  },
-  {
-    annee: 2025,
-    titre:
-      "Active crustal deformation across a nucleating extensional microplate, D. R. Congo, East Africa",
-    revue: "Tectonics, 44(7), e2025TC008815",
-    auteurs: "Colet M., Kolawole F., Ajala R., Delvaux D., & Nkodia H. M. D.-V.",
-    doi: "10.1029/2025TC008815",
-    image: "/images/figure-pub-2025.jpg",
   },
 ];
 

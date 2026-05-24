@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import { useLang } from "@/contexts/LanguageContext";
 import { tr } from "@/data/translations";
@@ -8,6 +9,17 @@ const publications = [
   {
     annee: 2026,
     items: [
+      {
+        type: "Article",
+        ref: "Nkodia, H. M. D.-V., Park, K., Naik, S. P., Peace, A. L., & Kim, Y.-S. (2026). Assessing the contemporary stress field and seismogenic structures of the Korean peninsula using focal-mechanism inversion and slip-tendency analysis. Tectonophysics, art. 231261. In Press.",
+        doi: "10.1016/j.tecto.2026.231261",
+        badge: "In Press",
+        image: "/images/figure-pub-2026-korea-stress.png",
+        resumePublic: {
+          fr: "Cette étude détermine les forces qui s'exercent actuellement sur la croûte terrestre sous la péninsule coréenne. En analysant des centaines de mécanismes au foyer (enregistrements de séismes passés) et en appliquant une analyse de slip-tendency, les auteurs ont identifié quelles failles actives sont les plus susceptibles de se rompre et de provoquer de futurs tremblements de terre. La carte ci-contre synthétise le potentiel de glissement de chaque faille connue. La recherche a été conduite à l'Université Nationale de Pukyong, à Busan (Corée du Sud).",
+          en: "This paper investigated the forces currently acting on the Earth's crust beneath the Korean peninsula — a region that experiences earthquakes despite sitting far from a major plate boundary. By analysing hundreds of earthquake focal mechanisms and applying slip-tendency analysis to active faults, the team identified which fault systems are most likely to rupture and generate future earthquakes. The map shows the slip-tendency score of each known fault across the peninsula. The research was carried out at Pukyong National University in Busan, South Korea.",
+        },
+      },
       {
         type: "Article",
         ref: "Bazebizonza Tchiguina, N. C., Samba, P. R. R., Nkodia, H. M. D.-V., Boudzoumou, F., Arfaoui, I., François, C., & Lahogue, P. (2026). Inventory of karstic cavities of the Schisto-Calcaire Group, Republic of Congo: Applying a geoheritage promotion approach in the Madingou region. International Journal of Geoheritage and Parks, 14(1), 43–59.",
@@ -273,44 +285,76 @@ export default function Publications() {
             <span className="block w-full h-px bg-black/10 my-5" />
             <ul className="space-y-5">
               {bloc.items.map((it, i) => (
-                <li key={i} className="carte p-6 flex flex-col sm:flex-row gap-4">
-                  <span
-                    className={`shrink-0 self-start font-oswald uppercase text-xs tracking-wide px-3 py-1 ${
-                      couleurType[it.type] || "bg-encre text-white"
-                    }`}
-                  >
-                    {it.type}
-                  </span>
-                  <div>
-                    <p className="text-encre/85 leading-relaxed">{it.ref}</p>
-                    {it.doi && (
-                      <a
-                        href={`https://doi.org/${it.doi}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="lien-corail text-sm mt-2 inline-block"
+                <li key={i} className="carte overflow-hidden flex flex-col">
+                  {/* Carte enrichie : image + résumé public */}
+                  {it.image && (
+                    <div className="relative w-full" style={{ aspectRatio: "16/7", maxHeight: 320 }}>
+                      <Image
+                        src={it.image}
+                        alt={it.ref.slice(0, 80)}
+                        fill
+                        sizes="(max-width:768px) 100vw, 900px"
+                        className="object-contain object-center bg-white"
+                      />
+                    </div>
+                  )}
+                  <div className="p-6 flex flex-col sm:flex-row gap-4">
+                    <div className="flex flex-col gap-2 shrink-0">
+                      <span
+                        className={`self-start font-oswald uppercase text-xs tracking-wide px-3 py-1 ${
+                          couleurType[it.type] || "bg-encre text-white"
+                        }`}
                       >
-                        DOI : {it.doi} →
-                      </a>
-                    )}
-                    {it.doiAConfirmer && (
-                      <span className="block text-sm mt-2 text-encre/50 italic">
-                        {T(tr.publications.doiConfirmer)} {it.doiAConfirmer}
-                        {it.noteUrl && (
-                          <>
-                            {" — "}
-                            <a href={it.noteUrl} target="_blank" rel="noopener noreferrer" className="lien-corail">
-                              {T(tr.publications.voirSource)}
-                            </a>
-                          </>
-                        )}
+                        {it.type}
                       </span>
-                    )}
-                    {!it.doi && !it.doiAConfirmer && it.noteUrl && (
-                      <a href={it.noteUrl} target="_blank" rel="noopener noreferrer" className="lien-corail text-sm mt-2 inline-block">
-                        {T(tr.publications.voirSource)}
-                      </a>
-                    )}
+                      {it.badge && (
+                        <span className="self-start font-oswald uppercase text-xs tracking-wide px-3 py-1 bg-amber-500 text-white">
+                          {it.badge}
+                        </span>
+                      )}
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-encre/85 leading-relaxed">{it.ref}</p>
+                      {it.doi && (
+                        <a
+                          href={`https://doi.org/${it.doi}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="lien-corail text-sm mt-2 inline-block"
+                        >
+                          DOI : {it.doi} →
+                        </a>
+                      )}
+                      {it.doiAConfirmer && (
+                        <span className="block text-sm mt-2 text-encre/50 italic">
+                          {T(tr.publications.doiConfirmer)} {it.doiAConfirmer}
+                          {it.noteUrl && (
+                            <>
+                              {" — "}
+                              <a href={it.noteUrl} target="_blank" rel="noopener noreferrer" className="lien-corail">
+                                {T(tr.publications.voirSource)}
+                              </a>
+                            </>
+                          )}
+                        </span>
+                      )}
+                      {!it.doi && !it.doiAConfirmer && it.noteUrl && (
+                        <a href={it.noteUrl} target="_blank" rel="noopener noreferrer" className="lien-corail text-sm mt-2 inline-block">
+                          {T(tr.publications.voirSource)}
+                        </a>
+                      )}
+                      {/* Résumé grand public */}
+                      {it.resumePublic && (
+                        <div className="mt-4 border-l-2 border-corail/40 pl-4">
+                          <p className="text-xs font-oswald uppercase tracking-wide text-corail mb-1">
+                            {T({ fr: "En bref", en: "Plain-language summary" })}
+                          </p>
+                          <p className="text-sm text-encre/75 leading-relaxed font-bitter italic">
+                            {T(it.resumePublic)}
+                          </p>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </li>
               ))}
