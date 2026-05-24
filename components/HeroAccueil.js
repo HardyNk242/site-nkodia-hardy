@@ -7,24 +7,26 @@ import { profil } from "@/data/site";
 /**
  * Home-page hero
  *  • hero-bg2.jpg fills the full width without horizontal cropping
- *  • Portrait photo and info card are the SAME size, side-by-side
- *  • The pair is centred horizontally AND vertically inside the background
- *  • Info box overlaps the next section by 72 px (negative bottom margin)
+ *  • Photo and card start at the very top, filling 100 vh
+ *  • Photo edges are diffused via CSS mask-image (no hard border)
+ *  • Card opacity raised to 0.96 for legibility
+ *  • SVG icons for ResearchGate and Google Scholar
+ *  • Green accent (#1E7A40) throughout
  */
 export default function HeroAccueil() {
   const { T } = useLang();
 
-  /* Shared column dimensions */
-  const CARD_W = 400;   /* px — same for both portrait and info box */
-  const CARD_MIN_H = 580; /* px — info-box min height; portrait stretches to match */
+  const CARD_W = 400;    /* px — same for portrait and info box */
+  const GREEN  = "#1E7A40";
+  const GREEN_DK = "#155530";
 
   return (
     <section
       className="w-full relative overflow-visible"
       aria-label="Présentation — Dr. Nkodia Hardy"
-      style={{ minHeight: 660 }}
+      style={{ minHeight: "100vh" }}
     >
-      {/* Side vignettes → rock texture fades into body bg */}
+      {/* Side vignettes — rock texture fades into dark body bg */}
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none z-[1]"
@@ -34,21 +36,36 @@ export default function HeroAccueil() {
         }}
       />
 
-      {/* ── Centred composition (portrait + info card) ───────────────── */}
-      <div
-        className="relative z-10 w-full flex items-center justify-center px-4"
-        style={{ minHeight: 640 }}
-      >
-        {/*
-          items-stretch → portrait and info box reach the same height.
-          justify-center → the pair is centred in the full-width background.
-        */}
+      {/*
+        items-start  → portrait + card are anchored at the very top
+        items-stretch → both reach the same height
+        justify-center → the pair is centred horizontally in the background
+      */}
+      <div className="relative z-10 w-full flex items-start justify-center">
         <div className="flex items-stretch justify-center">
 
-          {/* ── Portrait ── visible lg+, hidden on smaller screens */}
+          {/* ── Portrait — visible lg+, hidden below ─────────────────── */}
           <div
             className="hidden lg:block relative shrink-0"
-            style={{ width: CARD_W }}
+            style={{
+              width: CARD_W,
+              minHeight: "100vh",
+              /*
+                mask-image:
+                  top    → transparent 0 % → opaque at 6 %   (fade-in from top)
+                  bottom → opaque at 88 %  → transparent 100 % (fade-out at bottom)
+                  right  → opaque 0 %      → transparent 100 % (blend into card)
+                  All three gradients intersect so only the fully-visible area shows.
+              */
+              WebkitMaskImage:
+                "linear-gradient(to bottom, transparent 0%, black 6%, black 88%, transparent 100%), " +
+                "linear-gradient(to right,  black 0%, black 72%, transparent 100%)",
+              maskImage:
+                "linear-gradient(to bottom, transparent 0%, black 6%, black 88%, transparent 100%), " +
+                "linear-gradient(to right,  black 0%, black 72%, transparent 100%)",
+              WebkitMaskComposite: "destination-in",
+              maskComposite: "intersect",
+            }}
           >
             <Image
               src="/images/photo-profil-new.jpg"
@@ -58,34 +75,24 @@ export default function HeroAccueil() {
               className="object-cover object-top"
               priority
             />
-            {/* Right-edge fade → blends seamlessly into the info box */}
-            <div
-              aria-hidden="true"
-              className="absolute inset-y-0 right-0 pointer-events-none"
-              style={{
-                width: 80,
-                background:
-                  "linear-gradient(to right, transparent, rgba(42,43,42,0.94))",
-              }}
-            />
           </div>
 
-          {/* ── Info box ── same width as portrait */}
+          {/* ── Info box — same width as portrait ────────────────────── */}
           <div
             className="flex flex-col justify-center px-8 py-10 relative z-20 w-full lg:w-auto lg:shrink-0"
             style={{
               width: CARD_W,
-              minHeight: CARD_MIN_H,
-              background: "rgba(42, 43, 42, 0.92)",
-              backdropFilter: "blur(8px)",
-              WebkitBackdropFilter: "blur(8px)",
-              marginBottom: -72,   /* overlaps the next section */
+              minHeight: "100vh",
+              background: "rgba(26, 28, 26, 0.96)",
+              backdropFilter: "blur(10px)",
+              WebkitBackdropFilter: "blur(10px)",
+              marginBottom: -72,
             }}
           >
-            {/* Sandstone accent bar */}
+            {/* Green accent bar */}
             <span
               className="block w-10 h-[3px] mb-5"
-              style={{ backgroundColor: "#C2A88D" }}
+              style={{ backgroundColor: GREEN }}
               aria-hidden="true"
             />
 
@@ -113,11 +120,11 @@ export default function HeroAccueil() {
                 width: "100%",
                 maxWidth: 300,
                 height: 1,
-                backgroundColor: "rgba(194,168,141,0.35)",
+                backgroundColor: `${GREEN}55`,
               }}
             />
 
-            {/* Biography — 3 short paragraphs */}
+            {/* Biography */}
             <div
               className="space-y-3 font-sans text-justify"
               style={{ fontSize: 13, lineHeight: 1.65, color: "rgba(244,241,237,0.82)" }}
@@ -149,50 +156,60 @@ export default function HeroAccueil() {
               style={{ height: 1, backgroundColor: "rgba(244,241,237,0.10)" }}
             />
 
-            {/* Profile links */}
-            <div className="flex flex-wrap gap-3">
+            {/* Profile links — SVG icons */}
+            <div className="flex items-center gap-4">
+
+              {/* ResearchGate */}
               <a
                 href={profil.liens.researchgate}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center font-oswald uppercase tracking-wide text-xs px-4 py-2 transition-colors"
-                style={{ background: "#C2A88D", color: "#1A1C1A" }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = "#A8906B")}
-                onMouseLeave={(e) => (e.currentTarget.style.background = "#C2A88D")}
+                aria-label="ResearchGate"
+                className="flex items-center justify-center rounded-sm transition-all duration-150"
+                style={{ width: 40, height: 40, background: "rgba(255,255,255,0.08)" }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = `${GREEN}33`)}
+                onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.08)")}
               >
-                ResearchGate
+                <Image
+                  src="/images/ResearchGate_icon_SVG.svg"
+                  alt="ResearchGate"
+                  width={26}
+                  height={26}
+                  className="object-contain"
+                  style={{ filter: "brightness(0) invert(1)" }}
+                />
               </a>
+
+              {/* Google Scholar */}
               <a
                 href={profil.liens.scholar}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center font-oswald uppercase tracking-wide text-xs px-4 py-2 transition-colors"
-                style={{ border: "1px solid rgba(194,168,141,0.50)", color: "#F4F1ED" }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = "#C2A88D";
-                  e.currentTarget.style.color = "#C2A88D";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = "rgba(194,168,141,0.50)";
-                  e.currentTarget.style.color = "#F4F1ED";
-                }}
+                aria-label="Google Scholar"
+                className="flex items-center justify-center rounded-sm transition-all duration-150"
+                style={{ width: 40, height: 40, background: "rgba(255,255,255,0.08)" }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = `${GREEN}33`)}
+                onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.08)")}
               >
-                Google Scholar
+                <Image
+                  src="/images/Google_Scholar_logo.svg"
+                  alt="Google Scholar"
+                  width={26}
+                  height={26}
+                  className="object-contain"
+                  style={{ filter: "brightness(0) invert(1)" }}
+                />
               </a>
+
+              {/* Contact — text link */}
               <a
                 href={`mailto:${profil.liens.email}`}
-                className="inline-flex items-center font-oswald uppercase tracking-wide text-xs px-4 py-2 transition-colors"
-                style={{ border: "1px solid rgba(244,241,237,0.18)", color: "#A6A29C" }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = "rgba(244,241,237,0.40)";
-                  e.currentTarget.style.color = "#F4F1ED";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = "rgba(244,241,237,0.18)";
-                  e.currentTarget.style.color = "#A6A29C";
-                }}
+                className="font-oswald uppercase tracking-wide text-xs transition-colors duration-150"
+                style={{ color: "#A6A29C" }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = GREEN)}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#A6A29C")}
               >
-                Contact
+                {T({ fr: "Contact", en: "Contact" })}
               </a>
             </div>
           </div>

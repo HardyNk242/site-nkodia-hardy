@@ -25,7 +25,7 @@
 
   /* Focus visible — keyboard only, clean ring */
   :focus-visible {
-    outline: 2px solid #C2A88D;
+    outline: 2px solid #1E7A40;
     outline-offset: 3px;
     border-radius: 2px;
   }
@@ -62,8 +62,8 @@
   left: 1rem;
   z-index: 9999;
   padding: 0.5rem 1rem;
-  background: #C2A88D;
-  color: #1A1C1A;
+  background: #1E7A40;
+  color: #F4F1ED;
   font-family: var(--font-oswald), sans-serif;
   font-size: 0.85rem;
   text-transform: uppercase;
