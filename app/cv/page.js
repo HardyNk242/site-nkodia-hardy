@@ -27,7 +27,7 @@ export default function CV() {
           <div className="group overflow-hidden rounded-sm shadow-md">
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="/images/photo-profil-new.jpg"
+                src="/images/photo-nkodia-hardy2.jpg"
                 alt="Dr. Nkodia Hardy Medry Dieu-Veil"
                 fill
                 sizes="260px"

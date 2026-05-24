@@ -68,7 +68,7 @@ export default function HeroAccueil() {
             }}
           >
             <Image
-              src="/images/photo-profil-new.jpg"
+              src="/images/photo-nkodia-hardy2.jpg"
               alt="Dr. Nkodia Hardy Medry Dieu-Veil"
               fill
               sizes={`${CARD_W}px`}
