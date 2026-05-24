@@ -46,6 +46,23 @@ export const publicationsRecentes = [
     auteurs: "Bazebizonza Tchiguina N. C., Samba P. R. R., Nkodia H. M. D.-V., Boudzoumou F., Arfaoui I., François C., & Lahogue P.",
     doi: "10.1016/j.ijgeop.2026.02.002",
     image: "/images/figure-pub-2026.jpg",
+    resume: {
+      fr: "Un inventaire systématique des cavités karstiques du Groupe Schisto-Calcaire au Congo-Brazzaville, dans la région de Madingou, révèle un patrimoine géologique méconnu. L'étude propose un cadre de valorisation géotouristique pour ces grottes et avens en s'appuyant sur des critères scientifiques et culturels.",
+      en: "A systematic inventory of karstic cavities in the Schisto-Calcaire Group of Congo-Brazzaville, in the Madingou region, reveals an underrecognised geological heritage. The study proposes a geotourism framework for these caves and sinkholes based on scientific and cultural criteria.",
+    },
+  },
+  {
+    annee: 2025,
+    titre:
+      "Active crustal deformation across a nucleating extensional microplate, D. R. Congo, East Africa",
+    revue: "Tectonics, 44(7), e2025TC008815",
+    auteurs: "Colet M., Kolawole F., Ajala R., Delvaux D., & Nkodia H. M. D.-V.",
+    doi: "10.1029/2025TC008815",
+    image: "/images/figure-pub-2025.jpg",
+    resume: {
+      fr: "Cette étude cartographie la déformation active de la croûte dans l'est de la République Démocratique du Congo, où une microplaque en cours de formation étire et fragmente la lithosphère. Les auteurs combinent données de terrain, sismicité et modélisation pour montrer comment ce processus d'extension continentale s'amorce à une échelle régionale.",
+      en: "This study maps active crustal deformation in eastern Democratic Republic of Congo, where a nascent microplate is stretching and fragmenting the lithosphere. The authors combine field data, seismicity records and modelling to show how this continental extension process initiates at a regional scale.",
+    },
   },
 ];
 

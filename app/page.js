@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import Hero from "@/components/Hero";
+import HeroAccueil from "@/components/HeroAccueil";
 import Placeholder from "@/components/Placeholder";
 import ImageCarousel from "@/components/ImageCarousel";
 import { useLang } from "@/contexts/LanguageContext";
@@ -20,39 +20,16 @@ export default function Accueil() {
 
   return (
     <>
-      <Hero titre={profil.nom} sousTitre={T(profil.titre)} image="/images/hero-bg.jpg" position="center top" />
+      <HeroAccueil />
 
-      {/* Profil + citation */}
-      <section className="max-w-content mx-auto px-5 py-16 grid gap-10 md:grid-cols-[280px_1fr] items-center">
-        <div className="group overflow-hidden rounded-sm shadow-md">
-          <div className="relative aspect-[4/5] overflow-hidden">
-            <Image
-              src="/images/photo-profil-new.jpg"
-              alt="Dr. Nkodia Hardy Medry Dieu-Veil"
-              fill
-              sizes="(max-width:768px) 100vw, 280px"
-              className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
-              priority
-            />
-          </div>
-        </div>
-        <div>
+      {/* Citation + profil — spacer to absorb info-box negative margin */}
+      <section className="pt-24 pb-16 bg-clair">
+        <div className="max-w-content mx-auto px-5">
           <h2 className="titre-section">{T(tr.home.profil)}</h2>
           <span className="barre-corail" />
-          <blockquote className="font-bitter italic text-xl md:text-2xl text-encre/80 leading-relaxed">
+          <blockquote className="font-bitter italic text-xl md:text-2xl text-encre/80 leading-relaxed max-w-3xl">
             {T(profil.citation)}
           </blockquote>
-          <p className="mt-5 text-encre/75 leading-relaxed">
-            {T(tr.home.bio)}
-          </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a href={profil.liens.researchgate} target="_blank" rel="noopener noreferrer" className="btn-corail">
-              ResearchGate
-            </a>
-            <a href={profil.liens.scholar} target="_blank" rel="noopener noreferrer" className="btn-contour">
-              Google Scholar
-            </a>
-          </div>
         </div>
       </section>
 
@@ -61,20 +38,20 @@ export default function Accueil() {
         <div className="max-w-content mx-auto px-5 py-16">
           <h2 className="titre-section">{T(tr.home.pubsRecentes)}</h2>
           <span className="barre-corail" />
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {publicationsRecentes.map((p, i) => (
               <article key={i} className="carte flex flex-col group overflow-hidden">
-                <div className="relative aspect-[16/9] overflow-hidden">
+                <div className="relative bg-white" style={{ aspectRatio: "4/3" }}>
                   {p.image ? (
                     <Image
                       src={p.image}
                       alt={`Figure — ${p.revue}`}
                       fill
-                      sizes="(max-width:768px) 100vw, 50vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width:768px) 100vw, (max-width:1024px) 50vw, 33vw"
+                      className="object-contain object-center"
                     />
                   ) : (
-                    <Placeholder label={`Figure — ${p.revue}`} ratio="aspect-[16/9]" />
+                    <Placeholder label={`Figure — ${p.revue}`} ratio="aspect-[4/3]" />
                   )}
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
