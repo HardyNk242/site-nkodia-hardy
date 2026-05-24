@@ -20,18 +20,36 @@ export default function Accueil() {
 
   return (
     <>
-      <HeroAccueil />
+      {/*
+        ── Shared background for Hero + Citation ──────────────────────
+        Both sit on the same rock-texture image. The citation section
+        uses a semi-transparent overlay so the texture shows through.
+      */}
+      <div
+        style={{
+          backgroundColor: "#1A1C1A",
+          backgroundImage: "url(/images/hero-bg2.jpg)",
+          backgroundSize: "100% auto",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center top",
+        }}
+      >
+        <HeroAccueil />
 
-      {/* Citation — spacer absorbs info-box negative margin */}
-      <section className="pt-28 pb-16 bg-clair border-b border-white/6">
-        <div className="max-w-content mx-auto px-5">
-          <h2 className="titre-section">{T(tr.home.profil)}</h2>
-          <span className="barre-corail" />
-          <blockquote className="font-bitter italic text-xl md:text-2xl text-encre/80 leading-relaxed max-w-3xl">
-            {T(profil.citation)}
-          </blockquote>
-        </div>
-      </section>
+        {/* Citation — absorbs info-box negative margin, transparent over bg */}
+        <section
+          className="pt-28 pb-16 border-b border-white/6"
+          style={{ background: "rgba(26,28,26,0.58)" }}
+        >
+          <div className="max-w-content mx-auto px-5">
+            <h2 className="titre-section">{T(tr.home.profil)}</h2>
+            <span className="barre-corail" />
+            <blockquote className="font-bitter italic text-xl md:text-2xl text-encre/80 leading-relaxed max-w-3xl">
+              {T(profil.citation)}
+            </blockquote>
+          </div>
+        </section>
+      </div>
 
       {/* Récentes publications */}
       <section className="bg-surface border-y border-white/8">

@@ -22,14 +22,7 @@ export default function HeroAccueil() {
     <section
       className="w-full relative overflow-visible"
       aria-label="Présentation — Dr. Nkodia Hardy"
-      style={{
-        backgroundColor: "#1A1C1A",
-        backgroundImage: "url(/images/hero-bg2.jpg)",
-        backgroundSize: "100% auto",      /* no horizontal crop */
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center top",
-        minHeight: 660,
-      }}
+      style={{ minHeight: 660 }}
     >
       {/* Side vignettes → rock texture fades into body bg */}
       <div
@@ -44,7 +37,7 @@ export default function HeroAccueil() {
       {/* ── Centred composition (portrait + info card) ───────────────── */}
       <div
         className="relative z-10 w-full flex items-center justify-center px-4"
-        style={{ minHeight: 660 }}
+        style={{ minHeight: 640 }}
       >
         {/*
           items-stretch → portrait and info box reach the same height.
