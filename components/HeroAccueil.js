@@ -79,14 +79,17 @@ export default function HeroAccueil() {
 
           {/* ── Info box — same width as portrait ────────────────────── */}
           <div
-            className="flex flex-col justify-center px-8 py-10 relative z-20 w-full lg:w-auto lg:shrink-0"
+            className="flex flex-col justify-center px-8 py-10 relative w-full lg:w-auto lg:shrink-0"
             style={{
               width: CARD_W,
               minHeight: "100vh",
-              background: "rgba(26, 28, 26, 0.96)",
+              background: "rgba(26, 28, 26, 0.62)",
               backdropFilter: "blur(10px)",
               WebkitBackdropFilter: "blur(10px)",
-              marginBottom: -72,
+              /* large negative margin so the card sinks under the profile section */
+              marginBottom: -220,
+              /* z-index lower than the profile section → card goes BEHIND it */
+              zIndex: 2,
             }}
           >
             {/* Sandstone accent bar */}

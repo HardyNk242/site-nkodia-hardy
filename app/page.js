@@ -36,10 +36,15 @@ export default function Accueil() {
       >
         <HeroAccueil />
 
-        {/* Citation — absorbs info-box negative margin, transparent over bg */}
+        {/* Citation — sits ON TOP of the info card (higher z-index) */}
         <section
-          className="pt-28 pb-16 border-b border-white/6"
-          style={{ background: "rgba(26,28,26,0.58)" }}
+          className="pb-16 border-b border-white/6"
+          style={{
+            paddingTop: 240,      /* absorbs the -220 margin + a bit of breathing room */
+            background: "rgba(26,28,26,0.58)",
+            position: "relative",
+            zIndex: 10,           /* appears in front of the card's z-index: 2        */
+          }}
         >
           <div className="max-w-content mx-auto px-5">
             <h2 className="titre-section">{T(tr.home.profil)}</h2>
