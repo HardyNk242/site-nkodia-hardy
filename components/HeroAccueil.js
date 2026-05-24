@@ -177,12 +177,11 @@ export default function HeroAccueil() {
                 onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.08)")}
               >
                 <Image
-                  src="/images/ResearchGate_icon_SVG.svg"
+                  src="/images/ResearchGate_icon_SVG.svg.png"
                   alt="ResearchGate"
                   width={28}
                   height={28}
                   className="object-contain"
-                  style={{ filter: "brightness(0) invert(1)" }}
                 />
               </a>
 
@@ -198,12 +197,11 @@ export default function HeroAccueil() {
                 onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.08)")}
               >
                 <Image
-                  src="/images/Google_Scholar_logo.svg"
+                  src="/images/Google_Scholar_logo.svg.png"
                   alt="Google Scholar"
                   width={28}
                   height={28}
                   className="object-contain"
-                  style={{ filter: "brightness(0) invert(1)" }}
                 />
               </a>
             </div>
