@@ -16,9 +16,9 @@ import { profil } from "@/data/site";
 export default function HeroAccueil() {
   const { T } = useLang();
 
-  const CARD_W = 400;    /* px — same for portrait and info box */
-  const GREEN  = "#1E7A40";
-  const GREEN_DK = "#155530";
+  const CARD_W  = 400;       /* px — same for portrait and info box */
+  const SAND    = "#C2A88D"; /* sandstone accent */
+  const SAND_DK = "#A8906B";
 
   return (
     <section
@@ -89,10 +89,10 @@ export default function HeroAccueil() {
               marginBottom: -72,
             }}
           >
-            {/* Green accent bar */}
+            {/* Sandstone accent bar */}
             <span
               className="block w-10 h-[3px] mb-5"
-              style={{ backgroundColor: GREEN }}
+              style={{ backgroundColor: SAND }}
               aria-hidden="true"
             />
 
@@ -120,7 +120,7 @@ export default function HeroAccueil() {
                 width: "100%",
                 maxWidth: 300,
                 height: 1,
-                backgroundColor: `${GREEN}55`,
+                backgroundColor: `${SAND}55`,
               }}
             />
 
@@ -149,15 +149,18 @@ export default function HeroAccueil() {
               </p>
             </div>
 
+            {/* Spacer — pushes icons to the bottom */}
+            <div className="flex-grow" />
+
             {/* Second divider */}
             <div
               aria-hidden="true"
-              className="mt-5 mb-5"
+              className="mb-5"
               style={{ height: 1, backgroundColor: "rgba(244,241,237,0.10)" }}
             />
 
-            {/* Profile links — SVG icons */}
-            <div className="flex items-center gap-4">
+            {/* Profile icons — centred at the bottom of the card */}
+            <div className="flex items-center justify-center gap-5">
 
               {/* ResearchGate */}
               <a
@@ -166,15 +169,15 @@ export default function HeroAccueil() {
                 rel="noopener noreferrer"
                 aria-label="ResearchGate"
                 className="flex items-center justify-center rounded-sm transition-all duration-150"
-                style={{ width: 40, height: 40, background: "rgba(255,255,255,0.08)" }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = `${GREEN}33`)}
+                style={{ width: 44, height: 44, background: "rgba(255,255,255,0.08)" }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = `${SAND}33`)}
                 onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.08)")}
               >
                 <Image
                   src="/images/ResearchGate_icon_SVG.svg"
                   alt="ResearchGate"
-                  width={26}
-                  height={26}
+                  width={28}
+                  height={28}
                   className="object-contain"
                   style={{ filter: "brightness(0) invert(1)" }}
                 />
@@ -187,29 +190,18 @@ export default function HeroAccueil() {
                 rel="noopener noreferrer"
                 aria-label="Google Scholar"
                 className="flex items-center justify-center rounded-sm transition-all duration-150"
-                style={{ width: 40, height: 40, background: "rgba(255,255,255,0.08)" }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = `${GREEN}33`)}
+                style={{ width: 44, height: 44, background: "rgba(255,255,255,0.08)" }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = `${SAND}33`)}
                 onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.08)")}
               >
                 <Image
                   src="/images/Google_Scholar_logo.svg"
                   alt="Google Scholar"
-                  width={26}
-                  height={26}
+                  width={28}
+                  height={28}
                   className="object-contain"
                   style={{ filter: "brightness(0) invert(1)" }}
                 />
-              </a>
-
-              {/* Contact — text link */}
-              <a
-                href={`mailto:${profil.liens.email}`}
-                className="font-oswald uppercase tracking-wide text-xs transition-colors duration-150"
-                style={{ color: "#A6A29C" }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = GREEN)}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#A6A29C")}
-              >
-                {T({ fr: "Contact", en: "Contact" })}
               </a>
             </div>
           </div>
