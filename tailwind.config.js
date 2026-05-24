@@ -7,13 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        corail:      "#1E7A40",   /* vert forêt — thème principal */
-        "corail-dk": "#155530",   /* vert foncé pour hover actif  */
-        clair:       "#F7F7F7",
-        encre:       "#212121",
-        "encre-lt":  "#444444",
-        surface:     "#FFFFFF",
-        muted:       "#6B6B6B",
+        corail:      "#C2A88D",   /* grès ensoleillé — accent principal   */
+        "corail-dk": "#A8906B",   /* grès foncé — hover actif             */
+        clair:       "#2A2B2A",   /* basalte sombre — fond principal       */
+        encre:       "#F4F1ED",   /* calcaire blanc — texte principal      */
+        "encre-lt":  "#A6A29C",   /* terre muette — texte secondaire       */
+        surface:     "#3A3A38",   /* roche weatherée — cartes / surfaces   */
+        muted:       "#A6A29C",
+        sombre:      "#1A1C1A",   /* très sombre — footer, dark sections   */
       },
       fontFamily: {
         oswald: ["var(--font-oswald)", "Impact", "sans-serif"],

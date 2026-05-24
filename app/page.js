@@ -22,8 +22,8 @@ export default function Accueil() {
     <>
       <HeroAccueil />
 
-      {/* Citation + profil — spacer to absorb info-box negative margin */}
-      <section className="pt-24 pb-16 bg-clair">
+      {/* Citation — spacer absorbs info-box negative margin */}
+      <section className="pt-28 pb-16 bg-clair border-b border-white/6">
         <div className="max-w-content mx-auto px-5">
           <h2 className="titre-section">{T(tr.home.profil)}</h2>
           <span className="barre-corail" />
@@ -34,14 +34,14 @@ export default function Accueil() {
       </section>
 
       {/* Récentes publications */}
-      <section className="bg-white border-y border-black/5">
+      <section className="bg-surface border-y border-white/8">
         <div className="max-w-content mx-auto px-5 py-16">
           <h2 className="titre-section">{T(tr.home.pubsRecentes)}</h2>
           <span className="barre-corail" />
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {publicationsRecentes.map((p, i) => (
               <article key={i} className="carte flex flex-col group overflow-hidden">
-                <div className="relative bg-white" style={{ aspectRatio: "4/3" }}>
+                <div className="relative bg-sombre" style={{ aspectRatio: "4/3" }}>
                   {p.image ? (
                     <Image
                       src={p.image}
@@ -138,7 +138,7 @@ export default function Accueil() {
       </section>
 
       {/* Carrousel d'images */}
-      <section className="bg-white border-t border-black/5">
+      <section className="bg-surface border-t border-white/8">
         <div className="max-w-content mx-auto px-5 py-16">
           <h2 className="titre-section">{T(tr.home.enImages)}</h2>
           <span className="barre-corail" />
@@ -147,7 +147,7 @@ export default function Accueil() {
       </section>
 
       {/* Bandeau profils */}
-      <section className="bg-encre text-white">
+      <section className="bg-sombre text-encre border-t border-white/8">
         <div className="max-w-content mx-auto px-5 py-14 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <p className="font-oswald uppercase text-2xl md:text-3xl">
             {T(tr.home.suivre)}
@@ -160,7 +160,7 @@ export default function Accueil() {
               href={profil.liens.scholar}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-oswald uppercase tracking-wide text-sm px-5 py-2.5 transition hover:bg-white hover:text-encre"
+              className="inline-flex items-center justify-center gap-2 border-2 border-encre/40 text-encre/80 font-oswald uppercase tracking-wide text-sm px-5 py-2.5 transition hover:border-corail hover:text-corail"
             >
               Google Scholar
             </a>

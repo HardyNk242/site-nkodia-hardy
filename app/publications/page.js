@@ -334,7 +334,7 @@ const publications = [
 
 const couleurType = {
   Article: "bg-corail text-white",
-  Communication: "bg-encre text-white",
+  Communication: "bg-sombre text-encre",
   Livre: "bg-amber-600 text-white",
   Thèse: "bg-violet-700 text-white",
   Mémoire: "bg-violet-400 text-white",
@@ -366,7 +366,7 @@ export default function Publications() {
                         alt={it.ref.slice(0, 80)}
                         fill
                         sizes="(max-width:768px) 100vw, 900px"
-                        className="object-contain object-center bg-white"
+                        className="object-contain object-center bg-sombre"
                       />
                     </div>
                   )}
@@ -374,7 +374,7 @@ export default function Publications() {
                     <div className="flex flex-col gap-2 shrink-0">
                       <span
                         className={`self-start font-oswald uppercase text-xs tracking-wide px-3 py-1 ${
-                          couleurType[it.type] || "bg-encre text-white"
+                          couleurType[it.type] || "bg-sombre text-encre"
                         }`}
                       >
                         {it.type}

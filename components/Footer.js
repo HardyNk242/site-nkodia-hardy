@@ -8,22 +8,22 @@ export default function Footer() {
   const { T } = useLang();
 
   return (
-    <footer className="bg-encre text-white/75 mt-20" role="contentinfo">
+    <footer className="bg-sombre text-encre/65 mt-20 border-t border-white/8" role="contentinfo">
       <div className="max-w-content mx-auto px-5 py-14 grid gap-10 md:grid-cols-3">
         {/* Brand */}
         <div>
-          <p className="font-oswald uppercase text-white text-base font-semibold tracking-wide">
+          <p className="font-oswald uppercase text-encre text-base font-semibold tracking-wide">
             Dr. Nkodia Hardy
           </p>
           <span className="block w-8 h-px bg-corail mt-2 mb-3" aria-hidden="true" />
-          <p className="text-sm leading-relaxed text-white/65">
+          <p className="text-sm leading-relaxed text-encre/55">
             {T(tr.footer.description)}
           </p>
         </div>
 
         {/* Navigation */}
         <div>
-          <p className="font-oswald uppercase text-white text-xs tracking-widest mb-4">
+          <p className="font-oswald uppercase text-corail text-xs tracking-widest mb-4">
             {T(tr.footer.nav)}
           </p>
           <ul className="space-y-2 text-sm" role="list">
@@ -49,7 +49,7 @@ export default function Footer() {
 
         {/* Contact & profiles */}
         <div>
-          <p className="font-oswald uppercase text-white text-xs tracking-widest mb-4">
+          <p className="font-oswald uppercase text-corail text-xs tracking-widest mb-4">
             {T(tr.footer.profils)}
           </p>
           <ul className="space-y-2 text-sm" role="list">
@@ -86,12 +86,12 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/8">
+      <div className="border-t border-white/6">
         <div className="max-w-content mx-auto px-5 py-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-          <p className="text-xs text-white/40">
+          <p className="text-xs text-encre/35">
             © {new Date().getFullYear()} Dr. Nkodia Hardy — Université Marien Ngouabi. {T(tr.footer.droits)}
           </p>
-          <p className="text-xs text-white/30">
+          <p className="text-xs text-encre/25">
             Brazzaville, République du Congo
           </p>
         </div>

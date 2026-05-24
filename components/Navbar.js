@@ -36,8 +36,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-white border-b border-black/10 transition-shadow duration-200 ${
-        scrolled ? "shadow-md" : "shadow-sm"
+      className={`sticky top-0 z-50 bg-sombre border-b border-white/10 transition-shadow duration-200 ${
+        scrolled ? "shadow-[0_4px_16px_rgba(0,0,0,0.45)]" : "shadow-[0_1px_4px_rgba(0,0,0,0.3)]"
       }`}
       role="banner"
     >
@@ -69,7 +69,7 @@ export default function Navbar() {
                   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-corail focus-visible:ring-offset-2
                   ${estActif(l.href)
                     ? "text-corail border-b-2 border-corail pb-1.5"
-                    : "text-encre hover:text-corail"
+                    : "text-encre/70 hover:text-corail"
                   }`}
                 aria-current={estActif(l.href) ? "page" : undefined}
               >
@@ -80,13 +80,13 @@ export default function Navbar() {
 
           {/* Language toggle — desktop */}
           <li className="ml-3" aria-label="Langue / Language">
-            <div className="flex items-center border border-black/15 rounded-sm overflow-hidden text-xs font-oswald uppercase tracking-wide">
+            <div className="flex items-center border border-white/15 rounded-sm overflow-hidden text-xs font-oswald uppercase tracking-wide">
               <button
                 onClick={() => setLang("fr")}
                 aria-pressed={lang === "fr"}
                 aria-label="Français"
                 className={`min-w-[44px] min-h-[36px] px-3 transition-colors duration-150
-                  ${lang === "fr" ? "bg-corail text-white" : "text-encre hover:bg-black/5"}`}
+                  ${lang === "fr" ? "bg-corail text-sombre" : "text-encre/70 hover:bg-white/8"}`}
               >
                 FR
               </button>
@@ -95,7 +95,7 @@ export default function Navbar() {
                 aria-pressed={lang === "en"}
                 aria-label="English"
                 className={`min-w-[44px] min-h-[36px] px-3 transition-colors duration-150
-                  ${lang === "en" ? "bg-corail text-white" : "text-encre hover:bg-black/5"}`}
+                  ${lang === "en" ? "bg-corail text-sombre" : "text-encre/70 hover:bg-white/8"}`}
               >
                 EN
               </button>
@@ -107,7 +107,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2 md:hidden">
           {/* Language toggle — mobile */}
           <div
-            className="flex items-center border border-black/15 rounded-sm overflow-hidden text-xs font-oswald uppercase tracking-wide"
+            className="flex items-center border border-white/15 rounded-sm overflow-hidden text-xs font-oswald uppercase tracking-wide"
             aria-label="Langue / Language"
           >
             <button
@@ -115,7 +115,7 @@ export default function Navbar() {
               aria-pressed={lang === "fr"}
               aria-label="Français"
               className={`min-w-[44px] min-h-[44px] px-2.5 transition-colors duration-150
-                ${lang === "fr" ? "bg-corail text-white" : "text-encre"}`}
+                ${lang === "fr" ? "bg-corail text-sombre" : "text-encre/70"}`}
             >
               FR
             </button>
@@ -124,7 +124,7 @@ export default function Navbar() {
               aria-pressed={lang === "en"}
               aria-label="English"
               className={`min-w-[44px] min-h-[44px] px-2.5 transition-colors duration-150
-                ${lang === "en" ? "bg-corail text-white" : "text-encre"}`}
+                ${lang === "en" ? "bg-corail text-sombre" : "text-encre/70"}`}
             >
               EN
             </button>
@@ -165,7 +165,7 @@ export default function Navbar() {
       {ouvert && (
         <ul
           id="mobile-menu"
-          className="md:hidden border-t border-black/10 bg-white"
+          className="md:hidden border-t border-white/10 bg-sombre"
           role="list"
         >
           {liens.map((l) => (
@@ -173,11 +173,11 @@ export default function Navbar() {
               <Link
                 href={l.href}
                 aria-current={estActif(l.href) ? "page" : undefined}
-                className={`flex items-center font-oswald uppercase text-sm tracking-wide px-5 min-h-[52px] border-b border-black/5
+                className={`flex items-center font-oswald uppercase text-sm tracking-wide px-5 min-h-[52px] border-b border-white/8
                   transition-colors duration-150
                   ${estActif(l.href)
                     ? "text-corail border-l-4 border-l-corail pl-4"
-                    : "text-encre hover:text-corail hover:bg-black/2"
+                    : "text-encre/70 hover:text-corail hover:bg-white/5"
                   }`}
               >
                 {l.label}

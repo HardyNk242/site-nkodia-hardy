@@ -35,7 +35,7 @@ export default function Hero({ titre, sousTitre, image, position = "center" }) {
         <span
           className="block w-14 h-[3px] bg-corail mb-6"
           aria-hidden="true"
-          style={{ boxShadow: "0 0 8px rgba(243,79,76,0.5)" }}
+          style={{ boxShadow: "0 0 8px rgba(194,168,141,0.5)" }}
         />
 
         <h1

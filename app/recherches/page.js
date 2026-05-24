@@ -34,7 +34,7 @@ export default function Recherches() {
           ))}
         </div>
 
-        <div className="mt-16 bg-encre text-white p-8 md:p-12">
+        <div className="mt-16 bg-sombre text-encre p-8 md:p-12 border border-white/8">
           <h3 className="font-oswald uppercase text-2xl">{T(tr.recherches.terrains)}</h3>
           <span className="block w-16 h-1 bg-corail mt-3 mb-6" />
           <div className="grid gap-6 sm:grid-cols-3">

@@ -81,9 +81,9 @@ export default function Quiz({ quiz, onClose }) {
     pourcentage >= 80 ? t.msgExcellent : pourcentage >= 50 ? t.msgGood : t.msgWork;
 
   return (
-    <div className="bg-white w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-xl">
+    <div className="bg-surface w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-xl border border-white/10">
       {/* Barre supérieure */}
-      <div className="flex items-center justify-between bg-encre text-white px-5 py-3 sticky top-0">
+      <div className="flex items-center justify-between bg-sombre text-encre px-5 py-3 sticky top-0">
         <div>
           <p className="font-oswald uppercase text-sm tracking-wide leading-tight">
             {lang === "fr" ? "Quiz" : "Quiz"} — {quiz.title[lang]}
@@ -125,7 +125,7 @@ export default function Quiz({ quiz, onClose }) {
                 {Math.round((index / total) * 100)}%
               </span>
             </div>
-            <div className="h-2 bg-black/10 mb-6">
+            <div className="h-2 bg-white/10 mb-6">
               <div
                 className="h-full bg-corail transition-all duration-300"
                 style={{ width: `${((index + (selected !== null ? 1 : 0)) / total) * 100}%` }}
@@ -144,11 +144,11 @@ export default function Quiz({ quiz, onClose }) {
             <ul className="space-y-2.5">
               {q.options[lang].map((opt, i) => {
                 let style =
-                  "border-black/15 hover:border-corail hover:bg-corail/5";
+                  "border-white/15 hover:border-corail hover:bg-corail/10";
                 if (selected !== null) {
-                  if (i === q.answer) style = "border-green-600 bg-green-50";
-                  else if (i === selected) style = "border-corail bg-corail/10";
-                  else style = "border-black/10 opacity-60";
+                  if (i === q.answer) style = "border-green-500 bg-green-900/30";
+                  else if (i === selected) style = "border-corail bg-corail/15";
+                  else style = "border-white/8 opacity-50";
                 }
                 return (
                   <li key={i}>

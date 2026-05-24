@@ -36,7 +36,7 @@ export default function CV() {
               />
             </div>
           </div>
-          <div className="mt-5 bg-white p-5 border border-black/5">
+          <div className="mt-5 bg-surface p-5 border border-white/8">
             <p className="font-oswald uppercase text-sm tracking-wide text-corail mb-2">{T(tr.cv.contact)}</p>
             <p className="text-sm text-encre/75 leading-relaxed">{cv.infos}</p>
             <p className="text-sm mt-2 text-encre/75">{T(profil.institution)}</p>
@@ -83,7 +83,7 @@ export default function CV() {
           <Bloc titre={T(tr.cv.competences)}>
             <div className="flex flex-wrap gap-2">
               {cv.competences.map((c, i) => (
-                <span key={i} className="bg-white border border-black/10 px-3 py-1.5 text-sm">{c}</span>
+                <span key={i} className="bg-surface border border-white/10 px-3 py-1.5 text-sm">{c}</span>
               ))}
             </div>
           </Bloc>

@@ -45,7 +45,7 @@ export default function Equipe() {
           ))}
         </div>
 
-        <div className="mt-14 border-l-4 border-corail bg-white p-6">
+        <div className="mt-14 border-l-4 border-corail bg-surface p-6">
           <p className="font-bitter italic text-lg text-encre/80">
             {T(tr.equipe.invite)}
           </p>
