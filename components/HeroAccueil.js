@@ -5,15 +5,18 @@ import { useLang } from "@/contexts/LanguageContext";
 import { profil } from "@/data/site";
 
 /**
- * Home-page hero:
- *  • hero-bg2.jpg fills the full banner width without cropping
- *    (backgroundSize: "100% auto" → shows the whole horizontal image)
- *  • Portrait photo floats on the left of the composition
- *  • Dark semi-transparent info box on the right (dark rock palette)
- *  • Info box has a slight negative bottom margin to overlap the next section
+ * Home-page hero
+ *  • hero-bg2.jpg fills the full width without horizontal cropping
+ *  • Portrait photo and info card are the SAME size, side-by-side
+ *  • The pair is centred horizontally AND vertically inside the background
+ *  • Info box overlaps the next section by 72 px (negative bottom margin)
  */
 export default function HeroAccueil() {
   const { T } = useLang();
+
+  /* Shared column dimensions */
+  const CARD_W = 400;   /* px — same for both portrait and info box */
+  const CARD_MIN_H = 580; /* px — info-box min height; portrait stretches to match */
 
   return (
     <section
@@ -22,13 +25,13 @@ export default function HeroAccueil() {
       style={{
         backgroundColor: "#1A1C1A",
         backgroundImage: "url(/images/hero-bg2.jpg)",
-        backgroundSize: "100% auto",   /* full width, no horizontal crop */
+        backgroundSize: "100% auto",      /* no horizontal crop */
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center top",
-        minHeight: 620,
+        minHeight: 660,
       }}
     >
-      {/* Subtle side vignettes so rock texture fades into the dark body bg */}
+      {/* Side vignettes → rock texture fades into body bg */}
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none z-[1]"
@@ -38,41 +41,49 @@ export default function HeroAccueil() {
         }}
       />
 
-      {/* ── Two-column composition ────────────────────────────────────── */}
-      <div className="relative z-10 max-w-[1180px] mx-auto px-5">
-        <div className="flex items-end">
+      {/* ── Centred composition (portrait + info card) ───────────────── */}
+      <div
+        className="relative z-10 w-full flex items-center justify-center px-4"
+        style={{ minHeight: 660 }}
+      >
+        {/*
+          items-stretch → portrait and info box reach the same height.
+          justify-center → the pair is centred in the full-width background.
+        */}
+        <div className="flex items-stretch justify-center">
 
-          {/* ── Portrait ── hidden on mobile, visible lg+ */}
+          {/* ── Portrait ── visible lg+, hidden on smaller screens */}
           <div
             className="hidden lg:block relative shrink-0"
-            style={{ width: 480, height: 640 }}
+            style={{ width: CARD_W }}
           >
             <Image
               src="/images/photo-profil-new.jpg"
               alt="Dr. Nkodia Hardy Medry Dieu-Veil"
               fill
-              sizes="480px"
+              sizes={`${CARD_W}px`}
               className="object-cover object-top"
               priority
             />
-            {/* Right edge fades into the info box */}
+            {/* Right-edge fade → blends seamlessly into the info box */}
             <div
               aria-hidden="true"
-              className="absolute inset-y-0 right-0 w-24 pointer-events-none"
+              className="absolute inset-y-0 right-0 pointer-events-none"
               style={{
+                width: 80,
                 background:
-                  "linear-gradient(to right, transparent, rgba(42,43,42,0.92))",
+                  "linear-gradient(to right, transparent, rgba(42,43,42,0.94))",
               }}
             />
           </div>
 
-          {/* ── Info box ───────────────────────────────────────────────── */}
+          {/* ── Info box ── same width as portrait */}
           <div
-            className="flex flex-col justify-center px-8 py-10 w-full lg:w-auto lg:flex-1 relative z-20"
+            className="flex flex-col justify-center px-8 py-10 relative z-20 w-full lg:w-auto lg:shrink-0"
             style={{
-              maxWidth: 400,
-              minHeight: 580,
-              background: "rgba(42, 43, 42, 0.90)",
+              width: CARD_W,
+              minHeight: CARD_MIN_H,
+              background: "rgba(42, 43, 42, 0.92)",
               backdropFilter: "blur(8px)",
               WebkitBackdropFilter: "blur(8px)",
               marginBottom: -72,   /* overlaps the next section */
@@ -145,7 +156,7 @@ export default function HeroAccueil() {
               style={{ height: 1, backgroundColor: "rgba(244,241,237,0.10)" }}
             />
 
-            {/* Social / profile links */}
+            {/* Profile links */}
             <div className="flex flex-wrap gap-3">
               <a
                 href={profil.liens.researchgate}
@@ -163,10 +174,7 @@ export default function HeroAccueil() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center font-oswald uppercase tracking-wide text-xs px-4 py-2 transition-colors"
-                style={{
-                  border: "1px solid rgba(194,168,141,0.50)",
-                  color: "#F4F1ED",
-                }}
+                style={{ border: "1px solid rgba(194,168,141,0.50)", color: "#F4F1ED" }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.borderColor = "#C2A88D";
                   e.currentTarget.style.color = "#C2A88D";
@@ -181,14 +189,17 @@ export default function HeroAccueil() {
               <a
                 href={`mailto:${profil.liens.email}`}
                 className="inline-flex items-center font-oswald uppercase tracking-wide text-xs px-4 py-2 transition-colors"
-                style={{
-                  border: "1px solid rgba(244,241,237,0.18)",
-                  color: "#A6A29C",
+                style={{ border: "1px solid rgba(244,241,237,0.18)", color: "#A6A29C" }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(244,241,237,0.40)";
+                  e.currentTarget.style.color = "#F4F1ED";
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.borderColor = "rgba(194,168,141,0.40)")}
-                onMouseLeave={(e) => (e.currentTarget.style.borderColor = "rgba(244,241,237,0.18)")}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(244,241,237,0.18)";
+                  e.currentTarget.style.color = "#A6A29C";
+                }}
               >
-                {T({ fr: "Contact", en: "Contact" })}
+                Contact
               </a>
             </div>
           </div>
