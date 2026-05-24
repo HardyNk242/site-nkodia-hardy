@@ -36,6 +36,12 @@ module.exports = {
         "card-hover": "0 4px 12px 0 rgba(0,0,0,0.10), 0 2px 4px -1px rgba(0,0,0,0.06)",
         section: "0 0 0 1px rgba(0,0,0,0.04)",
       },
+      opacity: {
+        "6":  "0.06",
+        "8":  "0.08",
+        "12": "0.12",
+        "18": "0.18",
+      },
       transitionDuration: {
         micro: "150ms",
         base:  "200ms",
