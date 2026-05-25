@@ -53,5 +53,6 @@ export const videos = [
       en: "Practical tutorial for mastering GPS use in field geology — essential for any field geologist.",
     },
     youtubeId: "wtlFhRysIr0",
+    embedSrc: "https://www.youtube.com/embed/wtlFhRysIr0?si=7TBkreivN-qWW4EA",
   },
 ];

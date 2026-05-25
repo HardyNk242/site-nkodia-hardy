@@ -16,15 +16,17 @@ function SectionTitre({ titre }) {
   );
 }
 
-function YoutubeEmbed({ id, titre }) {
+function YoutubeEmbed({ src, titre }) {
   return (
     <div className="relative w-full aspect-video rounded-sm overflow-hidden bg-sombre">
       <iframe
-        src={`https://www.youtube.com/embed/${id}`}
+        src={src}
         title={titre}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
-        className="absolute inset-0 w-full h-full border-0"
+        className="absolute inset-0 w-full h-full"
         loading="lazy"
       />
     </div>
@@ -89,7 +91,7 @@ export default function Vulgarisation() {
           <div className="grid gap-10 md:grid-cols-2">
             {videos.map((v, i) => (
               <div key={i}>
-                <YoutubeEmbed id={v.youtubeId} titre={T(v.titre)} />
+                <YoutubeEmbed src={v.embedSrc || `https://www.youtube.com/embed/${v.youtubeId}`} titre={T(v.titre)} />
                 <h3 className="font-oswald text-xl mt-4 leading-snug">{T(v.titre)}</h3>
                 <p className="text-sm text-encre/70 mt-2 leading-relaxed">{T(v.description)}</p>
               </div>

@@ -170,11 +170,13 @@ export default function Accueil() {
         <div className="max-w-content mx-auto px-5 py-16 grid gap-8 md:grid-cols-2 items-center">
           <div className="relative w-full aspect-video rounded-sm overflow-hidden bg-sombre">
             <iframe
-              src={`https://www.youtube.com/embed/${videos[0].youtubeId}`}
+              src={videos[0].embedSrc || `https://www.youtube.com/embed/${videos[0].youtubeId}`}
               title={T(videos[0].titre)}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-              className="absolute inset-0 w-full h-full border-0"
+              className="absolute inset-0 w-full h-full"
               loading="lazy"
             />
           </div>
