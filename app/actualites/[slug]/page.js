@@ -35,7 +35,7 @@ export default function ActualiteDetail({ params }) {
 
         {/* Tag */}
         <span className="tag-corail mb-6 inline-block">
-          {T(tr.actualites.fieldwork)}
+          {actu.type === "conference" ? T(tr.actualites.conference) : T(tr.actualites.fieldwork)}
         </span>
 
         {/* Sub-header */}

@@ -97,6 +97,7 @@ export const tr = {
     galerie:     { fr: "Galerie photos",                en: "Photo gallery" },
     rapport:     { fr: "Compte-rendu de terrain",       en: "Field report" },
     fieldwork:   { fr: "Terrain géologique",            en: "Geological fieldwork" },
+    conference:  { fr: "Conférence scientifique",       en: "Scientific conference" },
   },
   cours: {
     hero:          { fr: "Cours",                     en: "Courses" },

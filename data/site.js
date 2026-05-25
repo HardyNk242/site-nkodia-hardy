@@ -208,7 +208,9 @@ export const equipe = [
   },
 ];
 
-const FW_BASE = "/images/Actualit%C3%A9_Fieldwork_2025-02-04";
+const ACT_BASE  = "/images/Actualit%C3%A9s";
+const FW_BASE   = `${ACT_BASE}/Actualit%C3%A9_Fieldwork_2025-02-04`;
+const CONF_BASE = `${ACT_BASE}/Actualit%C3%A9_conference_geologica_belgica_2021`;
 
 export const actualites = [
   {
@@ -322,6 +324,58 @@ export const actualites = [
         legende: {
           fr: "Coupe structurale : plis et contact avec faille — France–Belgique",
           en: "Structural cross-section: folds and fault contact — France–Belgium",
+        },
+      },
+    ],
+  },
+  {
+    id: "conference-geologica-belgica-2021",
+    type: "conference",
+    titre: {
+      fr: "Conférence Geologica Belgica 2021",
+      en: "Geologica Belgica 2021 Conference",
+    },
+    sousTitre: {
+      fr: "Communication scientifique — Belgique, 15–17 septembre 2021",
+      en: "Scientific communication — Belgium, 15–17 September 2021",
+    },
+    cover: `${CONF_BASE}/IMG_20210916_135254.jpg`,
+    date: "Septembre 2021",
+    lieu: {
+      fr: "Belgique",
+      en: "Belgium",
+    },
+    description: {
+      fr: "Du 15 au 17 septembre 2021, le Dr. Hardy Nkodia a participé à la conférence internationale Geologica Belgica, tenue en Belgique, où il a présenté ses recherches sur la tectonique de la chaîne de l'Ouest du Congo et la sismicité en Afrique centrale.\n\nCette communication portait sur la déformation cassante de la marge passive congolaise et son rôle dans l'aléa sismotectonique régional — travaux menés dans le cadre de sa thèse de doctorat en collaboration avec le Musée Royal de l'Afrique Centrale (Tervuren), qui a financé sa participation.\n\nCette conférence a également été l'occasion de rencontres scientifiques fructueuses, notamment avec le Dr. Thierry Camelbeeck, spécialiste de la sismicité en Afrique centrale à l'Observatoire Royal de Belgique, et avec le géologue Joseph Akame.",
+      en: "From 15 to 17 September 2021, Dr. Hardy Nkodia participated in the international Geologica Belgica conference, held in Belgium, where he presented his research on the tectonics of the West Congo belt and seismicity in Central Africa.\n\nThe communication focused on brittle deformation along the Congolese passive margin and its role in regional seismotectonic hazard — research conducted as part of his doctoral thesis in collaboration with the Royal Museum for Central Africa (Tervuren), which funded his participation.\n\nThe conference also provided valuable scientific exchanges, notably with Dr. Thierry Camelbeeck, specialist in Central African seismicity at the Royal Observatory of Belgium, and with geologist Joseph Akame.",
+    },
+    images: [
+      {
+        src: `${CONF_BASE}/15-17septmbre_.jpg`,
+        legende: {
+          fr: "Programme et affiche — Geologica Belgica, 15–17 septembre 2021",
+          en: "Programme and poster — Geologica Belgica, 15–17 September 2021",
+        },
+      },
+      {
+        src: `${CONF_BASE}/IMG_20210916_135254.jpg`,
+        legende: {
+          fr: "Présentation à la conférence Geologica Belgica",
+          en: "Presentation at the Geologica Belgica conference",
+        },
+      },
+      {
+        src: `${CONF_BASE}/Photo%20avec%20Thierry%20Camelbeek.jpg`,
+        legende: {
+          fr: "Rencontre avec le Dr. Thierry Camelbeeck (Observatoire Royal de Belgique)",
+          en: "Meeting with Dr. Thierry Camelbeeck (Royal Observatory of Belgium)",
+        },
+      },
+      {
+        src: `${CONF_BASE}/Recontre%20avec%20Joseph%20Akame%20Belgique.jpg`,
+        legende: {
+          fr: "Rencontre avec le géologue Joseph Akame, Belgique",
+          en: "Meeting with geologist Joseph Akame, Belgium",
         },
       },
     ],
