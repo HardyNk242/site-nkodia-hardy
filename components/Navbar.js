@@ -13,12 +13,13 @@ export default function Navbar() {
   const { lang, setLang, T } = useLang();
 
   const liens = [
-    { href: "/",             label: T(tr.nav.accueil) },
-    { href: "/publications", label: T(tr.nav.publications) },
-    { href: "/recherches",   label: T(tr.nav.recherches) },
-    { href: "/equipe",       label: T(tr.nav.equipe) },
-    { href: "/cv",           label: T(tr.nav.cv) },
-    { href: "/cours",        label: T(tr.nav.cours) },
+    { href: "/",               label: T(tr.nav.accueil) },
+    { href: "/publications",   label: T(tr.nav.publications) },
+    { href: "/recherches",     label: T(tr.nav.recherches) },
+    { href: "/engagement",     label: T(tr.nav.engagement) },
+    { href: "/vulgarisation",  label: T(tr.nav.vulgarisation) },
+    { href: "/equipe",         label: T(tr.nav.equipe) },
+    { href: "/cv",             label: T(tr.nav.cv) },
   ];
 
   const estActif = (href) =>

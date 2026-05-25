@@ -1,0 +1,90 @@
+{
+  "id": "amorce-geo",
+  "titre": {
+    "fr": "AMORCE-GEO — Vers un modèle d'échanges pédagogiques en géosciences autour de l'Université de Bertoua",
+    "en": "AMORCE-GEO — Towards a model of pedagogical exchanges in geosciences around the University of Bertoua"
+  },
+  "periode": "Septembre 2025 — Août 2027",
+  "financement": "ARES-AMORCE 2025",
+  "logo": "/images/projets/amorce-geo-logo.png",
+  "resume": {
+    "fr": "Réseau universitaire international Nord–Sud–Sud pour renforcer la formation en géosciences en Afrique centrale, autour de cinq institutions partenaires.",
+    "en": "International North–South–South university network to strengthen geoscience education in Central Africa, around five partner institutions."
+  },
+  "contexte": {
+    "fr": "La qualité de l'enseignement universitaire en Afrique centrale est marquée par des avancées et des défis persistants : infrastructure insuffisante, qualité pédagogique inégale, sous-financement, accès limité aux ressources numériques, inadéquation formation/emploi. Le projet répond à la nécessité de former des géoscientifiques à haut niveau, capables de relever les défis environnementaux et économiques de la région.",
+    "en": "The quality of university education in Central Africa is characterised by advances and persistent challenges: insufficient infrastructure, uneven pedagogical quality, under-funding, limited access to digital resources, and a mismatch between training and employment. The project addresses the need to train high-level geoscientists capable of meeting the environmental and economic challenges of the region."
+  },
+  "vision": {
+    "fr": "Créer un centre d'excellence régional en géosciences, offrant des formations de haute qualité équivalentes à celles des universités européennes, capable d'accueillir des étudiants du Nord et du Sud pour des formations de Master et Doctorat.",
+    "en": "Create a regional centre of excellence in geosciences, offering high-quality training equivalent to that of European universities, capable of welcoming students from the North and South for Master's and Doctoral programmes."
+  },
+  "partenaires": [
+    {
+      "universite": "Université de Bertoua",
+      "pays": { "fr": "Cameroun", "en": "Cameroon" },
+      "drapeau": "🇨🇲",
+      "personnes": [
+        { "nom": "Prof. Sébastien Owona", "role": { "fr": "Coordinateur local", "en": "Local coordinator" } }
+      ]
+    },
+    {
+      "universite": "Université libre de Bruxelles (ULB)",
+      "pays": { "fr": "Belgique", "en": "Belgium" },
+      "drapeau": "🇧🇪",
+      "personnes": [
+        { "nom": "Prof. Karen Fontijn", "role": { "fr": "Coordinatrice générale", "en": "General coordinator" } },
+        { "nom": "Dr. Joseph Martial Akame", "role": { "fr": "Expert pédagogique", "en": "Pedagogical expert" } },
+        { "nom": "Dr. Collin Nkono", "role": { "fr": "Conseiller stratégique", "en": "Strategic adviser" } }
+      ]
+    },
+    {
+      "universite": "Université de Douala",
+      "pays": { "fr": "Cameroun", "en": "Cameroon" },
+      "drapeau": "🇨🇲",
+      "personnes": [
+        { "nom": "Dr. Christian Balla Ateba", "role": { "fr": "Référent local", "en": "Local representative" } },
+        { "nom": "Dr. Moussa Nsangou Ngapna", "role": { "fr": "Enseignant-chercheur", "en": "Lecturer-researcher" } }
+      ]
+    },
+    {
+      "universite": "Université Marien Ngouabi",
+      "pays": { "fr": "République du Congo", "en": "Republic of the Congo" },
+      "drapeau": "🇨🇬",
+      "personnes": [
+        { "nom": "Prof. Timothée Miyouna", "role": { "fr": "Référent local", "en": "Local representative" } },
+        { "nom": "Dr. Hardy Nkodia", "role": { "fr": "Enseignant-chercheur", "en": "Lecturer-researcher" } }
+      ]
+    },
+    {
+      "universite": "Université de Bangui",
+      "pays": { "fr": "République Centrafricaine", "en": "Central African Republic" },
+      "drapeau": "🇨🇫",
+      "personnes": [
+        { "nom": "Prof. José Kpéou", "role": { "fr": "Référent local", "en": "Local representative" } },
+        { "nom": "Dr. Topien Rodrigue", "role": { "fr": "Enseignant-chercheur", "en": "Lecturer-researcher" } }
+      ]
+    }
+  ],
+  "objectifs": {
+    "fr": [
+      "Améliorer la qualité de l'enseignement en géosciences à l'Université de Bertoua en alignant les curricula sur des standards internationaux.",
+      "Créer un réseau d'enseignants-chercheurs en géosciences entre les universités d'Afrique centrale et l'ULB.",
+      "Développer des cours hybrides (présentiel et en ligne) accessibles aux étudiants de la sous-région dès 2025-2026.",
+      "Organiser des stages de terrain en géologie avec des experts internationaux pour former les futurs géoscientifiques africains.",
+      "Objectif transversal : établir une convention de coopération interuniversitaire menant à terme à une co-diplomation entre les institutions partenaires."
+    ],
+    "en": [
+      "Improve the quality of geoscience education at the University of Bertoua by aligning curricula with international standards.",
+      "Create a network of geoscience lecturer-researchers between Central African universities and ULB.",
+      "Develop hybrid courses (in-person and online) accessible to students in the sub-region from 2025-2026.",
+      "Organise geological field courses with international experts to train the next generation of African geoscientists.",
+      "Cross-cutting objective: establish an inter-university cooperation agreement leading ultimately to joint degree programmes between partner institutions."
+    ]
+  },
+  "documentsUrl": null,
+  "monRole": {
+    "fr": "Le Dr. Hardy Nkodia représente l'Université Marien Ngouabi dans le projet AMORCE-GEO en tant qu'enseignant-chercheur. Il contribue au renforcement de l'enseignement en géologie structurale dans la sous-région et à la mise en place des échanges pédagogiques entre les institutions partenaires.",
+    "en": "Dr. Hardy Nkodia represents Marien Ngouabi University in the AMORCE-GEO project as a lecturer-researcher. He contributes to strengthening structural geology education in the sub-region and to establishing pedagogical exchanges between partner institutions."
+  }
+}

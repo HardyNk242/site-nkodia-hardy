@@ -10,10 +10,10 @@ import { tr } from "@/data/translations";
 import {
   profil,
   publicationsRecentes,
-  dansLesJournaux,
   evenements,
   actualites,
 } from "@/data/site";
+import { presseArticles, videos } from "@/data/vulgarisation";
 
 export default function Accueil() {
   const { T } = useLang();
@@ -61,8 +61,8 @@ export default function Accueil() {
         <div className="max-w-content mx-auto px-5 py-16">
           <h2 className="titre-section">{T(tr.home.pubsRecentes)}</h2>
           <span className="barre-corail" />
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {publicationsRecentes.map((p, i) => (
+          <div className="grid gap-8 md:grid-cols-2">
+            {publicationsRecentes.slice(0, 2).map((p, i) => (
               <article key={i} className="carte flex flex-col group overflow-hidden">
                 <div className="relative bg-sombre" style={{ aspectRatio: "4/3" }}>
                   {p.image ? (
@@ -106,13 +106,14 @@ export default function Accueil() {
         </div>
       </section>
 
-      {/* Dans les journaux + Événements */}
+      {/* Presse + Vidéo + Événements */}
       <section className="max-w-content mx-auto px-5 py-16 grid gap-12 lg:grid-cols-2">
+        {/* Dans les journaux — 2 articles */}
         <div>
           <h2 className="titre-section">{T(tr.home.dansJournaux)}</h2>
           <span className="barre-corail" />
           <ul className="space-y-5">
-            {dansLesJournaux.map((j, i) => (
+            {presseArticles.slice(0, 2).map((j, i) => (
               <li key={i} className="border-l-2 border-corail pl-4">
                 {j.image && (
                   <div className="mb-3 overflow-hidden rounded-sm relative h-32 w-full group">
@@ -139,8 +140,12 @@ export default function Accueil() {
               </li>
             ))}
           </ul>
+          <Link href="/vulgarisation#presse" className="lien-corail text-sm inline-block mt-5">
+            {T(tr.vulgarisation.voirTous)}
+          </Link>
         </div>
 
+        {/* Événements */}
         <div>
           <h2 className="titre-section">{T(tr.home.evenements)}</h2>
           <span className="barre-corail" />
@@ -157,6 +162,30 @@ export default function Accueil() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* Vidéo phare */}
+      <section className="bg-surface border-y border-white/8">
+        <div className="max-w-content mx-auto px-5 py-16 grid gap-8 md:grid-cols-2 items-center">
+          <div className="relative w-full aspect-video rounded-sm overflow-hidden bg-sombre">
+            <iframe
+              src={`https://www.youtube.com/embed/${videos[0].youtubeId}`}
+              title={T(videos[0].titre)}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full border-0"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <h2 className="titre-section">{T(videos[0].titre)}</h2>
+            <span className="barre-corail" />
+            <p className="text-encre/75 leading-relaxed mb-6">{T(videos[0].description)}</p>
+            <Link href="/vulgarisation#videos" className="lien-corail text-sm">
+              {T(tr.vulgarisation.voirVideos)}
+            </Link>
+          </div>
         </div>
       </section>
 
