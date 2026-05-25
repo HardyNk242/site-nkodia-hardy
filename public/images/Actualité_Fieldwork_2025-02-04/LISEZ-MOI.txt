@@ -1,0 +1,7 @@
+Déposez ici les photographies du site (portrait, terrain, affleurements…).
+
+Pour utiliser une vraie image en fond d'en-tête, passez son chemin au composant
+Hero, par exemple : <Hero titre="..." image="/images/mayombe.jpg" />.
+
+Pour remplacer un bloc « placeholder », importez le composant Image de next/image
+à la place du composant Placeholder.

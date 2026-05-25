@@ -30,7 +30,8 @@ export const tr = {
     lireArticle:   { fr: "Lire l'article →",       en: "Read the article →" },
     dansJournaux:  { fr: "Dans les journaux",       en: "In the press" },
     evenements:    { fr: "Événements à venir",      en: "Upcoming events" },
-    enImages:      { fr: "En images",               en: "Gallery" },
+    actualites:        { fr: "Actualités",               en: "News & fieldwork" },
+    voirActualite:     { fr: "Voir le compte-rendu complet →", en: "View full field report →" },
     suivre:        { fr: "Suivez les travaux de recherche", en: "Follow the research" },
   },
   publications: {
@@ -89,6 +90,13 @@ export const tr = {
     distinctions:  { fr: "Récompenses et honneurs",   en: "Awards & honours" },
     telecharger:   { fr: "Télécharger le CV (PDF)",   en: "Download CV (PDF)" },
     contact:       { fr: "Contact",                   en: "Contact" },
+  },
+  actualites: {
+    hero:        { fr: "Actualités",                    en: "News & fieldwork" },
+    retour:      { fr: "← Toutes les actualités",       en: "← All news" },
+    galerie:     { fr: "Galerie photos",                en: "Photo gallery" },
+    rapport:     { fr: "Compte-rendu de terrain",       en: "Field report" },
+    fieldwork:   { fr: "Terrain géologique",            en: "Geological fieldwork" },
   },
   cours: {
     hero:          { fr: "Cours",                     en: "Courses" },

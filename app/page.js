@@ -12,7 +12,7 @@ import {
   publicationsRecentes,
   dansLesJournaux,
   evenements,
-  carrousel,
+  actualites,
 } from "@/data/site";
 
 export default function Accueil() {
@@ -160,12 +160,31 @@ export default function Accueil() {
         </div>
       </section>
 
-      {/* Carrousel d'images */}
+      {/* Actualités */}
       <section className="bg-surface border-t border-white/8">
         <div className="max-w-content mx-auto px-5 py-16">
-          <h2 className="titre-section">{T(tr.home.enImages)}</h2>
+          <h2 className="titre-section">{T(tr.home.actualites)}</h2>
           <span className="barre-corail" />
-          <ImageCarousel items={carrousel.map((c) => ({ ...c, legende: T(c.legende) }))} />
+          {actualites.map((actu) => (
+            <div key={actu.id} className="mb-12 last:mb-0">
+              <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-4">
+                <p className="font-oswald uppercase text-corail text-sm tracking-wide">
+                  {actu.date} · {T(actu.lieu)}
+                </p>
+                <p className="font-oswald text-lg leading-snug">{T(actu.titre)}</p>
+              </div>
+              <ImageCarousel
+                items={actu.images.map((img) => ({
+                  src: img.src,
+                  legende: T(img.legende),
+                  href: `/actualites/${actu.id}`,
+                }))}
+              />
+              <Link href={`/actualites/${actu.id}`} className="lien-corail inline-block mt-5">
+                {T(tr.home.voirActualite)}
+              </Link>
+            </div>
+          ))}
         </div>
       </section>
 

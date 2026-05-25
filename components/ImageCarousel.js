@@ -2,6 +2,7 @@
 
 import { useRef, useState, useCallback } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Placeholder from "./Placeholder";
 
 /* SVG chevron — no HTML entity, consistent stroke */
@@ -54,31 +55,50 @@ export default function ImageCarousel({ items }) {
         className="scroll-cache flex gap-5 overflow-x-auto snap-x snap-mandatory pb-2"
         aria-live="polite"
       >
-        {items.map((it, i) => (
-          <figure
-            key={i}
-            data-carte
-            className="snap-start shrink-0 w-[80%] sm:w-[46%] lg:w-[31%] group"
-            aria-label={it.legende}
-          >
-            <div className="rounded-sm overflow-hidden aspect-[3/2] relative">
-              {it.src ? (
-                <Image
-                  src={it.src}
-                  alt={it.legende}
-                  fill
-                  sizes="(max-width:640px) 80vw, (max-width:1024px) 46vw, 31vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              ) : (
-                <Placeholder label={it.legende} ratio="aspect-[3/2]" />
-              )}
-            </div>
-            <figcaption className="mt-2.5 text-sm text-encre/65 font-bitter italic leading-snug">
-              {it.legende}
-            </figcaption>
-          </figure>
-        ))}
+        {items.map((it, i) => {
+          const inner = (
+            <>
+              <div className="rounded-sm overflow-hidden aspect-[3/2] relative">
+                {it.src ? (
+                  <Image
+                    src={it.src}
+                    alt={it.legende}
+                    fill
+                    sizes="(max-width:640px) 80vw, (max-width:1024px) 46vw, 31vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : (
+                  <Placeholder label={it.legende} ratio="aspect-[3/2]" />
+                )}
+                {it.href && (
+                  <div className="absolute inset-0 bg-sombre/0 group-hover:bg-sombre/30 transition-colors duration-300 flex items-end justify-end p-3">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs font-oswald uppercase tracking-wide text-encre bg-sombre/70 px-2 py-1 rounded-sm">
+                      Voir →
+                    </span>
+                  </div>
+                )}
+              </div>
+              <figcaption className="mt-2.5 text-sm text-encre/65 font-bitter italic leading-snug">
+                {it.legende}
+              </figcaption>
+            </>
+          );
+
+          return (
+            <figure
+              key={i}
+              data-carte
+              className="snap-start shrink-0 w-[80%] sm:w-[46%] lg:w-[31%] group"
+              aria-label={it.legende}
+            >
+              {it.href ? (
+                <Link href={it.href} className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-corail focus-visible:ring-offset-2">
+                  {inner}
+                </Link>
+              ) : inner}
+            </figure>
+          );
+        })}
       </div>
 
       {/* Controls */}

@@ -208,6 +208,125 @@ export const equipe = [
   },
 ];
 
+const FW_BASE = "/images/Actualit%C3%A9_Fieldwork_2025-02-04";
+
+export const actualites = [
+  {
+    id: "terrain-belgique-france-2025",
+    type: "fieldwork",
+    titre: {
+      fr: "Terrain structural — Belgique & France",
+      en: "Structural fieldwork — Belgium & France",
+    },
+    sousTitre: {
+      fr: "Avec le Pr. Damien Delvaux · Ardennes, zone rhéno-hercynienne",
+      en: "With Prof. Damien Delvaux · Ardennes, Rhenohercynian zone",
+    },
+    date: "Février 2025",
+    lieu: {
+      fr: "Belgique — France (Ardennes / zone rhéno-hercynienne)",
+      en: "Belgium — France (Ardennes / Rhenohercynian zone)",
+    },
+    description: {
+      fr: "En février 2025, le Dr. Hardy Nkodia a participé à une mission de terrain en géologie structurale dans les Ardennes belgo-françaises, en collaboration avec le Pr. Damien Delvaux (Musée Royal de l'Afrique Centrale, Tervuren, Belgique). Cette région, classique de l'orogenèse varisque, offre des affleurements remarquables permettant d'observer et d'analyser une grande variété de structures tectoniques cassantes et ductiles.\n\nLa mission a permis de documenter des failles inverses à schistosité en sigmoïdes témoignant de compressions anciennes, des plis couchés et des plis en genou (kink folds) issus de la déformation polyphasée des roches sédimentaires. Les miroirs de faille présentent des gradins de calcite et des stries multiples, témoignant de réactivations successives lors d'épisodes tectoniques distincts. Le contact entre l'orogenèse calédonienne et varisque a également été documenté à partir de la lecture collective des coupes géologiques régionales.\n\nCe terrain de comparaison avec les structures africaines constitue une référence précieuse pour les travaux menés dans la chaîne du Mayombe et le bassin côtier congolais.",
+      en: "In February 2025, Dr. Hardy Nkodia took part in a structural geology field campaign in the Belgian-French Ardennes, in collaboration with Prof. Damien Delvaux (Royal Museum for Central Africa, Tervuren, Belgium). This region, a classic area for Variscan orogeny research, offers exceptional outcrops for observing and analysing a wide range of brittle and ductile tectonic structures.\n\nThe campaign documented reverse faults with sigmoid schistosity reflecting ancient compressional episodes, along with recumbent folds and kink folds resulting from polyphase deformation of sedimentary rocks. Observed fault mirrors display calcite steps and multiple sets of striations, recording successive reactivations during distinct tectonic episodes. The contact between Caledonian and Variscan orogenic imprints was also documented through collective reading of regional geological cross-sections.\n\nThis comparative fieldwork provides a valuable reference for ongoing structural research in the Mayombe belt and the Congolese coastal basin.",
+    },
+    images: [
+      {
+        src: `${FW_BASE}/Depart_lecture_du_plande_coupe.jpg`,
+        legende: {
+          fr: "Départ : lecture collective du plan de coupe régionale",
+          en: "Departure: collective reading of the regional cross-section",
+        },
+      },
+      {
+        src: `${FW_BASE}/Dans_la_voiture_avec_lequipe.jpg`,
+        legende: {
+          fr: "L'équipe en route vers le premier affleurement",
+          en: "Team on the way to the first outcrop",
+        },
+      },
+      {
+        src: `${FW_BASE}/Dans_lavoiture_avec_lequipe.jpg`,
+        legende: {
+          fr: "Transit entre affleurements",
+          en: "In transit between outcrops",
+        },
+      },
+      {
+        src: `${FW_BASE}/Field_work_Belguim_france_reverse_fault.jpg`,
+        legende: {
+          fr: "Faille inverse — terrain Belgique–France",
+          en: "Reverse fault — Belgium–France fieldwork",
+        },
+      },
+      {
+        src: `${FW_BASE}/Field_work_france_belgique_damien_delvaux_reverse_fault.jpg`,
+        legende: {
+          fr: "Analyse de faille inverse avec le Pr. Damien Delvaux",
+          en: "Reverse fault analysis with Prof. Damien Delvaux",
+        },
+      },
+      {
+        src: `${FW_BASE}/faille_inverse_horizontale_separant_la%20schistosit%C3%A9%20en%20Sigmoides.jpg`,
+        legende: {
+          fr: "Faille inverse horizontale séparant la schistosité en sigmoïdes",
+          en: "Horizontal reverse fault separating schistosity into sigmoids",
+        },
+      },
+      {
+        src: `${FW_BASE}/Kink_folds_fieldwork_belguim_france_20250224jpg.jpg`,
+        legende: {
+          fr: "Plis en genou (kink folds) — Ardennes, 24 fév. 2025",
+          en: "Kink folds — Ardennes, 24 Feb. 2025",
+        },
+      },
+      {
+        src: `${FW_BASE}/Plis-couch%C3%A9-axe-duPlisPartmamain.jpg`,
+        legende: {
+          fr: "Axe du pli couché mesuré à la main",
+          en: "Recumbent fold axis measured by hand",
+        },
+      },
+      {
+        src: `${FW_BASE}/field_work_orogenese_varisque.jpg`,
+        legende: {
+          fr: "Structures de l'orogenèse varisque",
+          en: "Variscan orogeny structures",
+        },
+      },
+      {
+        src: `${FW_BASE}/Fiel_work_damien_delvaux_2025-02-24_contact-orogense_caledonienne_varisque_plan%20de%20la%20coupe.jpg`,
+        legende: {
+          fr: "Contact orogenèse calédonienne–varisque : lecture du plan de coupe avec D. Delvaux",
+          en: "Caledonian–Variscan orogenic contact: reading the section plan with D. Delvaux",
+        },
+      },
+      {
+        src: `${FW_BASE}/Faille%20avec%20gradin%20de%20calcite%20et%20sitrie%20oblique%20Belgique_faille%20normale%20oblique.jpg`,
+        legende: {
+          fr: "Faille normale oblique avec gradins de calcite et stries obliques",
+          en: "Oblique normal fault with calcite steps and oblique striations",
+        },
+      },
+      {
+        src: `${FW_BASE}/Stries_multiples_reactivations.jpg`,
+        legende: {
+          fr: "Stries de faille témoignant de réactivations multiples",
+          en: "Fault striations recording multiple tectonic reactivations",
+        },
+      },
+      {
+        src: `${FW_BASE}/Coupe-france-belique_plis-contact-avecFaillejpg.jpg`,
+        legende: {
+          fr: "Coupe structurale : plis et contact avec faille — France–Belgique",
+          en: "Structural cross-section: folds and fault contact — France–Belgium",
+        },
+      },
+    ],
+  },
+];
+
 export const cv = {
   infos: "27/07/1994 · Nationalité congolaise · Brazzaville, République du Congo",
   profil: {
