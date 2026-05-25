@@ -38,7 +38,8 @@ sombre:      "#1A1C1A"   // très sombre — footer, sections dark
 
 ```
 app/
-  page.js                  ← Accueil (hero + citation + pubs récentes + journaux + carrousel)
+  page.js                  ← Accueil (hero + citation + pubs récentes + journaux + actualités)
+  actualites/[slug]/page.js ← Détail d'une actualité (compte-rendu + galerie photos)
   publications/page.js     ← Liste complète des publications avec "En bref"
   recherches/page.js       ← Thèmes de recherche
   equipe/page.js           ← Collaborateurs
@@ -54,7 +55,7 @@ components/
   Hero.js                  ← Hero générique pour les autres pages
   Navbar.js                ← Navigation sticky (dark, bg-clair)
   Footer.js                ← Footer (bg-sombre)
-  ImageCarousel.js         ← Carrousel horizontal
+  ImageCarousel.js         ← Carrousel horizontal (prop `href` optionnel par item → click-through)
   CoursDetail.js           ← Détail cours + quiz modal + exercices
   Quiz.js                  ← Quiz modal (inline, non surveillé)
   QuizInteractif.js        ← Quiz surveillé anti-triche + webhook Google Sheets
@@ -73,7 +74,7 @@ public/images/             ← Toutes les images statiques
   figure-pub-2026-korea-stress.png  ← Figure Tectonophysics 2026
   figure-pub-2026.jpg      ← Figure IJGeoP 2026
   figure-pub-2025.jpg      ← Figure Tectonics 2025
-  carrousel-1..5.jpg       ← Photos terrain pour le carrousel
+  Actualité_Fieldwork_2025-02-04/  ← 13 photos terrain Belgique-France fév. 2025
   equipe-*.jpg             ← Portraits équipe
 ```
 
@@ -140,6 +141,35 @@ T(tr.home.profil)  // via l'objet tr dans data/translations.js
 - **Card info** : même largeur (400 px), transparence `rgba(26,28,26,0.62)`, `marginBottom: -220`, `zIndex: 2`
 - **Section profil** (page.js) : `position: relative; zIndex: 10; paddingTop: 240` → passe DEVANT la card
 - **Fond partagé** : dans `page.js`, un `<div>` wrapper contient `<HeroAccueil />` + section profil avec le même background
+
+---
+
+## Section Actualités
+
+- Export `actualites` dans `data/site.js` — tableau d'entrées `{ id, type, titre, sousTitre, date, lieu, description, images[] }`
+- Chaque image : `{ src, legende: {fr, en} }` — paths URL-encodés pour les accents et espaces
+- Dossier images : `public/images/Actualité_Fieldwork_2025-02-04/` → src : `/images/Actualit%C3%A9_Fieldwork_2025-02-04/...`
+- `ImageCarousel` : prop `href` optionnel par item → overlay "VOIR →" au hover + `<Link>` sur le clic
+- Page détail : `app/actualites/[slug]/page.js` — Hero + back link + tag + sous-titre + compte-rendu + galerie grid
+- Translations : `tr.home.actualites`, `tr.home.voirActualite`, `tr.actualites.*`
+
+### Ajouter une nouvelle actualité
+```js
+// data/site.js → tableau actualites
+{
+  id: "slug-unique",          // correspond à l'URL /actualites/slug-unique
+  type: "fieldwork",          // fieldwork | news | conference | …
+  titre: { fr: "…", en: "…" },
+  sousTitre: { fr: "…", en: "…" },
+  date: "Mois AAAA",
+  lieu: { fr: "…", en: "…" },
+  description: { fr: "Paragraphe 1\n\nParagraphe 2", en: "…" },
+  images: [
+    { src: "/images/monDossier/photo.jpg", legende: { fr: "…", en: "…" } },
+  ],
+}
+```
+**Piège** : les espaces et accents dans les noms de fichiers/dossiers doivent être URL-encodés dans `src` (espace → `%20`, é → `%C3%A9`).
 
 ---
 
