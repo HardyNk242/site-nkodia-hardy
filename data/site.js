@@ -101,27 +101,35 @@ export const dansLesJournaux = [
 export const evenements = [
   {
     titre: {
-      fr: "Colloque panafricain de géosciences — session « Tectonique du craton du Congo »",
-      en: "Pan-African geosciences conference — session 'Congo craton tectonics'",
+      fr: "Séjour de recherche invité — Musée Royal de l'Afrique Centrale (MRAC)",
+      en: "Invited research stay — Royal Museum for Central Africa (MRAC)",
     },
-    lieu: { fr: "Brazzaville, Congo", en: "Brazzaville, Congo" },
-    date: "15–18 oct. 2026",
+    lieu: { fr: "Tervuren, Belgique", en: "Tervuren, Belgium" },
+    date: "Été 2026",
   },
   {
     titre: {
-      fr: "École de terrain : analyse structurale du Mayombe (master 2 géosciences)",
-      en: "Field school: structural analysis of the Mayombe belt (M2 geosciences)",
+      fr: "Terrain géologique — Gabon",
+      en: "Geological fieldwork — Gabon",
     },
-    lieu: { fr: "Pointe-Noire & Mayombe", en: "Pointe-Noire & Mayombe" },
-    date: "3–12 fév. 2026",
+    lieu: { fr: "Gabon", en: "Gabon" },
+    date: "2026",
   },
   {
     titre: {
-      fr: "Séminaire « Mécanique des roches et déformation continentale »",
-      en: "Seminar 'Rock mechanics and continental deformation'",
+      fr: "Terrain géologique — Angola",
+      en: "Geological fieldwork — Angola",
     },
-    lieu: { fr: "Université Marien Ngouabi, Brazzaville", en: "Marien Ngouabi University, Brazzaville" },
-    date: "20 mai 2026",
+    lieu: { fr: "Angola", en: "Angola" },
+    date: "2026",
+  },
+  {
+    titre: {
+      fr: "Étude structurale de la chaîne du Mayombe — République du Congo",
+      en: "Structural study of the Mayombe belt — Republic of the Congo",
+    },
+    lieu: { fr: "Mayombe, République du Congo", en: "Mayombe, Republic of the Congo" },
+    date: "2026",
   },
 ];
 

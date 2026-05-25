@@ -61,8 +61,8 @@ export default function Accueil() {
         <div className="max-w-content mx-auto px-5 py-16">
           <h2 className="titre-section">{T(tr.home.pubsRecentes)}</h2>
           <span className="barre-corail" />
-          <div className="grid gap-8 md:grid-cols-2">
-            {publicationsRecentes.slice(0, 2).map((p, i) => (
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {publicationsRecentes.slice(0, 3).map((p, i) => (
               <article key={i} className="carte flex flex-col group overflow-hidden">
                 <div className="relative bg-sombre" style={{ aspectRatio: "4/3" }}>
                   {p.image ? (
