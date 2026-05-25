@@ -22,6 +22,8 @@ export default function ActualiteDetail({ params }) {
       <Hero
         titre={T(actu.titre)}
         sousTitre={`${actu.date} · ${T(actu.lieu)}`}
+        image={actu.cover}
+        position="center"
       />
 
       <div className="max-w-content mx-auto px-5 py-16">

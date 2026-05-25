@@ -222,6 +222,7 @@ export const actualites = [
       fr: "Avec le Pr. Damien Delvaux · Ardennes, zone rhéno-hercynienne",
       en: "With Prof. Damien Delvaux · Ardennes, Rhenohercynian zone",
     },
+    cover: `${FW_BASE}/Kink_folds_fieldwork_belguim_france_20250224jpg.jpg`,
     date: "Février 2025",
     lieu: {
       fr: "Belgique — France (Ardennes / zone rhéno-hercynienne)",

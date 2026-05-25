@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useCallback } from "react";
+import { useRef, useState, useCallback, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Placeholder from "./Placeholder";
@@ -26,9 +26,10 @@ function ChevronRight() {
   );
 }
 
-export default function ImageCarousel({ items }) {
+export default function ImageCarousel({ items, autoDelay = 4000 }) {
   const piste = useRef(null);
   const [index, setIndex] = useState(0);
+  const [pause, setPause] = useState(false);
 
   const defiler = useCallback((dir) => {
     const el = piste.current;
@@ -46,8 +47,28 @@ export default function ImageCarousel({ items }) {
     setIndex(Math.round(el.scrollLeft / pas));
   }, []);
 
+  /* Auto-scroll — pauses on hover */
+  useEffect(() => {
+    if (pause) return;
+    const id = setInterval(() => {
+      const el = piste.current;
+      if (!el) return;
+      const carte = el.querySelector("[data-carte]");
+      const pas = carte ? carte.offsetWidth + 20 : 320;
+      const atEnd = el.scrollLeft >= el.scrollWidth - el.clientWidth - 10;
+      el.scrollTo({ left: atEnd ? 0 : el.scrollLeft + pas, behavior: "smooth" });
+    }, autoDelay);
+    return () => clearInterval(id);
+  }, [pause, autoDelay]);
+
   return (
-    <div className="relative" role="region" aria-label="Galerie d'images">
+    <div
+      className="relative"
+      role="region"
+      aria-label="Galerie d'images"
+      onMouseEnter={() => setPause(true)}
+      onMouseLeave={() => setPause(false)}
+    >
       {/* Track */}
       <div
         ref={piste}
