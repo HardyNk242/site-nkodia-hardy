@@ -220,6 +220,7 @@ const ACT_BASE   = "/images/Actualit%C3%A9s";
 const FW_BASE    = `${ACT_BASE}/Actualit%C3%A9_Fieldwork_2025-02-04`;
 const CONF_BASE  = `${ACT_BASE}/Actualit%C3%A9_conference_geologica_belgica_2021`;
 const KOREA_BASE = `${ACT_BASE}/Post-doc%20Cor%C3%A9e%20du%20Sud%20busan%20Mai%202025-2026`;
+const MRAC_BASE  = `${ACT_BASE}/Sejour-Post-doc%20Musee%20Royal%20Afrique%20Centrale%20Fev%202025-Mars%202025`;
 
 export const actualites = [
   {
@@ -308,6 +309,37 @@ export const actualites = [
         legende: {
           fr: "Retraite et méditation scientifique — Île de Geoje",
           en: "Scientific retreat and meditation — Geoje Island",
+        },
+      },
+    ],
+  },
+  {
+    id: "sejour-mrac-bruxelles-2025",
+    type: "sejour",
+    titre: {
+      fr: "Séjour de recherche — Musée Royal de l'Afrique Centrale",
+      en: "Research stay — Royal Museum for Central Africa",
+    },
+    sousTitre: {
+      fr: "Collaboration scientifique · Tervuren / Bruxelles, Belgique · Février – Mars 2025",
+      en: "Scientific collaboration · Tervuren / Brussels, Belgium · February – March 2025",
+    },
+    cover: `${MRAC_BASE}/Nkodia%20Hardy%20Bruxelles%20Fev%202025_Avec%20Camille%20Francois%2C%20Pasale%20Lahogue%2C%20et%20des%20doctorants.jfif`,
+    date: "Février – Mars 2025",
+    lieu: {
+      fr: "Tervuren / Bruxelles, Belgique",
+      en: "Tervuren / Brussels, Belgium",
+    },
+    description: {
+      fr: "En février–mars 2025, le Dr. Hardy Nkodia a effectué un séjour de recherche au Musée Royal de l'Afrique Centrale (MRAC) de Tervuren, en Belgique, dans le cadre de la bourse doctorale GeoRes4Dev. Ce séjour annuel de collaboration scientifique a réuni des chercheurs et doctorants autour des projets communs portant sur la cartographie des failles et des systèmes karstiques d'Afrique centrale.\n\nCe séjour a été l'occasion d'échanges fructueux avec Camille François et Pascale Lahogue (karstologie et patrimoine géologique), ainsi qu'avec des doctorants impliqués dans les recherches géologiques régionales. Ces collaborations ont contribué directement aux publications en cours, notamment sur l'inventaire des cavités karstiques du Groupe Schisto-Calcaire en République du Congo.",
+      en: "In February–March 2025, Dr. Hardy Nkodia conducted a research stay at the Royal Museum for Central Africa (MRAC) in Tervuren, Belgium, as part of the GeoRes4Dev doctoral fellowship. This annual scientific collaboration brought together researchers and doctoral students working on joint projects covering fault mapping and karst systems in Central Africa.\n\nThe stay provided fruitful exchanges with Camille François and Pascale Lahogue (karstology and geoheritage), as well as with doctoral students involved in regional geological research. These collaborations contributed directly to ongoing publications, including the inventory of karstic cavities of the Schisto-Calcaire Group in the Republic of the Congo.",
+    },
+    images: [
+      {
+        src: `${MRAC_BASE}/Nkodia%20Hardy%20Bruxelles%20Fev%202025_Avec%20Camille%20Francois%2C%20Pasale%20Lahogue%2C%20et%20des%20doctorants.jfif`,
+        legende: {
+          fr: "Avec Camille François, Pascale Lahogue et des doctorants — Bruxelles, Février 2025",
+          en: "With Camille François, Pascale Lahogue and doctoral students — Brussels, February 2025",
         },
       },
     ],

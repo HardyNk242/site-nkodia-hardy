@@ -130,6 +130,7 @@ export const tr = {
     rapport:     { fr: "Compte-rendu de terrain",       en: "Field report" },
     fieldwork:   { fr: "Terrain géologique",            en: "Geological fieldwork" },
     conference:  { fr: "Conférence scientifique",       en: "Scientific conference" },
+    sejour:      { fr: "Séjour de recherche",           en: "Research stay" },
   },
   cours: {
     hero:          { fr: "Cours",                     en: "Courses" },
