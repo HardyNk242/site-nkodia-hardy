@@ -52,7 +52,7 @@ export default function CV() {
             {T(tr.cv.telecharger)}
           </a>
           <p className="text-xs text-encre/50 mt-2 font-bitter italic">
-            Fichier PDF à déposer dans /public/cv/.
+            {T({ fr: "Fichier PDF à déposer dans /public/cv/.", en: "PDF file to be placed in /public/cv/." })}
           </p>
         </aside>
 
@@ -69,10 +69,10 @@ export default function CV() {
                     {e.periode}
                   </span>
                   <div>
-                    <p className="font-semibold leading-snug">{e.intitule}</p>
-                    <p className="text-sm text-encre/60">{e.lieu}</p>
+                    <p className="font-semibold leading-snug">{T(e.intitule)}</p>
+                    <p className="text-sm text-encre/60">{T(e.lieu)}</p>
                     {e.mention && (
-                      <p className="text-sm text-corail/75 italic mt-0.5">{e.mention}</p>
+                      <p className="text-sm text-corail/75 italic mt-0.5">{T(e.mention)}</p>
                     )}
                   </div>
                 </li>
@@ -83,7 +83,7 @@ export default function CV() {
           <Bloc titre={T(tr.cv.competences)}>
             <div className="flex flex-wrap gap-2">
               {cv.competences.map((c, i) => (
-                <span key={i} className="bg-surface border border-white/10 px-3 py-1.5 text-sm">{c}</span>
+                <span key={i} className="bg-surface border border-white/10 px-3 py-1.5 text-sm">{T(c)}</span>
               ))}
             </div>
           </Bloc>
@@ -93,14 +93,14 @@ export default function CV() {
               {cv.experience.map((x, i) => (
                 <li key={i} className="border-l-2 border-corail pl-4">
                   <p className="font-oswald uppercase text-xs tracking-wide text-encre/50">{x.periode}</p>
-                  <p className="font-semibold leading-snug mt-0.5">{x.poste}</p>
+                  <p className="font-semibold leading-snug mt-0.5">{T(x.poste)}</p>
                   <p className="text-sm text-encre/60">
-                    {x.institution}{x.lieu && ` — ${x.lieu}`}
+                    {x.institution}{x.lieu && ` — ${T(x.lieu)}`}
                   </p>
                   {x.details && x.details.length > 0 && (
                     <ul className="mt-1.5 space-y-0.5 list-disc pl-4">
                       {x.details.map((d, j) => (
-                        <li key={j} className="text-sm text-encre/75">{d}</li>
+                        <li key={j} className="text-sm text-encre/75">{T(d)}</li>
                       ))}
                     </ul>
                   )}
@@ -112,7 +112,7 @@ export default function CV() {
           <Bloc titre={T(tr.cv.distinctions)}>
             <ul className="space-y-3 list-disc pl-5 text-encre/80">
               {cv.distinctions.map((d, i) => (
-                <li key={i} className="leading-relaxed">{d}</li>
+                <li key={i} className="leading-relaxed">{T(d)}</li>
               ))}
             </ul>
           </Bloc>
