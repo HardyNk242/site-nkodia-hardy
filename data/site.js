@@ -216,11 +216,102 @@ export const equipe = [
   },
 ];
 
-const ACT_BASE  = "/images/Actualit%C3%A9s";
-const FW_BASE   = `${ACT_BASE}/Actualit%C3%A9_Fieldwork_2025-02-04`;
-const CONF_BASE = `${ACT_BASE}/Actualit%C3%A9_conference_geologica_belgica_2021`;
+const ACT_BASE   = "/images/Actualit%C3%A9s";
+const FW_BASE    = `${ACT_BASE}/Actualit%C3%A9_Fieldwork_2025-02-04`;
+const CONF_BASE  = `${ACT_BASE}/Actualit%C3%A9_conference_geologica_belgica_2021`;
+const KOREA_BASE = `${ACT_BASE}/Post-doc%20Cor%C3%A9e%20du%20Sud%20busan%20Mai%202025-2026`;
 
 export const actualites = [
+  {
+    id: "conference-gsk-jeju-2025",
+    type: "conference",
+    titre: {
+      fr: "Conférence Geological Society of Korea (GSK) 2025",
+      en: "Geological Society of Korea (GSK) Conference 2025",
+    },
+    sousTitre: {
+      fr: "Communication scientifique — Île de Jeju, Octobre 2025",
+      en: "Scientific communication — Jeju Island, October 2025",
+    },
+    cover: `${KOREA_BASE}/GSK%20conference%202025-Jeju%20Island_networkingwith%20Alexander%20Peace.jpg`,
+    date: "Octobre 2025",
+    lieu: {
+      fr: "Île de Jeju, Corée du Sud",
+      en: "Jeju Island, South Korea",
+    },
+    description: {
+      fr: "En octobre 2025, le Dr. Hardy Nkodia a participé à la conférence annuelle de la Geological Society of Korea (GSK), tenue sur l'île de Jeju. Cette conférence est l'un des principaux rendez-vous de la communauté géoscientifique coréenne et internationale.\n\nCette participation a été l'occasion de présenter les travaux menés dans le cadre du postdoc à la Pukyong National University sur les failles actives et l'aléa sismique en Corée du Sud. La conférence a également permis des échanges scientifiques fructueux, notamment avec le Dr. Alexander Peace, collaborateur international spécialisé en tectonique des plaques.",
+      en: "In October 2025, Dr. Hardy Nkodia participated in the annual conference of the Geological Society of Korea (GSK), held on Jeju Island. This conference is one of the main gatherings of the Korean and international geoscience community.\n\nThe event provided an opportunity to present research conducted during the postdoctoral fellowship at Pukyong National University on active faults and seismic hazard in South Korea. The conference also enabled fruitful scientific exchanges, notably with Dr. Alexander Peace, an international collaborator specialising in plate tectonics.",
+    },
+    images: [
+      {
+        src: `${KOREA_BASE}/GSK%20conference%202025-Jeju%20Island_networkingwith%20Alexander%20Peace.jpg`,
+        legende: {
+          fr: "Networking avec le Dr. Alexander Peace — Conférence GSK, Île de Jeju 2025",
+          en: "Networking with Dr. Alexander Peace — GSK Conference, Jeju Island 2025",
+        },
+      },
+      {
+        src: `${KOREA_BASE}/GSK-conference-Octobrer-Jeju%20Islan_Networking.jpg`,
+        legende: {
+          fr: "Échanges scientifiques — Conférence GSK, Île de Jeju, Octobre 2025",
+          en: "Scientific exchanges — GSK Conference, Jeju Island, October 2025",
+        },
+      },
+    ],
+  },
+  {
+    id: "postdoc-coree-du-sud-2025",
+    type: "fieldwork",
+    titre: {
+      fr: "Postdoc — Corée du Sud, Busan",
+      en: "Postdoc — South Korea, Busan",
+    },
+    sousTitre: {
+      fr: "Pukyong National University · Paléosismologie et failles actives · Mai 2025 – 2026",
+      en: "Pukyong National University · Palaeoseismology and active faults · May 2025 – 2026",
+    },
+    cover: `${KOREA_BASE}/Recherche%20de%20faille%20active%20apres%20creuser%20une%20tranchee.jpeg`,
+    date: "Mai 2025 – 2026",
+    lieu: {
+      fr: "Busan, Corée du Sud",
+      en: "Busan, South Korea",
+    },
+    description: {
+      fr: "Depuis mai 2025, le Dr. Hardy Nkodia effectue un séjour postdoctoral à la Pukyong National University (Busan, Corée du Sud), au sein du Active Fault and Earthquake Hazard Mitigation Research Institute. Ces travaux portent sur la paléosismologie de la péninsule coréenne, en particulier sur l'identification et la caractérisation des failles actives par fouille de tranchées paléosismiques.\n\nLes campagnes de terrain ont permis de creuser des tranchées à travers des failles supposées actives, d'identifier des marqueurs stratigraphiques de ruptures passées et de documenter des structures à mouvement inverse. Ces données contribuent à l'évaluation de l'aléa sismique dans une région qui, malgré l'absence de frontière de plaque majeure à proximité, est sujette à des séismes significatifs.\n\nEn parallèle, des retraites scientifiques avec l'équipe du laboratoire ont été organisées sur l'île de Geoje, favorisant les échanges scientifiques et la cohésion de groupe.",
+      en: "Since May 2025, Dr. Hardy Nkodia has been conducting a postdoctoral fellowship at Pukyong National University (Busan, South Korea), within the Active Fault and Earthquake Hazard Mitigation Research Institute. The research focuses on the palaeoseismology of the Korean peninsula, in particular the identification and characterisation of active faults through palaeoseismic trenching.\n\nField campaigns involved excavating trenches across suspected active faults, identifying stratigraphic markers of past ruptures, and documenting fault structures with reverse movement. These data contribute to seismic hazard assessment in a region that, despite lying far from a major plate boundary, experiences significant earthquakes.\n\nIn parallel, scientific retreats with the laboratory team were organised on Geoje Island, fostering scientific exchange and team cohesion.",
+    },
+    images: [
+      {
+        src: `${KOREA_BASE}/Recherche%20de%20faille%20active%20apres%20creuser%20une%20tranchee.jpeg`,
+        legende: {
+          fr: "Recherche de faille active après creusement d'une tranchée paléosismique — Busan, Corée du Sud",
+          en: "Searching for an active fault after palaeoseismic trench excavation — Busan, South Korea",
+        },
+      },
+      {
+        src: `${KOREA_BASE}/Decouverte%20dune%20faille%20active%20mouvement%20inverse.jpg`,
+        legende: {
+          fr: "Découverte d'une faille active à mouvement inverse dans la tranchée",
+          en: "Discovery of an active reverse-motion fault in the trench",
+        },
+      },
+      {
+        src: `${KOREA_BASE}/Scientific%20retreat%20for%20the%20Lab%2C%202%20day%20retreat%20Gogje%20Island.jpg`,
+        legende: {
+          fr: "Retraite scientifique de l'équipe du laboratoire — Île de Geoje (2 jours)",
+          en: "Laboratory team scientific retreat — Geoje Island (2 days)",
+        },
+      },
+      {
+        src: `${KOREA_BASE}/Scientific_retreat%20and%20meditation%20Godze%20Island%20.jpg`,
+        legende: {
+          fr: "Retraite et méditation scientifique — Île de Geoje",
+          en: "Scientific retreat and meditation — Geoje Island",
+        },
+      },
+    ],
+  },
   {
     id: "terrain-belgique-france-2025",
     type: "fieldwork",
