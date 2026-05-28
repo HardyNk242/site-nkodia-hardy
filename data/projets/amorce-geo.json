@@ -6,7 +6,8 @@
   },
   "periode": "Septembre 2025 — Août 2027",
   "financement": "ARES-AMORCE 2025",
-  "logo": "/images/projets/amorce-geo-logo.png",
+  "logo": "/images/projet%20Amorce.jpg",
+  "images": ["/images/projet%20Amorce.jpg", "/images/projet%20Amorce2.jpg"],
   "resume": {
     "fr": "Réseau universitaire international Nord–Sud–Sud pour renforcer la formation en géosciences en Afrique centrale, autour de cinq institutions partenaires.",
     "en": "International North–South–South university network to strengthen geoscience education in Central Africa, around five partner institutions."

@@ -2,6 +2,7 @@
 
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import { useLang } from "@/contexts/LanguageContext";
 import { tr } from "@/data/translations";
@@ -102,6 +103,27 @@ export default function ProjetDetail({ params }) {
           <h2 className="font-oswald uppercase text-xl mb-2">{T(tr.engagement.monRole)}</h2>
           <p className="prose-site text-sm">{T(projet.monRole)}</p>
         </section>
+
+        {/* ── Photos ───────────────────────────────────────────────── */}
+        {projet.images && projet.images.length > 0 && (
+          <section className="mb-14">
+            <h2 className="font-oswald uppercase text-2xl mb-3">Photos</h2>
+            <span className="barre-corail" />
+            <div className="grid gap-4 sm:grid-cols-2">
+              {projet.images.map((img, i) => (
+                <div key={i} className="relative aspect-[4/3] rounded-sm overflow-hidden bg-surface">
+                  <Image
+                    src={img}
+                    alt={`${T(projet.titre)} — photo ${i + 1}`}
+                    fill
+                    sizes="(max-width:640px) 100vw, 50vw"
+                    className="object-cover object-center"
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* ── Documents ────────────────────────────────────────────── */}
         <section>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import { useLang } from "@/contexts/LanguageContext";
 import { tr } from "@/data/translations";
@@ -30,11 +31,23 @@ export default function Engagement() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {projets.map((p) => (
               <article key={p.id} className="carte flex flex-col group overflow-hidden">
-                {/* Logo / image placeholder */}
-                <div className="relative h-36 bg-surface flex items-center justify-center border-b border-white/8">
-                  <span className="font-oswald uppercase text-corail text-lg tracking-wide px-4 text-center leading-tight">
-                    {p.id.toUpperCase()}
-                  </span>
+                {/* Photo ou placeholder */}
+                <div className="relative h-36 bg-surface border-b border-white/8 overflow-hidden">
+                  {p.logo ? (
+                    <Image
+                      src={p.logo}
+                      alt={T(p.titre)}
+                      fill
+                      sizes="(max-width:768px) 100vw, (max-width:1024px) 50vw, 33vw"
+                      className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="flex items-center justify-center h-full w-full">
+                      <span className="font-oswald uppercase text-corail text-lg tracking-wide px-4 text-center leading-tight">
+                        {p.id.toUpperCase()}
+                      </span>
+                    </div>
+                  )}
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <span className="text-xs font-oswald uppercase tracking-wide text-corail mb-1">
