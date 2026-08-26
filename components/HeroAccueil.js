@@ -18,7 +18,8 @@ import { profil } from "@/data/site";
 
 export default function HeroAccueil() {
   const { T, lang } = useLang();
-  const cv = lang === "en" ? "/cv/CV_Nkodia_Hardy_EN.pdf" : "/cv/CV_Nkodia_Hardy_FR.pdf";
+  const cv =
+    lang === "en" ? "/cv/CV_Nkodia_Hardy_EN_web.pdf" : "/cv/CV_Nkodia_Hardy_FR_web.pdf";
 
   return (
     <header className="relative overflow-hidden bg-clair">

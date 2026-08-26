@@ -18,10 +18,12 @@ function Bloc({ titre, children }) {
 
 export default function CV() {
   const { T, lang } = useLang();
-  /* Version longue (3 p.) et version courte (1 p.), dans la langue affichée. */
+  /* Version longue (3 p.) et version courte (1 p.), dans la langue affichée.
+     Suffixe _web : variantes épurées, sans date de naissance, sans téléphone
+     et sans les coordonnées des référents. Sources dans cv-sources/. */
   const suffixe = lang === "en" ? "EN" : "FR";
-  const cvLong = `/cv/CV_Nkodia_Hardy_${suffixe}.pdf`;
-  const cvCourt = `/cv/CV_Nkodia_Hardy_${suffixe}_court.pdf`;
+  const cvLong = `/cv/CV_Nkodia_Hardy_${suffixe}_web.pdf`;
+  const cvCourt = `/cv/CV_Nkodia_Hardy_${suffixe}_court_web.pdf`;
 
   return (
     <>
@@ -73,12 +75,6 @@ export default function CV() {
               <a href={profil.liens.scholar} target="_blank" rel="noopener noreferrer" className="lien-corail text-sm">Scholar →</a>
             </div>
           </div>
-          <a href="/cv/cv-nkodia-hardy.pdf" className="btn-corail w-full mt-4">
-            {T(tr.cv.telecharger)}
-          </a>
-          <p className="text-xs text-encre/50 mt-2 font-bitter italic">
-            {T({ fr: "Fichier PDF à déposer dans /public/cv/.", en: "PDF file to be placed in /public/cv/." })}
-          </p>
         </aside>
 
         <div>

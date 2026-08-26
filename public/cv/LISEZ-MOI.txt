@@ -1,4 +1,12 @@
-Déposez ici le curriculum vitae au format PDF.
+Versions WEB du curriculum vitae — epurees.
 
-Nom de fichier attendu par la page « CV » :
-  cv-nkodia-hardy.pdf
+Ces PDF sont librement telechargeables depuis le site. Ils ne contiennent
+NI date de naissance, NI numero de telephone, NI coordonnees des referents.
+Ne deposez jamais ici la version complete destinee aux candidatures.
+
+  CV_Nkodia_Hardy_FR_web.pdf        version longue, francais
+  CV_Nkodia_Hardy_EN_web.pdf        version longue, anglais
+  CV_Nkodia_Hardy_FR_court_web.pdf  version courte, francais
+  CV_Nkodia_Hardy_EN_court_web.pdf  version courte, anglais
+
+Sources LaTeX et procedure de regeneration : ../../cv-sources/

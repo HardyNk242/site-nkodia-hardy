@@ -1,0 +1,178 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx} % Times-like serif (Elsevier body font)
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage[official]{eurosym}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\setlength{\headheight}{14pt}
+
+\definecolor{accent}{HTML}{000000}
+\definecolor{accent2}{HTML}{000000}
+\definecolor{grey}{HTML}{000000}
+\hypersetup{colorlinks=true, urlcolor=accent2, linkcolor=accent2}
+
+% avoid wrong hyphenation (no French patterns installed); keep lines from overflowing
+\hyphenpenalty=10000 \exhyphenpenalty=10000 \tolerance=9999 \emergencystretch=3em
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[{\vspace{-0.4ex}\color{accent}\titlerule[1pt]}]
+\titlespacing*{\section}{0pt}{1.15ex}{0.6ex}
+
+\setlist[itemize]{leftmargin=1.35em, itemsep=1.5pt, topsep=2pt, parsep=0pt, label=\textbullet}
+
+\newcommand{\dateb}[1]{{\small\itshape\color{grey}#1}}
+\newcommand{\cvrow}[2]{%
+  \noindent\makebox[2.7cm][l]{\dateb{#1}}%
+  \parbox[t]{\dimexpr\linewidth-2.7cm\relax}{#2}\par\smallskip}
+
+% --- Elsevier-style page furniture ---
+\fancypagestyle{cvrun}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0.5pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+  \renewcommand{\headrule}{{\color{accent}\hrule height\headrulewidth}}%
+  \fancyhead[L]{\small\itshape\color{grey}H.\,M.\,D.-V. Nkodia\ \ /\ \ Curriculum Vit\ae}%
+  \fancyhead[R]{\small\color{accent}\thepage\,/\,\pageref{LastPage}}%
+}
+\fancypagestyle{cvfirst}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+  \fancyfoot[C]{\small\color{grey}\thepage\,/\,\pageref{LastPage}}%
+}
+\pagestyle{cvrun}
+
+\begin{document}
+\thispagestyle{cvfirst}
+
+\noindent{\color{accent}\rule{\linewidth}{1.3pt}}\\[3.5pt]
+{\footnotesize\scshape\color{grey} Curriculum Vit\ae\hfill Brazzaville, R\'epublique du Congo \ \textbullet\ \ Ao\^ut 2026}\\[5pt]
+{\Huge\bfseries\color{accent} Dr. NKODIA Hardy Medry Dieu-Veil}\\[3pt]
+{\large\itshape\color{accent2} Géologue — Tectonique, géodynamique et géologie structurale}\\[5pt]
+{\small\color{grey} Nationalité congolaise \ \textbullet\ Brazzaville, République du Congo}\\[3pt]
+{\small Email : \href{mailto:nkodiahardy@gmail.com}{nkodiahardy@gmail.com} \ \textbullet\ \href{https://www.researchgate.net/profile/Hardy-Medry-Dieu-Veil-Nkodia}{ResearchGate} \ \textbullet\ \href{https://scholar.google.com/citations?user=gYOI-FkAAAAJ&hl=fr}{Google Scholar} \ \textbullet\ \href{https://orcid.org/0000-0001-6919-6863}{ORCID 0000-0001-6919-6863} \ \textbullet\ \href{https://nkodiahardy.com}{nkodiahardy.com}}\\[6pt]
+\noindent{\color{accent2}\rule{\linewidth}{0.5pt}}
+
+\section{Profil}
+Enseignant-chercheur en géologie structurale et tectonique, spécialisé dans l'analyse des paléocontraintes, la réactivation des failles et l'aléa sismique intraplaque en Afrique centrale. Approche de terrain couplée à la télédétection et à la modélisation des contraintes.
+
+\section{Axes de recherche}
+Architecture des réservoirs failles/fractures (Inkisi, région du Pool)~; géomorphologie et érosion du bassin du Congo~; minéralisations, déformation des roches et aquifères~; aléa sismique et cinématique des failles sur la marge riftée d'Afrique centrale.
+
+\section{Formation}
+\cvrow{2019 – 2024}{\textbf{Doctorat en Géosciences} — Université Marien Ngouabi (Congo) \& Musée royal de l'Afrique centrale (Belgique). Tectonique, géodynamique et géologie structurale. Mention très honorable avec félicitations du jury.}
+\cvrow{2015 – 2017}{\textbf{Master en Géosciences} — Université Marien Ngouabi (Congo). Mention Bien~; major de promotion.}
+\cvrow{2012 – 2015}{\textbf{Licence en Géosciences} — Université Marien Ngouabi (Congo). Mention Assez bien~; 2\textsuperscript{e} de promotion.}
+\cvrow{2011}{\textbf{Baccalauréat série D} — Lycée Chaminade, Brazzaville. Mention Bien~; 1\textsuperscript{er} de l'établissement.}
+
+\section{Certifications}
+\cvrow{2023 – 2024}{\textbf{Certificat professionnel — Gestion de projet}, Google (en ligne).}
+\cvrow{2023}{\textbf{Rédiger et publier un article scientifique} (pédagogie par projet), École Polytechnique, Paris (en ligne).}
+\cvrow{2022}{\textbf{Cartographie des zones humides}, Lab. de Télédétection et d'Écologie Forestière, ENS, Congo.}
+\cvrow{2019}{\textbf{Initiation à la télédétection radar}, IGNFI / Université Marien Ngouabi / AFD.}
+
+\section{Expérience académique et professionnelle}
+\cvrow{2025 – présent}{\textbf{Assistant} (poste titularisable / \emph{tenure-track}, en voie de promotion au grade d'Assistant Professor) — Université Marien Ngouabi, Faculté des Sciences et Techniques, Dép. de Géologie (Congo).
+\begin{itemize}
+\item Enseignement et recherche en géologie structurale~; encadrement de mémoires de Master.
+\item Cours magistral de Géologie structurale (L2)~; travaux pratiques de Pétrologie–Minéralogie.
+\end{itemize}}
+\cvrow{2025 – 2026}{\textbf{Chercheur post-doctoral} — Pukyong National University, Busan (Corée du Sud), en congé de recherche de l'Université Marien Ngouabi. Champ de contraintes actuel et structures sismogènes de la péninsule coréenne~: inversion des mécanismes au foyer et analyse du \emph{slip tendency}.}
+\cvrow{Août – sept. 2026}{\textbf{Séjour de recherche} — Musée royal de l'Afrique centrale (MRAC), Tervuren (Belgique). Chaîne Ouest-congolienne et systèmes karstiques.}
+\cvrow{Févr. – mars 2025}{\textbf{Chercheur post-doctoral} (séjour de recherche) — Musée royal de l'Afrique centrale (MRAC), Tervuren (Belgique).}
+\cvrow{2018 – 2024}{\textbf{Enseignant-chercheur} — Université Marien Ngouabi, FST, Dép. de Géologie (Congo).
+\begin{itemize}
+\item Conception de dispositifs pédagogiques par projet axés sur la géologie de terrain.
+\item Co-organisation d'une conférence internationale de géologie.
+\item Auteur / co-auteur de plusieurs articles dans des revues internationales à comité de lecture.
+\end{itemize}}
+\cvrow{2019 – 2021}{\textbf{Assistant de recherche} — Musée royal de l'Afrique centrale (MRAC), Tervuren (Belgique).
+\begin{itemize}
+\item Co-organisation de la 1\textsuperscript{re} édition de la conférence internationale « Géologie et ressources naturelles en Afrique centrale : impact sociétal et développement durable au Congo ».
+\item Participation à l'organisation d'une réunion du Tectonic Studies Group (Londres).
+\item Gestion d'un budget de recherche de \euro{}15\,000 sur 3 ans~; collaborations internationales.
+\end{itemize}}
+\cvrow{2019 – 2021}{\textbf{Enseignant} — École Africaine de Développement (EAD), Brazzaville (Congo). Introduction et enseignement du cours de géologie structurale.}
+
+\section{Financements et projets}
+\begin{itemize}
+\item \textbf{AMORCE-GEO (2025–2027)} — projet de coopération financé par l'ARES (Belgique). Rôle : \emph{co-organisateur et formateur}.
+\item \textbf{Budget de recherche MRAC} — \euro{}15\,000 sur 3 ans (2019–2021).
+\end{itemize}
+
+\section{Distinctions}
+\begin{itemize}
+\item Doctorat : mention très honorable avec félicitations du jury (2024).
+\item Major de promotion — Master de Géosciences (2017).
+\item 2\textsuperscript{e} de promotion — Licence de Géosciences (2015)~; 1\textsuperscript{er} de l'établissement — Baccalauréat (2011).
+\end{itemize}
+
+\section{Publications — articles à comité de lecture}
+\begin{enumerate}[leftmargin=1.6em, itemsep=3pt, topsep=2pt, label=\arabic*.]
+\item \textbf{Nkodia, H.\,M.\,D.-V.}, Hategekimana, F., Naik, S.\,P., Cheon, Y., Peace, A.\,L., Bae, S.-Y., Kandregula, R.\,S., \& Kim, Y.-S. (2026). Vertical kinematic partitioning in intraplate fault systems: evidence from the SE Korean Peninsula. \emph{Journal of Structural Geology}, \textbf{211}, 105778. \href{https://doi.org/10.1016/j.jsg.2026.105778}{doi:10.1016/j.jsg.2026.105778}
+\item \textbf{Nkodia, H.\,M.\,D.-V.}, Park, K., Naik, S.\,P., Peace, A.\,L., \& Kim, Y.-S. (2026). Assessing the contemporary stress field and seismogenic structures of the Korean peninsula using focal-mechanism inversion and slip-tendency analysis. \emph{Tectonophysics}, \textbf{934}, 231261. \href{https://doi.org/10.1016/j.tecto.2026.231261}{doi:10.1016/j.tecto.2026.231261}
+\item Colet, M., Kolawole, F., Ajala, R., Delvaux, D., \& \textbf{Nkodia, H.\,M.\,D.-V.} (2025). Active crustal deformation across a nucleating extensional microplate, D.\,R. Congo, East Africa. \emph{Tectonics}, 44, e2025TC008815. \href{https://doi.org/10.1029/2025TC008815}{doi:10.1029/2025TC008815}
+\item Mavoungou, Y.\,B., \textbf{Nkodia, H.\,M.\,D.-V.}, Watha-Ndoudy, N., \& Bolarinwa, A.\,T. (2024). Lineament extraction and paleostress analysis in the Bikélélé iron deposit (Chaillu Massif, Republic of Congo). \emph{Modeling Earth Systems and Environment}, 10(2), 1993–2009. \href{https://doi.org/10.1007/s40808-023-01883-3}{doi:10.1007/s40808-023-01883-3}
+\item Miyouna, T., Florent, B., \textbf{Nkodia, H.\,M.\,D.-V.}, \& Delvaux, D. (2024). The Cambro-Ordovician Gondwana alluvial megafan in Central Africa: insights from the Palaeozoic sandstones of the Inkisi Group. \emph{Journal of African Earth Sciences}, 209, 105109. \href{https://doi.org/10.1016/j.jafrearsci.2023.105109}{doi:10.1016/j.jafrearsci.2023.105109}
+\item \textbf{Nkodia, H.\,M.\,D.-V.}, Boudzoumou, F., Miyouna, T., Kongota, E., Ganza, G.\,B., Lahogue, P., \& Delvaux, D. (2024). Brittle faulting and tectonic stress history on the western margin of the Congo Basin between Kinshasa and Brazzaville. \emph{Tectonophysics}, 877, 230282. \href{https://doi.org/10.1016/j.tecto.2024.230282}{doi:10.1016/j.tecto.2024.230282}
+\item Loemba, A.\,P.\,R., Ferreira, A., Ntsiele, L.\,J.\,E.\,P., Opo, U.\,F., Bazebizonza Tchiguina, N.\,C., \textbf{Nkodia, H.\,M.\,D.-V.}, Klausen, M., \& Boudzoumou, F. (2023). Archean crustal generation and Neoproterozoic partial melting in the Ivindo basement, NW Congo craton. \emph{Journal of African Earth Sciences}, 200, 104852. \href{https://doi.org/10.1016/j.jafrearsci.2023.104852}{doi:10.1016/j.jafrearsci.2023.104852}
+\item \textbf{Nkodia, H.\,M.\,D.-V.}, Miyouna, T., Kolawole, F., Boudzoumou, F., Loemba, A.\,P.\,R., Bazebizonza Tchiguina, N.\,C., \& Delvaux, D. (2022). Seismogenic fault reactivation in western Central Africa: insights from regional stress analysis. \emph{Geochemistry, Geophysics, Geosystems}, 23(11), e2022GC010377. \href{https://doi.org/10.1029/2022GC010377}{doi:10.1029/2022GC010377}
+\item \textbf{Nkodia, H.\,M.\,D.-V.}, Miyouna, T., Delvaux, D., \& Boudzoumou, F. (2020). Flower structures in sandstones of the Palaeozoic Inkisi Group (Brazzaville, Republic of Congo). \emph{South African Journal of Geology}, 123(4), 531–550. \href{https://doi.org/10.25131/sajg.123.0038}{doi:10.25131/sajg.123.0038}
+\item Bazebizonza, N.\,C., Miyouna, T., \textbf{Nkodia, H.\,M.\,D.-V.}, \& Boudzoumou, F. (2020). Detection of neotectonic signatures by morphometric analysis of the Inkisi Group on both banks of the Congo River. \emph{Journal of Geosciences and Geomatics}, 8, 83–93. \href{https://doi.org/10.12691/jgg-8-2-4}{doi:10.12691/jgg-8-2-4}
+\item Miyouna, T., Bazebizonza, N.\,C., Florent, E., Kempena, A., \textbf{Nkodia, H.\,M.\,D.-V.}, \& Boudzoumou, F. (2020). Cartographie par traitement d'image satellitaire des linéaments du groupe de l'Inkisi en République du Congo : implications hydrogéologiques et minières. (16), 68–84.
+\item Nkodia, A., Bazebizonza, N.\,C., \& \textbf{Nkodia, H.\,M.\,D.-V.} (2020). Caractéristiques épidémiologiques et dynamique spatio-temporelle de la pandémie à COVID-19 en République du Congo, 2020. (21), 39–45.
+\item Miyouna, T., \textbf{Nkodia, H.\,M.\,D.-V.}, Essouli, O.\,F., Dabo, M., Boudzoumou, F., \& Delvaux, D. (2018). Strike-slip deformation in the Inkisi Formation, Brazzaville, Republic of Congo. \emph{Cogent Geoscience}, 4(1), 1542762. \href{https://doi.org/10.1080/23312041.2018.1542762}{doi:10.1080/23312041.2018.1542762}
+\end{enumerate}
+
+\section{Préprints}
+\begin{itemize}
+\item Loemba, R., \textbf{Nkodia, H.\,M.\,D.-V.}, Opo, U.\,F., Bazebizonza Tchiguina, N.\,C., Miyouna, T., \& Boudzoumou, F. (2022). A unified structural framework for major shear zones in the Ntem–Chaillu–Ivindo blocks. \emph{SSRN preprint}. \href{https://doi.org/10.2139/ssrn.4220669}{doi:10.2139/ssrn.4220669}
+\end{itemize}
+
+\section{Conférences invitées}
+\begin{itemize}
+\item \textbf{6 juillet 2026} — « Ocean–continent tectonic stresses and earthquake hazards of the Central African rifted margin ». Série de séminaires en ligne \emph{Earthquake Hazards of Rifted Margins}, Columbia University / Lamont-Doherty Earth Observatory (conveners : F. Kolawole \emph{et al.}). Enregistrement : \href{https://www.youtube.com/watch?v=lnRf0Jz0QbM}{YouTube}.
+\end{itemize}
+
+\section{Communications à des congrès (sélection)}
+\begin{itemize}\small
+\item \textbf{Nkodia, H.\,M.\,D.-V.}, Miyouna, T., Boudzoumou, F., \& Delvaux, D. (2021). Integration of flower structures in strike-slip fault damage zones classification. EGU General Assembly, Vienne.
+\item \textbf{Nkodia, H.\,M.\,D.-V.}, Boudzoumou, F., Miyouna, T., Ibarra-Gnianga, A., \& Delvaux, D. (2021). A progressive episode of deformation in the foreland of the West-Congo Belt. EGU General Assembly, Vienne.
+\item \textbf{Nkodia, H.\,M.\,D.-V.}, Delvaux, D., Boudzoumou, F., \& Miyouna, T. (2021). Paleostress reconstruction of brittle deformation in the foreland of the West-Congo Belt. Geologica Belgica International Meeting, Tervuren.
+\item Delvaux, D., Miyouna, T., Boudzoumou, F., \& \textbf{Nkodia, H.\,M.\,D.-V.} (2022). Combined paleostress reconstruction and slip tendency for a complex strike-slip fault system: the Pool area. EGU General Assembly, Vienne.
+\item Loemba, A.\,P., \textbf{Nkodia, H.\,M.\,D.-V.}, Bazebizonza, N.\,C., Miyouna, T., \& Boudzoumou, F. (2022). Tectonic and structural evolution of a major shear zone in the Ntem–Chaillu Block. Tectonic Studies Group Annual Meeting.
+\item \textbf{Nkodia, H.\,M.\,D.-V.}, Miyouna, T., Boudzoumou, F., Mbilou, U., Kongota, E., \& Florent, E. (2018). Style structural et tectonique de la formation de l'Inkisi (Brazzaville). Conférence de Géologie du Congo, Kinshasa.
+\end{itemize}
+
+\section{Responsabilités scientifiques et vulgarisation}
+\begin{itemize}
+\item \textbf{Fondateur \& Président de Kongo Science} (2019 – présent) — première bibliothèque scientifique numérique du Congo~; cours en ligne et en présentiel~; atelier avec la Pr. Francine Ntoumi réunissant près de 500 étudiants.
+\item \textbf{Fondateur du Laboratoire de Géodynamique et Ressources Naturelles (LGRN)}, Université Marien Ngouabi — rédaction des statuts et du règlement intérieur.
+\item Vulgarisation scientifique et médias (Dépêches de Brazzaville, Le Papyrus).
+\end{itemize}
+
+\section{Compétences et langues}
+\begin{itemize}
+\item Analyse tectonique et structurale~; reconstitution de paléocontraintes et analyse de la sismicité (slip tendency).
+\item Télédétection et cartographie SIG~; extraction de linéaments (DEM ALOS-PALSAR, imagerie satellitaire, drone).
+\item Pétrologie (roches sédimentaires, magmatiques, métamorphiques)~; préparation de lames minces~; géologie de terrain.
+\item Illustration scientifique (Adobe Illustrator)~; Python pour figures publiables (600 dpi)~; gestion de projet et budgétisation.
+\item Langues : français (langue maternelle), anglais (professionnel).
+\end{itemize}
+
+\section{Références}
+\begin{itemize}
+\item \textbf{Pr. Florent Boudzoumou} — Université Marien Ngouabi.
+\item \textbf{Pr. Averti Ifo} — Université Marien Ngouabi.
+\item \textbf{Dr. Damien Delvaux} — Senior Geologist~; Honorary Head, Geodynamics and Mineral Resources Unit~; Editor-in-Chief, \emph{Journal of African Earth Sciences}~; Musée royal de l'Afrique centrale, Tervuren.
+\item \emph{Coordonnées des référents disponibles sur demande.}
+\end{itemize}
+
+\end{document}
