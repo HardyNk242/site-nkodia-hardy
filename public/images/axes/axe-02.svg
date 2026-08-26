@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Reseau de drainage devie par une faille active, vue en plan">
+  <rect width="640" height="360" fill="#1A1C1A"/>
+  <ellipse cx="505" cy="95" rx="150" ry="92" fill="none" stroke="#A6A29C" stroke-width="1.4" opacity="0.18" transform="rotate(-18 505 95)"/>
+  <ellipse cx="505" cy="95" rx="110" ry="66" fill="none" stroke="#A6A29C" stroke-width="1.4" opacity="0.23" transform="rotate(-18 505 95)"/>
+  <ellipse cx="505" cy="95" rx="70" ry="42" fill="none" stroke="#A6A29C" stroke-width="1.4" opacity="0.28" transform="rotate(-18 505 95)"/>
+  <path d="M40 120 C110 150 150 150 214 178" fill="none" stroke="#C2A88D" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+  <path d="M120 34 C170 90 190 110 246 150" fill="none" stroke="#C2A88D" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+  <path d="M150 300 C215 268 240 250 286 224" fill="none" stroke="#C2A88D" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+  <path d="M470 250 C500 276 520 292 556 304" fill="none" stroke="#C2A88D" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+  <path d="M600 190 C560 232 540 258 512 286" fill="none" stroke="#C2A88D" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+  <path d="M28 66 C120 118 210 160 300 186 L340 198 L366 300 C420 322 500 330 616 336" fill="none" stroke="#C2A88D" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="286" y1="-10" x2="410" y2="370" stroke="#F4F1ED" stroke-width="2.6" stroke-dasharray="14 9" opacity="0.9"/>
+  <g opacity="0.8"><line x1="322.0" y1="150.0" x2="349.3" y2="132.3" stroke="#F4F1ED" stroke-width="2.2" stroke-linecap="round"/><polygon points="356.0,128.0 351.5,135.7 347.1,129.0" fill="#F4F1ED"/></g>
+  <g opacity="0.8"><line x1="352.0" y1="250.0" x2="324.7" y2="267.7" stroke="#F4F1ED" stroke-width="2.2" stroke-linecap="round"/><polygon points="318.0,272.0 322.5,264.3 326.9,271.0" fill="#F4F1ED"/></g>
+  <text x="602" y="330" text-anchor="end" font-family="Georgia,'Times New Roman',serif" font-size="150" font-weight="700" fill="#F4F1ED" opacity="0.10" letter-spacing="6">II</text>
+</svg>

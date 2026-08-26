@@ -1,7 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import Hero from "@/components/Hero";
-import Placeholder from "@/components/Placeholder";
 import { useLang } from "@/contexts/LanguageContext";
 import { tr } from "@/data/translations";
 import { themesRecherche } from "@/data/site";
@@ -22,10 +22,21 @@ export default function Recherches() {
         <div className="grid gap-8 md:grid-cols-2">
           {themesRecherche.map((t, i) => (
             <article key={i} className="carte overflow-hidden flex flex-col">
-              <Placeholder
-                label={`${T(tr.recherches.axe)} ${String(i + 1).padStart(2, "0")}`}
-                ratio="aspect-[16/9]"
-              />
+              {/* Schéma de l'axe — SVG, servi tel quel (l'optimiseur next/image
+                  ne traite pas les SVG sans dangerouslyAllowSVG) */}
+              <div className="relative w-full aspect-[16/9] bg-sombre">
+                <Image
+                  src={t.image}
+                  alt={T(t.titre)}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 560px"
+                  className="object-cover"
+                  unoptimized
+                />
+                <span className="absolute bottom-3 left-4 font-oswald uppercase text-xs tracking-[0.18em] text-corail">
+                  {T(tr.recherches.axe)} {String(i + 1).padStart(2, "0")}
+                </span>
+              </div>
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="font-oswald text-xl leading-snug">{T(t.titre)}</h3>
                 <p className="text-encre/75 leading-relaxed mt-3">{T(t.resume)}</p>

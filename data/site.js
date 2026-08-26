@@ -147,6 +147,11 @@ export const themesRecherche = [
       fr: "Évolution géodynamique et déformation multi-échelles",
       en: "Geodynamic evolution and multi-scale deformation",
     },
+    titreCourt: {
+      fr: "Déformation multi-échelles",
+      en: "Multi-scale deformation",
+    },
+    image: "/images/axes/axe-01.svg",
     resume: {
       fr: "Reconstituer l'histoire tectonique et cinématique des grands ensembles géologiques d'Afrique centrale par l'analyse intégrée des structures ductiles et cassantes, à l'échelle des bassins, des chaînes et du craton.",
       en: "Reconstructing the tectonic and kinematic history of the major geological domains of Central Africa through the integrated analysis of ductile and brittle structures, at basin, belt and craton scale.",
@@ -183,6 +188,11 @@ export const themesRecherche = [
       fr: "Dynamique géomorphologique, érosion et néotectonique",
       en: "Geomorphic dynamics, erosion and neotectonics",
     },
+    titreCourt: {
+      fr: "Géomorphologie & néotectonique",
+      en: "Geomorphology & neotectonics",
+    },
+    image: "/images/axes/axe-02.svg",
     resume: {
       fr: "Analyser l'évolution géomorphologique des paysages et quantifier les aléas de surface, en démêlant le contrôle de la tectonique récente des facteurs climatiques et anthropiques, à Brazzaville et dans le bassin du Congo.",
       en: "Analysing the geomorphic evolution of landscapes and quantifying surface hazards, disentangling the control of recent tectonics from climatic and anthropogenic factors, in Brazzaville and the Congo basin.",
@@ -219,6 +229,11 @@ export const themesRecherche = [
       fr: "Contrôle structural des fluides : minéralisations et aquifères",
       en: "Structural control of fluid flow: mineralisation and aquifers",
     },
+    titreCourt: {
+      fr: "Fluides, minéralisations & aquifères",
+      en: "Fluids, mineralisation & aquifers",
+    },
+    image: "/images/axes/axe-03.svg",
     resume: {
       fr: "Décrypter le rôle des structures tectoniques — charnières de plis, zones de failles, schistosités — comme drains ou barrières hydrauliques, afin de modéliser et prédire la localisation des gisements métallifères et des réservoirs hydrogéologiques.",
       en: "Deciphering the role of tectonic structures — fold hinges, fault zones, cleavage — as hydraulic conduits or barriers, in order to model and predict the location of metallic deposits and groundwater reservoirs.",
@@ -247,6 +262,11 @@ export const themesRecherche = [
       fr: "Champ de contraintes, mécanismes aux foyers et aléa sismique",
       en: "Stress field, focal mechanisms and seismic hazard",
     },
+    titreCourt: {
+      fr: "Aléa sismique",
+      en: "Seismic hazard",
+    },
+    image: "/images/axes/axe-04.svg",
     resume: {
       fr: "Évaluer l'aléa sismique actuel par une approche quantitative de mécanique des roches, reliant la sismicité historique et instrumentale aux propriétés structurales et géomécaniques de la croûte.",
       en: "Assessing present-day seismic hazard through a quantitative rock-mechanics approach, linking historical and instrumental seismicity to the structural and geomechanical properties of the crust.",

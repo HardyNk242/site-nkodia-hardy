@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Strates plissees decalees par une faille normale">
+  <rect width="640" height="360" fill="#1A1C1A"/>
+  <defs>
+    <clipPath id="a1g"><path d="M0 0 H398 L288 360 H0 Z"/></clipPath>
+    <clipPath id="a1d"><path d="M398 0 H640 V360 H288 Z"/></clipPath>
+  </defs>
+  <g clip-path="url(#a1g)" fill="none" stroke="#C2A88D" stroke-width="2.6" opacity="0.8">
+    <path d="M-60 50 q50 -30 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+    <path d="M-60 92 q50 -30 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+    <path d="M-60 134 q50 -30 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+    <path d="M-60 176 q50 -30 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+    <path d="M-60 218 q50 -30 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+    <path d="M-60 260 q50 -30 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+    <path d="M-60 302 q50 -30 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+  </g>
+  <g clip-path="url(#a1d)">
+    <g transform="translate(0,34)" fill="none" stroke="#C2A88D" stroke-width="2.6" opacity="0.55">
+      <path d="M-60 50 q50 -30 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+      <path d="M-60 92 q50 -30 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+      <path d="M-60 134 q50 -30 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+      <path d="M-60 176 q50 -30 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+      <path d="M-60 218 q50 -30 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+      <path d="M-60 260 q50 -30 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+      <path d="M-60 302 q50 -30 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+    </g>
+  </g>
+  <line x1="400" y1="-10" x2="286" y2="370" stroke="#F4F1ED" stroke-width="3.4" opacity="0.95"/>
+  <g opacity="0.85"><line x1="320.0" y1="152.4" x2="330.6" y2="116.9" stroke="#F4F1ED" stroke-width="2.4" stroke-linecap="round"/><polygon points="333.2,108.3 334.9,118.2 326.3,115.6" fill="#F4F1ED"/></g>
+  <g opacity="0.85"><line x1="377.4" y1="169.6" x2="366.8" y2="205.1" stroke="#F4F1ED" stroke-width="2.4" stroke-linecap="round"/><polygon points="364.2,213.7 362.5,203.8 371.1,206.4" fill="#F4F1ED"/></g>
+  <text x="602" y="330" text-anchor="end" font-family="Georgia,'Times New Roman',serif" font-size="150" font-weight="700" fill="#F4F1ED" opacity="0.10" letter-spacing="6">I</text>
+</svg>

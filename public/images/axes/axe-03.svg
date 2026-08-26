@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Reseau de fractures, mineralisations aux intersections et nappe">
+  <rect width="640" height="360" fill="#1A1C1A"/>
+  <line x1="52" y1="24" x2="528" y2="300" stroke="#C2A88D" stroke-width="2.1" opacity="0.62" stroke-linecap="round"/>
+  <line x1="572" y1="42" x2="108" y2="322" stroke="#C2A88D" stroke-width="2.1" opacity="0.62" stroke-linecap="round"/>
+  <line x1="18" y1="176" x2="622" y2="132" stroke="#C2A88D" stroke-width="2.1" opacity="0.62" stroke-linecap="round"/>
+  <line x1="312" y1="6" x2="352" y2="352" stroke="#C2A88D" stroke-width="2.1" opacity="0.62" stroke-linecap="round"/>
+  <line x1="160" y1="348" x2="452" y2="18" stroke="#C2A88D" stroke-width="2.1" opacity="0.62" stroke-linecap="round"/>
+  <circle cx="332.4" cy="186.6" r="11" fill="#C2A88D" opacity="0.16"/>
+  <circle cx="332.4" cy="186.6" r="4.6" fill="#F4F1ED"/>
+  <circle cx="281.1" cy="156.8" r="11" fill="#C2A88D" opacity="0.16"/>
+  <circle cx="281.1" cy="156.8" r="4.6" fill="#F4F1ED"/>
+  <circle cx="332.9" cy="186.9" r="11" fill="#C2A88D" opacity="0.16"/>
+  <circle cx="332.9" cy="186.9" r="4.6" fill="#F4F1ED"/>
+  <circle cx="312.9" cy="175.3" r="11" fill="#C2A88D" opacity="0.16"/>
+  <circle cx="312.9" cy="175.3" r="4.6" fill="#F4F1ED"/>
+  <circle cx="395.5" cy="148.5" r="11" fill="#C2A88D" opacity="0.16"/>
+  <circle cx="395.5" cy="148.5" r="4.6" fill="#F4F1ED"/>
+  <circle cx="332.8" cy="186.3" r="11" fill="#C2A88D" opacity="0.16"/>
+  <circle cx="332.8" cy="186.3" r="4.6" fill="#F4F1ED"/>
+  <circle cx="268.9" cy="224.9" r="11" fill="#C2A88D" opacity="0.16"/>
+  <circle cx="268.9" cy="224.9" r="4.6" fill="#F4F1ED"/>
+  <circle cx="329.0" cy="153.3" r="11" fill="#C2A88D" opacity="0.16"/>
+  <circle cx="329.0" cy="153.3" r="4.6" fill="#F4F1ED"/>
+  <circle cx="332.5" cy="153.1" r="11" fill="#C2A88D" opacity="0.16"/>
+  <circle cx="332.5" cy="153.1" r="4.6" fill="#F4F1ED"/>
+  <circle cx="329.4" cy="156.5" r="11" fill="#C2A88D" opacity="0.16"/>
+  <circle cx="329.4" cy="156.5" r="4.6" fill="#F4F1ED"/>
+  <path d="M-20 306 q60 -14 120 0 t120 0 t120 0 t120 0 t120 0 t120 0 V380 H-20 Z" fill="#C2A88D" opacity="0.10"/>
+  <path d="M-20 306 q60 -14 120 0 t120 0 t120 0 t120 0 t120 0 t120 0" fill="none" stroke="#F4F1ED" stroke-width="2.4" opacity="0.85" stroke-dasharray="3 7" stroke-linecap="round"/>
+  <text x="602" y="330" text-anchor="end" font-family="Georgia,'Times New Roman',serif" font-size="150" font-weight="700" fill="#F4F1ED" opacity="0.10" letter-spacing="6">III</text>
+</svg>
