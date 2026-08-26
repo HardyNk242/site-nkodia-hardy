@@ -27,3 +27,9 @@ Thumbs.db
 
 # Old site drafts
 My-site-main/
+
+.vercel
+
+# Secrets / cles de recuperation - ne jamais committer
+Bitlocker_key_recovery*
+*recovery_key*

@@ -22,13 +22,37 @@ export default function Recherches() {
         <div className="grid gap-8 md:grid-cols-2">
           {themesRecherche.map((t, i) => (
             <article key={i} className="carte overflow-hidden flex flex-col">
-              <Placeholder label={T(t.titre)} ratio="aspect-[16/9]" />
-              <div className="p-6">
-                <span className="font-oswald text-corail text-sm">
-                  {T(tr.recherches.axe)} {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="font-oswald text-xl mt-1 leading-snug">{T(t.titre)}</h3>
+              <Placeholder
+                label={`${T(tr.recherches.axe)} ${String(i + 1).padStart(2, "0")}`}
+                ratio="aspect-[16/9]"
+              />
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="font-oswald text-xl leading-snug">{T(t.titre)}</h3>
                 <p className="text-encre/75 leading-relaxed mt-3">{T(t.resume)}</p>
+
+                {/* Sub-themes A / B / C — the numbered, scannable breakdown */}
+                {t.sousThemes?.length > 0 && (
+                  <ul className="mt-6 pt-5 border-t border-white/8 space-y-4" role="list">
+                    {t.sousThemes.map((st) => (
+                      <li key={st.lettre} className="flex gap-3">
+                        <span
+                          className="font-oswald text-corail text-sm shrink-0 leading-6"
+                          aria-hidden="true"
+                        >
+                          {st.lettre}
+                        </span>
+                        <div>
+                          <p className="font-oswald text-encre text-base leading-snug">
+                            {T(st.titre)}
+                          </p>
+                          <p className="text-encre-lt text-sm leading-relaxed mt-1">
+                            {T(st.detail)}
+                          </p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </article>
           ))}

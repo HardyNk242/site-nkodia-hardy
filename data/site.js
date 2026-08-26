@@ -143,39 +143,140 @@ export const carrousel = [
 
 export const themesRecherche = [
   {
-    titre: { fr: "Tectonique de la chaîne du Mayombe", en: "Tectonics of the Mayombe belt" },
-    resume: {
-      fr: "Analyse de la déformation polyphasée de la chaîne panafricaine du Mayombe : superposition de phases de plissement, zones de cisaillement ductile et reconstitution des trajectoires de contraintes.",
-      en: "Analysis of polyphase deformation in the Pan-African Mayombe belt: superposition of folding phases, ductile shear zones and reconstruction of palaeostress trajectories.",
+    titre: {
+      fr: "Évolution géodynamique et déformation multi-échelles",
+      en: "Geodynamic evolution and multi-scale deformation",
     },
+    resume: {
+      fr: "Reconstituer l'histoire tectonique et cinématique des grands ensembles géologiques d'Afrique centrale par l'analyse intégrée des structures ductiles et cassantes, à l'échelle des bassins, des chaînes et du craton.",
+      en: "Reconstructing the tectonic and kinematic history of the major geological domains of Central Africa through the integrated analysis of ductile and brittle structures, at basin, belt and craton scale.",
+    },
+    sousThemes: [
+      {
+        lettre: "A",
+        titre: { fr: "Couverture sédimentaire — Inkisi / Pool", en: "Sedimentary cover — Inkisi / Pool" },
+        detail: {
+          fr: "Architecture des zones de dommage de la faille du Pool, quantification par drone et satellite des réseaux de fractures et de leurs gradients de maturité, chronologie des phases de déformation et micromécanique des grès sous charge.",
+          en: "Architecture of the Pool fault damage zones, drone- and satellite-based quantification of fracture networks and their maturity gradients, chronology of deformation phases, and micromechanics of sandstones under load.",
+        },
+      },
+      {
+        lettre: "B",
+        titre: { fr: "Plis, linéations et fabriques ductiles", en: "Folds, lineations and ductile fabrics" },
+        detail: {
+          fr: "Transition ductile–cassant, cinématique des linéations d'étirement et géométrie des plis dans le bassin du Niari, la chaîne du Mayombe et le domaine paléoprotérozoïque.",
+          en: "Ductile–brittle transition, kinematics of stretching lineations and fold geometry across the Niari basin, the Mayombe belt and the Palaeoproterozoic domain.",
+        },
+      },
+      {
+        lettre: "C",
+        titre: { fr: "Héritage structural du craton", en: "Structural inheritance of the craton" },
+        detail: {
+          fr: "Cartographie et cinématique des grands systèmes de cisaillement affectant le craton du Congo.",
+          en: "Mapping and kinematics of the major shear systems affecting the Congo craton.",
+        },
+      },
+    ],
   },
   {
-    titre: { fr: "Réseaux de fractures et paléocontraintes", en: "Fracture networks and palaeostress" },
-    resume: {
-      fr: "Inversion des données de failles striées et des réseaux de joints pour reconstituer les champs de paléocontraintes successifs affectant le bassin sédimentaire côtier congolais.",
-      en: "Inversion of slickenside fault data and joint networks to reconstruct successive palaeostress fields affecting the Congolese coastal sedimentary basin.",
+    titre: {
+      fr: "Dynamique géomorphologique, érosion et néotectonique",
+      en: "Geomorphic dynamics, erosion and neotectonics",
     },
+    resume: {
+      fr: "Analyser l'évolution géomorphologique des paysages et quantifier les aléas de surface, en démêlant le contrôle de la tectonique récente des facteurs climatiques et anthropiques, à Brazzaville et dans le bassin du Congo.",
+      en: "Analysing the geomorphic evolution of landscapes and quantifying surface hazards, disentangling the control of recent tectonics from climatic and anthropogenic factors, in Brazzaville and the Congo basin.",
+    },
+    sousThemes: [
+      {
+        lettre: "A",
+        titre: { fr: "Processus érosifs et dynamique des versants", en: "Erosion processes and hillslope dynamics" },
+        detail: {
+          fr: "Inventaire, typologie et suivi temporel des érosions en ravines à Brazzaville ; caractérisation des sols et dynamique hydrologique des bassins versants urbains.",
+          en: "Inventory, typology and temporal monitoring of gully erosion in Brazzaville; soil characterisation and hydrological dynamics of urban catchments.",
+        },
+      },
+      {
+        lettre: "B",
+        titre: { fr: "Dynamique sédimentaire fluviale", en: "Fluvial sediment dynamics" },
+        detail: {
+          fr: "Quantification de l'ensablement du fleuve Congo à Brazzaville : granulométrie, volumes sédimentaires et vitesse de dépôt.",
+          en: "Quantifying sand accumulation in the Congo River at Brazzaville: grain size, sediment volumes and deposition rates.",
+        },
+      },
+      {
+        lettre: "C",
+        titre: { fr: "Morphotectonique et endokarsts", en: "Morphotectonics and endokarst" },
+        detail: {
+          fr: "Signatures néotectoniques du paysage — indices morphométriques, paléoséismes, déflexions de rivières — et spéléogenèse sous contrôle structural.",
+          en: "Neotectonic signatures in the landscape — morphometric indices, palaeoearthquakes, river deflections — and structurally controlled speleogenesis.",
+        },
+      },
+    ],
   },
   {
-    titre: { fr: "Géologie structurale appliquée à l'aléa sismique", en: "Structural geology and seismic hazard" },
-    resume: {
-      fr: "Caractérisation des failles actives et de leur segmentation autour de Brazzaville en vue d'une meilleure évaluation de l'aléa sismotectonique régional.",
-      en: "Characterisation of active faults and their segmentation around Brazzaville with a view to improved seismotectonic hazard assessment in the region.",
+    titre: {
+      fr: "Contrôle structural des fluides : minéralisations et aquifères",
+      en: "Structural control of fluid flow: mineralisation and aquifers",
     },
+    resume: {
+      fr: "Décrypter le rôle des structures tectoniques — charnières de plis, zones de failles, schistosités — comme drains ou barrières hydrauliques, afin de modéliser et prédire la localisation des gisements métallifères et des réservoirs hydrogéologiques.",
+      en: "Deciphering the role of tectonic structures — fold hinges, fault zones, cleavage — as hydraulic conduits or barriers, in order to model and predict the location of metallic deposits and groundwater reservoirs.",
+    },
+    sousThemes: [
+      {
+        lettre: "A",
+        titre: { fr: "Métallogénie structurale et pétro-fabriques", en: "Structural metallogeny and petrofabrics" },
+        detail: {
+          fr: "Analyse structurale et pétrographique des complexes magmatiques et métamorphiques ; guides structuraux des minéralisations hydrothermales et filoniennes (or, diamant) et cartes-inventaires.",
+          en: "Structural and petrographic analysis of magmatic and metamorphic complexes; structural guides to hydrothermal and vein-hosted mineralisation (gold, diamond) and inventory mapping.",
+        },
+      },
+      {
+        lettre: "B",
+        titre: { fr: "Hydrogéologie structurale et réservoirs", en: "Structural hydrogeology and reservoirs" },
+        detail: {
+          fr: "Perméabilité et productivité des aquifères des grès de l'Inkisi en fonction de la densité des linéaments et des zones de failles ; réseau piézométrique de la nappe de Brazzaville et calage lithostratigraphique.",
+          en: "Permeability and yield of the Inkisi sandstone aquifers as a function of lineament and fault-zone density; piezometric network of the Brazzaville aquifer and lithostratigraphic calibration.",
+        },
+      },
+    ],
   },
   {
-    titre: { fr: "Mécanismes de déformation et microstructures", en: "Deformation mechanisms and microstructures" },
-    resume: {
-      fr: "Étude pétrographique et microtectonique des roches de faille et des mylonites pour contraindre les conditions pression-température de la déformation.",
-      en: "Petrographic and microtectonic study of fault rocks and mylonites to constrain the pressure-temperature conditions of deformation.",
+    titre: {
+      fr: "Champ de contraintes, mécanismes aux foyers et aléa sismique",
+      en: "Stress field, focal mechanisms and seismic hazard",
     },
-  },
-  {
-    titre: { fr: "Géologie structurale et ressources", en: "Structural geology and resources" },
     resume: {
-      fr: "Contrôle structural des minéralisations et des réservoirs : rôle des fractures et des zones de cisaillement dans la circulation des fluides crustaux.",
-      en: "Structural control of mineralisations and reservoirs: the role of fractures and shear zones in crustal fluid circulation.",
+      fr: "Évaluer l'aléa sismique actuel par une approche quantitative de mécanique des roches, reliant la sismicité historique et instrumentale aux propriétés structurales et géomécaniques de la croûte.",
+      en: "Assessing present-day seismic hazard through a quantitative rock-mechanics approach, linking historical and instrumental seismicity to the structural and geomechanical properties of the crust.",
     },
+    sousThemes: [
+      {
+        lettre: "A",
+        titre: { fr: "Sismotectonique et tenseur de contrainte", en: "Seismotectonics and stress tensor" },
+        detail: {
+          fr: "Constitution d'un catalogue des mécanismes aux foyers régionaux et inversion des données sismologiques pour modéliser le tenseur de contrainte réduit actuel (orientations de σ₁, σ₂, σ₃ et rapport de forme R).",
+          en: "Compiling a catalogue of regional focal mechanisms and inverting seismological data to model the present-day reduced stress tensor (orientations of σ₁, σ₂, σ₃ and shape ratio R).",
+        },
+      },
+      {
+        lettre: "B",
+        titre: { fr: "Tendance au glissement (slip tendency)", en: "Slip tendency" },
+        detail: {
+          fr: "Modélisation quantitative de la tendance au glissement et à la réactivation des failles majeures — notamment la faille du Pool — sous le champ de contraintes actuel, en combinant les essais géomécaniques.",
+          en: "Quantitative modelling of the slip and reactivation tendency of major faults — notably the Pool fault — under the present-day stress field, combined with geomechanical testing.",
+        },
+      },
+      {
+        lettre: "C",
+        titre: { fr: "Surveillance instrumentale", en: "Instrumental monitoring" },
+        detail: {
+          fr: "Conception, déploiement et traitement des données des premiers réseaux de séismographes régionaux (sismicité naturelle et induite).",
+          en: "Design, deployment and data processing of the first regional seismograph networks (natural and induced seismicity).",
+        },
+      },
+    ],
   },
 ];
 

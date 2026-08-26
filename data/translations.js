@@ -57,8 +57,8 @@ export const tr = {
     },
     thematiques:   { fr: "Thématiques de recherche", en: "Research themes" },
     bio:           {
-      fr: "Les travaux du Dr. Nkodia Hardy combinent levés de terrain, analyse microtectonique et reconstitution des paléocontraintes. Ils visent à décrire la déformation des terrains précambriens et des bassins sédimentaires de la République du Congo, à différentes échelles d'observation.",
-      en: "Dr. Nkodia Hardy's research combines field surveys, microtectonic analysis and palaeostress reconstruction. It aims to describe deformation in Precambrian terranes and sedimentary basins of the Republic of the Congo, across different scales of observation.",
+      fr: "Le programme de recherche du Dr. Nkodia Hardy s'articule autour de quatre axes, de la déformation profonde de la croûte continentale jusqu'à ses expressions de surface. Il combine levés de terrain, imagerie drone et satellite, analyse microtectonique, inversion des contraintes et modélisation géomécanique, appliqués aux bassins sédimentaires, aux chaînes plissées et au craton d'Afrique centrale.",
+      en: "Dr. Nkodia Hardy's research programme is built around four themes, from deep deformation of the continental crust to its expression at the surface. It combines field surveys, drone and satellite imagery, microtectonic analysis, stress inversion and geomechanical modelling, applied to the sedimentary basins, fold belts and craton of Central Africa.",
     },
     axe:           { fr: "Axe",                      en: "Theme" },
     terrains:      { fr: "Terrains d'étude",          en: "Study areas" },

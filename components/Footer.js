@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useLang } from "@/contexts/LanguageContext";
 import { tr } from "@/data/translations";
+import { profil } from "@/data/site";
 
 export default function Footer() {
   const { T } = useLang();
@@ -55,7 +56,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm" role="list">
             <li>
               <a
-                href="https://www.researchgate.net/profile/Nkodia-Hardy-Medry-Dieu-Veil"
+                href={profil.liens.researchgate}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-corail transition-colors duration-150 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-corail"
@@ -65,7 +66,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="https://scholar.google.com/citations?user=nkodia-hardy"
+                href={profil.liens.scholar}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-corail transition-colors duration-150 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-corail"
@@ -75,10 +76,10 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="mailto:hardy.nkodia@umng.cg"
+                href={`mailto:${profil.liens.email}`}
                 className="hover:text-corail transition-colors duration-150 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-corail"
               >
-                hardy.nkodia@umng.cg
+                {profil.liens.email}
               </a>
             </li>
           </ul>
