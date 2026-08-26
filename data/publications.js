@@ -13,6 +13,16 @@ export const publications = [
     items: [
       {
         type: "Article",
+        axes: [4, 1],
+        ref: "Nkodia, H. M. D.-V., Hategekimana, F., Naik, S. P., Cheon, Y., Peace, A. L., Bae, S.-Y., Kandregula, R. S., & Kim, Y.-S. (2026). Vertical kinematic partitioning in intraplate fault systems: Evidence from the SE Korean Peninsula. Journal of Structural Geology, 211, 105778.",
+        doi: "10.1016/j.jsg.2026.105778",
+        resumePublic: {
+          fr: "Dans les régions sismiques éloignées des frontières de plaques, les séismes profonds indiquent des mouvements de coulissage horizontal, alors que les traces laissées en surface témoignent surtout de chevauchements. On attribuait d'ordinaire cette contradiction à un changement du champ de contraintes au cours du temps. Menée dans le sud-est de la péninsule coréenne, cette étude montre qu'il s'agit en réalité d'un effet de profondeur : les failles profondes, redressées à la verticale, coulissent, tandis que leurs ramifications superficielles, peu inclinées, chevauchent — la signature d'une structure en fleur. Conséquence directe pour l'évaluation du risque : se fier aux seules tranchées creusées en surface conduit à sous-estimer gravement le potentiel de séismes majeurs des racines profondes des failles.",
+          en: "In seismic regions far from plate boundaries, deep earthquakes indicate horizontal strike-slip motion, whereas the record left at the surface is dominated by reverse faulting. This contradiction was usually explained as a shift in the stress field over time. Working in the southeastern Korean Peninsula, this study shows it is instead an effect of depth: deep, steeply dipping faults slip laterally, while their shallow, low-angle splays accommodate reverse motion — the signature of a positive flower structure. The direct consequence for hazard assessment is that relying on surface trenching alone severely underestimates the large-magnitude strike-slip potential of deep fault cores.",
+        },
+      },
+      {
+        type: "Article",
         axes: [4],
         ref: "Nkodia, H. M. D.-V., Park, K., Naik, S. P., Peace, A. L., & Kim, Y.-S. (2026). Assessing the contemporary stress field and seismogenic structures of the Korean peninsula using focal-mechanism inversion and slip-tendency analysis. Tectonophysics, art. 231261. In Press.",
         doi: "10.1016/j.tecto.2026.231261",

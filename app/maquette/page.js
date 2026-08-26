@@ -101,8 +101,13 @@ export default function Maquette() {
           </g>
         </svg>
 
-        <div className="relative max-w-content mx-auto px-5 py-20 md:py-28 grid gap-12 md:grid-cols-[1.35fr_1fr] items-center">
-          <div>
+        {/* Colonne texte + citation à gauche, portrait à droite. Le portrait
+            s'étire sur les deux rangées : il court du sommet du hero jusqu'au
+            bas du bandeau de citation. Sur mobile la grille retombe sur une
+            colonne (texte, portrait, citation), d'où le placement explicite
+            en col-start / row-start pour md et au-delà. */}
+        <div className="relative max-w-content mx-auto px-5 grid gap-x-12 md:grid-cols-[1.35fr_1fr] md:grid-rows-[1fr_auto]">
+          <div className="py-16 md:py-24 md:col-start-1 md:row-start-1">
             <p
               className="font-oswald uppercase text-xs tracking-[0.22em] mb-5"
               style={{ color: OCRE_TEXTE }}
@@ -150,38 +155,36 @@ export default function Maquette() {
             </div>
           </div>
 
-          {/* Portrait posé proprement sur un côté */}
-          <div className="relative justify-self-center w-[260px] md:w-[300px]">
+          {/* Portrait pleine hauteur, sur les deux rangées */}
+          <div className="relative min-h-[460px] md:min-h-0 md:col-start-2 md:row-start-1 md:row-span-2">
+            <Image
+              src="/images/photo-nkodia-hardy2.jpg"
+              alt="Dr. Nkodia Hardy Medry Dieu-Veil"
+              fill
+              sizes="(max-width: 768px) 100vw, 480px"
+              className="object-cover object-top"
+              priority
+            />
+            {/* Fondu léger sur le bord gauche : évite l'effet d'image collée */}
             <div
               aria-hidden="true"
-              className="absolute -inset-3"
-              style={{ backgroundColor: SABLE, opacity: 0.55 }}
+              className="absolute inset-0"
+              style={{
+                background: `linear-gradient(to right, ${IVOIRE} 0%, transparent 15%)`,
+              }}
             />
-            <div className="relative aspect-[3/4]">
-              <Image
-                src="/images/photo-nkodia-hardy2.jpg"
-                alt="Dr. Nkodia Hardy Medry Dieu-Veil"
-                fill
-                sizes="300px"
-                className="object-cover object-top"
-              />
-            </div>
           </div>
-        </div>
-      </header>
 
-      {/* ══════════════════ CITATION — conservée, resserrée ══════════════════ */}
-      <section style={{ backgroundColor: VERT }}>
-        <div className="max-w-content mx-auto px-5 py-14">
+          {/* Citation — bas de la colonne de gauche, alignée sur le bas du portrait */}
           <blockquote
-            className="font-bitter italic text-xl md:text-2xl leading-relaxed max-w-4xl"
-            style={{ color: IVOIRE }}
+            className="font-bitter italic text-lg md:text-xl leading-relaxed px-8 py-10 md:col-start-1 md:row-start-2"
+            style={{ backgroundColor: VERT, color: IVOIRE }}
           >
             « La roche garde la mémoire des forces qui l&apos;ont déformée : lire une
             structure, c&apos;est remonter le temps des contraintes. »
           </blockquote>
         </div>
-      </section>
+      </header>
 
       {/* <div> et non <main> : le layout en fournit déjà un, et le HTML
           n'autorise qu'un seul élément main par document. */}
