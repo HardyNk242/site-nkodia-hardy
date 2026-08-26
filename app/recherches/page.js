@@ -5,6 +5,15 @@ import Hero from "@/components/Hero";
 import { useLang } from "@/contexts/LanguageContext";
 import { tr } from "@/data/translations";
 import { themesRecherche } from "@/data/site";
+import { publications } from "@/data/publications";
+
+/** Nombre de publications rattachées à un axe (1-4). */
+function compterPublications(axe) {
+  return publications.reduce(
+    (n, bloc) => n + bloc.items.filter((it) => it.axes?.includes(axe)).length,
+    0
+  );
+}
 
 export default function Recherches() {
   const { T } = useLang();
@@ -64,6 +73,15 @@ export default function Recherches() {
                     ))}
                   </ul>
                 )}
+
+                {/* Vers les publications de cet axe */}
+                <a
+                  href={`/publications#axe-0${i + 1}`}
+                  className="mt-auto pt-5 border-t border-white/8 font-oswald uppercase text-sm tracking-wide text-corail hover:text-encre transition-colors duration-150 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-corail"
+                >
+                  {compterPublications(i + 1)}{" "}
+                  {T({ fr: "publications rattachées", en: "linked publications" })} →
+                </a>
               </div>
             </article>
           ))}
