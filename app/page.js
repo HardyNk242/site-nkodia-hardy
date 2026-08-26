@@ -20,44 +20,13 @@ export default function Accueil() {
 
   return (
     <>
-      {/*
-        ── Shared background for Hero + Citation ──────────────────────
-        Both sit on the same rock-texture image. The citation section
-        uses a semi-transparent overlay so the texture shows through.
-      */}
-      <div
-        style={{
-          backgroundColor: "#1A1C1A",
-          backgroundImage: "url(/images/hero-bg2.jpg)",
-          backgroundSize: "100% auto",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center top",
-        }}
-      >
-        <HeroAccueil />
-
-        {/* Citation — sits ON TOP of the info card (higher z-index) */}
-        <section
-          className="pb-16 border-b border-white/6"
-          style={{
-            paddingTop: 240,      /* absorbs the -220 margin + a bit of breathing room */
-            background: "rgba(26,28,26,0.58)",
-            position: "relative",
-            zIndex: 10,           /* appears in front of the card's z-index: 2        */
-          }}
-        >
-          <div className="max-w-content mx-auto px-5">
-            <h2 className="titre-section">{T(tr.home.profil)}</h2>
-            <span className="barre-corail" />
-            <blockquote className="font-bitter italic text-xl md:text-2xl text-encre/80 leading-relaxed max-w-3xl">
-              {T(profil.citation)}
-            </blockquote>
-          </div>
-        </section>
-      </div>
+      {/* Le hero porte désormais l'accroche, le portrait pleine hauteur et la
+          citation. L'ancien fond sombre partagé et la section « Profil » qui
+          répétait la citation ont disparu avec le passage au fond ivoire. */}
+      <HeroAccueil />
 
       {/* Récentes publications */}
-      <section className="bg-surface border-y border-white/8">
+      <section className="bg-surface border-y border-black/10">
         <div className="max-w-content mx-auto px-5 py-16">
           <h2 className="titre-section">{T(tr.home.pubsRecentes)}</h2>
           <span className="barre-corail" />
@@ -166,7 +135,7 @@ export default function Accueil() {
       </section>
 
       {/* Vidéo phare */}
-      <section className="bg-surface border-y border-white/8">
+      <section className="bg-surface border-y border-black/10">
         <div className="max-w-content mx-auto px-5 py-16 grid gap-8 md:grid-cols-2 items-center">
           <div className="relative w-full aspect-video rounded-sm overflow-hidden bg-sombre">
             <iframe
@@ -192,7 +161,7 @@ export default function Accueil() {
       </section>
 
       {/* Actualités */}
-      <section className="bg-surface border-t border-white/8">
+      <section className="bg-surface border-t border-black/10">
         <div className="max-w-content mx-auto px-5 py-16">
           <h2 className="titre-section">{T(tr.home.actualites)}</h2>
           <span className="barre-corail" />
@@ -220,7 +189,7 @@ export default function Accueil() {
       </section>
 
       {/* Bandeau profils */}
-      <section className="bg-sombre text-encre border-t border-white/8">
+      <section className="bg-sombre text-encre-inv border-t border-white/10">
         <div className="max-w-content mx-auto px-5 py-14 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <p className="font-oswald uppercase text-2xl md:text-3xl">
             {T(tr.home.suivre)}
@@ -233,7 +202,7 @@ export default function Accueil() {
               href={profil.liens.scholar}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 border-2 border-encre/40 text-encre/80 font-oswald uppercase tracking-wide text-sm px-5 py-2.5 transition hover:border-corail hover:text-corail"
+              className="inline-flex items-center justify-center gap-2 border-2 border-encre-inv/45 text-encre-inv font-oswald uppercase tracking-wide text-sm px-5 py-2.5 transition hover:border-ocre-vif hover:text-ocre-vif"
             >
               Google Scholar
             </a>

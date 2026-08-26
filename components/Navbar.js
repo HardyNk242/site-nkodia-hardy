@@ -51,10 +51,10 @@ export default function Navbar() {
           className="flex flex-col leading-none group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-corail focus-visible:ring-offset-2"
           aria-label="Dr. Nkodia Hardy — Accueil"
         >
-          <span className="font-oswald uppercase font-bold text-lg tracking-wide group-hover:text-corail transition-colors duration-150">
-            Nkodia <span className="text-corail">Hardy</span>
+          <span className="font-oswald uppercase font-bold text-lg tracking-wide text-encre-inv group-hover:text-ocre-vif transition-colors duration-150">
+            Nkodia <span className="text-ocre-vif">Hardy</span>
           </span>
-          <span className="text-[10px] uppercase tracking-[0.2em] text-encre/55">
+          <span className="text-[10px] uppercase tracking-[0.2em] text-encre-inv/60">
             {T(tr.nav.sousTitre)}
           </span>
         </Link>
@@ -68,8 +68,8 @@ export default function Navbar() {
                 className={`font-oswald uppercase text-sm tracking-wide px-3 py-2 inline-block transition-colors duration-150
                   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-corail focus-visible:ring-offset-2
                   ${estActif(l.href)
-                    ? "text-corail border-b-2 border-corail pb-1.5"
-                    : "text-encre/70 hover:text-corail"
+                    ? "text-ocre-vif border-b-2 border-ocre-vif pb-1.5"
+                    : "text-encre-inv/75 hover:text-ocre-vif"
                   }`}
                 aria-current={estActif(l.href) ? "page" : undefined}
               >
@@ -86,7 +86,7 @@ export default function Navbar() {
                 aria-pressed={lang === "fr"}
                 aria-label="Français"
                 className={`min-w-[44px] min-h-[36px] px-3 transition-colors duration-150
-                  ${lang === "fr" ? "bg-corail text-sombre" : "text-encre/70 hover:bg-white/8"}`}
+                  ${lang === "fr" ? "bg-ocre-vif text-sombre" : "text-encre-inv/75 hover:bg-white/10"}`}
               >
                 FR
               </button>
@@ -95,7 +95,7 @@ export default function Navbar() {
                 aria-pressed={lang === "en"}
                 aria-label="English"
                 className={`min-w-[44px] min-h-[36px] px-3 transition-colors duration-150
-                  ${lang === "en" ? "bg-corail text-sombre" : "text-encre/70 hover:bg-white/8"}`}
+                  ${lang === "en" ? "bg-ocre-vif text-sombre" : "text-encre-inv/75 hover:bg-white/10"}`}
               >
                 EN
               </button>
@@ -115,7 +115,7 @@ export default function Navbar() {
               aria-pressed={lang === "fr"}
               aria-label="Français"
               className={`min-w-[44px] min-h-[44px] px-2.5 transition-colors duration-150
-                ${lang === "fr" ? "bg-corail text-sombre" : "text-encre/70"}`}
+                ${lang === "fr" ? "bg-ocre-vif text-sombre" : "text-encre-inv/75"}`}
             >
               FR
             </button>
@@ -124,7 +124,7 @@ export default function Navbar() {
               aria-pressed={lang === "en"}
               aria-label="English"
               className={`min-w-[44px] min-h-[44px] px-2.5 transition-colors duration-150
-                ${lang === "en" ? "bg-corail text-sombre" : "text-encre/70"}`}
+                ${lang === "en" ? "bg-ocre-vif text-sombre" : "text-encre-inv/75"}`}
             >
               EN
             </button>
@@ -137,8 +137,8 @@ export default function Navbar() {
             aria-expanded={ouvert}
             aria-controls="mobile-menu"
             onClick={() => setOuvert((v) => !v)}
-            className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center text-encre
-              hover:text-corail transition-colors duration-150
+            className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center text-encre-inv
+              hover:text-ocre-vif transition-colors duration-150
               focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-corail focus-visible:ring-offset-2"
           >
             <svg
@@ -176,8 +176,8 @@ export default function Navbar() {
                 className={`flex items-center font-oswald uppercase text-sm tracking-wide px-5 min-h-[52px] border-b border-white/8
                   transition-colors duration-150
                   ${estActif(l.href)
-                    ? "text-corail border-l-4 border-l-corail pl-4"
-                    : "text-encre/70 hover:text-corail hover:bg-white/5"
+                    ? "text-ocre-vif border-l-4 border-l-ocre-vif pl-4"
+                    : "text-encre-inv/75 hover:text-ocre-vif hover:bg-white/5"
                   }`}
               >
                 {l.label}

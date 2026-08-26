@@ -33,9 +33,9 @@ export default function Hero({ titre, sousTitre, image, position = "center" }) {
       <div className="max-w-content mx-auto px-5 py-20 md:py-32 relative z-10">
         {/* Accent bar */}
         <span
-          className="block w-14 h-[3px] bg-corail mb-6"
+          className="block w-14 h-[3px] bg-ocre-vif mb-6"
           aria-hidden="true"
-          style={{ boxShadow: "0 0 8px rgba(194,168,141,0.5)" }}
+          style={{ boxShadow: "0 0 8px rgba(200,121,59,0.5)" }}
         />
 
         <h1

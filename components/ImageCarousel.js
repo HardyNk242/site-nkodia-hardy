@@ -93,7 +93,7 @@ export default function ImageCarousel({ items, autoDelay = 4000 }) {
                 )}
                 {it.href && (
                   <div className="absolute inset-0 bg-sombre/0 group-hover:bg-sombre/30 transition-colors duration-300 flex items-end justify-end p-3">
-                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs font-oswald uppercase tracking-wide text-encre bg-sombre/70 px-2 py-1 rounded-sm">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs font-oswald uppercase tracking-wide text-encre-inv bg-sombre/75 px-2 py-1 rounded-sm">
                       Voir →
                     </span>
                   </div>

@@ -1,215 +1,110 @@
 "use client";
 
+/**
+ * Écran d'ouverture de la page d'accueil — direction « Atlas tectonique ».
+ *
+ * Fond ivoire avec un filigrane de strates et de failles, portrait à droite
+ * courant du sommet jusqu'au bas du bandeau de citation, accroche vulgarisée
+ * et deux appels à l'action.
+ *
+ * Toutes les couleurs passent par les jetons Tailwind : aucun hexadécimal en
+ * dur, pour que la palette reste pilotée depuis tailwind.config.js.
+ */
+
 import Image from "next/image";
+import Link from "next/link";
 import { useLang } from "@/contexts/LanguageContext";
 import { profil } from "@/data/site";
 
-/**
- * Home-page hero
- *  • hero-bg2.jpg fills the full width without horizontal cropping
- *  • Photo and card start at the very top, filling 100 vh
- *  • Photo edges are diffused via CSS mask-image (no hard border)
- *  • Card opacity raised to 0.96 for legibility
- *  • SVG icons for ResearchGate and Google Scholar
- *  • Green accent (#1E7A40) throughout
- */
 export default function HeroAccueil() {
-  const { T } = useLang();
-
-  const CARD_W  = 400;       /* px — same for portrait and info box */
-  const SAND    = "#C2A88D"; /* sandstone accent */
-  const SAND_DK = "#A8906B";
+  const { T, lang } = useLang();
+  const cv = lang === "en" ? "/cv/CV_Nkodia_Hardy_EN.pdf" : "/cv/CV_Nkodia_Hardy_FR.pdf";
 
   return (
-    <section
-      className="w-full relative overflow-visible"
-      aria-label="Présentation — Dr. Nkodia Hardy"
-      style={{ minHeight: "100vh" }}
-    >
-      {/* Side vignettes — rock texture fades into dark body bg */}
-      <div
+    <header className="relative overflow-hidden bg-clair">
+      {/* Filigrane : strates plissées recoupées par deux failles */}
+      <svg
         aria-hidden="true"
-        className="absolute inset-0 pointer-events-none z-[1]"
-        style={{
-          background:
-            "linear-gradient(to right, rgba(26,28,26,0.55) 0%, transparent 18%, transparent 82%, rgba(26,28,26,0.55) 100%)",
-        }}
-      />
-
-      {/*
-        items-start  → portrait + card are anchored at the very top
-        items-stretch → both reach the same height
-        justify-center → the pair is centred horizontally in the background
-      */}
-      <div className="relative z-10 w-full flex items-start justify-center">
-        <div className="flex items-stretch justify-center">
-
-          {/* ── Portrait — visible lg+, hidden below ─────────────────── */}
-          <div
-            className="hidden lg:block relative shrink-0"
-            style={{
-              width: CARD_W,
-              minHeight: "100vh",
-              /*
-                mask-image:
-                  top    → transparent 0 % → opaque at 6 %   (fade-in from top)
-                  bottom → opaque at 88 %  → transparent 100 % (fade-out at bottom)
-                  right  → opaque 0 %      → transparent 100 % (blend into card)
-                  All three gradients intersect so only the fully-visible area shows.
-              */
-              WebkitMaskImage:
-                "linear-gradient(to bottom, transparent 0%, black 6%, black 88%, transparent 100%), " +
-                "linear-gradient(to right,  black 0%, black 72%, transparent 100%)",
-              maskImage:
-                "linear-gradient(to bottom, transparent 0%, black 6%, black 88%, transparent 100%), " +
-                "linear-gradient(to right,  black 0%, black 72%, transparent 100%)",
-              WebkitMaskComposite: "destination-in",
-              maskComposite: "intersect",
-            }}
-          >
-            <Image
-              src="/images/photo-nkodia-hardy2.jpg"
-              alt="Dr. Nkodia Hardy Medry Dieu-Veil"
-              fill
-              sizes={`${CARD_W}px`}
-              className="object-cover object-top"
-              priority
+        viewBox="0 0 1200 560"
+        preserveAspectRatio="none"
+        className="absolute inset-0 w-full h-full"
+      >
+        <g stroke="currentColor" fill="none" className="text-vert" opacity="0.10">
+          {[0, 1, 2, 3, 4, 5, 6].map((i) => (
+            <path
+              key={i}
+              strokeWidth="1.2"
+              d={`M-60 ${60 + i * 80} q150 -36 300 0 t300 0 t300 0 t300 0`}
             />
+          ))}
+          <path d="M770 -20 L650 580" strokeWidth="2.4" opacity="0.55" />
+          <path d="M330 -20 L240 580" strokeWidth="2.4" opacity="0.55" />
+        </g>
+      </svg>
+
+      {/* Colonne texte + citation à gauche, portrait à droite sur les deux
+          rangées. Sur mobile : texte, portrait, citation. */}
+      <div className="relative max-w-content mx-auto px-5 grid gap-x-12 md:grid-cols-[1.35fr_1fr] md:grid-rows-[1fr_auto]">
+        <div className="py-16 md:py-24 md:col-start-1 md:row-start-1">
+          <p className="font-oswald uppercase text-xs tracking-[0.22em] text-corail mb-5">
+            {T({
+              fr: "Afrique centrale · Asie de l'Est · Géologie structurale",
+              en: "Central Africa · East Asia · Structural geology",
+            })}
+          </p>
+
+          <h1 className="font-oswald uppercase leading-[1.05] text-4xl md:text-6xl text-vert">
+            {T({ fr: "Comprendre les failles.", en: "Understand the faults." })}
+            <br />
+            {T({ fr: "Lire les contraintes.", en: "Read the stresses." })}
+            <br />
+            <span className="text-corail">
+              {T({ fr: "Réduire les risques.", en: "Reduce the risk." })}
+            </span>
+          </h1>
+
+          <p className="mt-7 text-lg leading-relaxed max-w-xl text-encre">
+            {T({
+              fr: "Géologue structuraliste. Enseignant-chercheur à l'Université Marien Ngouabi de Brazzaville et ancien postdoctorant à l'Université Nationale de Pukyong, en Corée du Sud. Mes travaux portent sur la tectonique, les paléocontraintes et les failles actives en Afrique centrale et en Asie de l'Est.",
+              en: "Structural geologist. Lecturer-researcher at Marien Ngouabi University in Brazzaville and former postdoctoral researcher at Pukyong National University, South Korea. My work addresses tectonics, palaeostress and active faults in Central Africa and East Asia.",
+            })}
+          </p>
+
+          <div className="mt-9 flex flex-wrap gap-3">
+            <Link href="/recherches" className="btn-corail">
+              {T({ fr: "Découvrir mes recherches", en: "Explore my research" })}
+            </Link>
+            <a href={cv} download className="btn-contour">
+              {T({ fr: "Télécharger mon CV", en: "Download my CV" })}
+            </a>
           </div>
-
-          {/* ── Info box — same width as portrait ────────────────────── */}
-          <div
-            className="flex flex-col justify-center px-8 py-10 relative w-full lg:w-auto lg:shrink-0"
-            style={{
-              width: CARD_W,
-              minHeight: "100vh",
-              background: "rgba(26, 28, 26, 0.62)",
-              backdropFilter: "blur(10px)",
-              WebkitBackdropFilter: "blur(10px)",
-              /* large negative margin so the card sinks under the profile section */
-              marginBottom: -220,
-              /* z-index lower than the profile section → card goes BEHIND it */
-              zIndex: 2,
-            }}
-          >
-            {/* Sandstone accent bar */}
-            <span
-              className="block w-10 h-[3px] mb-5"
-              style={{ backgroundColor: SAND }}
-              aria-hidden="true"
-            />
-
-            {/* Name */}
-            <h1
-              className="font-oswald uppercase font-bold leading-tight"
-              style={{ fontSize: 24, color: "#F4F1ED" }}
-            >
-              Dr. Hardy Nkodia
-            </h1>
-
-            {/* Professional title */}
-            <p
-              className="font-oswald uppercase tracking-widest mt-1.5 leading-snug"
-              style={{ fontSize: 11, color: "#A6A29C" }}
-            >
-              {T(profil.titre)}
-            </p>
-
-            {/* Divider */}
-            <div
-              aria-hidden="true"
-              className="mt-5 mb-5"
-              style={{
-                width: "100%",
-                maxWidth: 300,
-                height: 1,
-                backgroundColor: `${SAND}55`,
-              }}
-            />
-
-            {/* Biography */}
-            <div
-              className="space-y-3 font-sans text-justify"
-              style={{ fontSize: 13, lineHeight: 1.65, color: "rgba(244,241,237,0.82)" }}
-            >
-              <p>
-                {T({
-                  fr: "Bonjour ! Je suis géologue structuraliste, enseignant-chercheur à l'Université Marien Ngouabi de Brazzaville et ancien postdoctorant à l'Université Nationale de Pukyong (Busan, Corée du Sud).",
-                  en: "Hello! I am a structural geologist, lecturer-researcher at Marien Ngouabi University in Brazzaville, and former postdoctoral researcher at Pukyong National University (Busan, South Korea).",
-                })}
-              </p>
-              <p>
-                {T({
-                  fr: "Mes travaux portent sur la cinématique des failles, l'inversion des contraintes tectoniques et la déformation cassante de la croûte continentale en Afrique centrale et en Asie de l'Est.",
-                  en: "My research focuses on fault kinematics, tectonic stress inversion, and brittle deformation of the continental crust in Central Africa and East Asia.",
-                })}
-              </p>
-              <p>
-                {T({
-                  fr: "Fondateur de l'association Kongo Science, je m'engage pour le renforcement des capacités scientifiques sur le continent africain.",
-                  en: "As founder of the Kongo Science association, I am committed to building scientific capacity across the African continent.",
-                })}
-              </p>
-            </div>
-
-            {/* Spacer — pushes icons to the bottom */}
-            <div className="flex-grow" />
-
-            {/* Second divider */}
-            <div
-              aria-hidden="true"
-              className="mb-5"
-              style={{ height: 1, backgroundColor: "rgba(244,241,237,0.10)" }}
-            />
-
-            {/* Profile icons — centred at the bottom of the card */}
-            <div className="flex items-center justify-center gap-5">
-
-              {/* ResearchGate */}
-              <a
-                href={profil.liens.researchgate}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="ResearchGate"
-                className="flex items-center justify-center rounded-sm transition-all duration-150"
-                style={{ width: 44, height: 44, background: "rgba(255,255,255,0.08)" }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = `${SAND}33`)}
-                onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.08)")}
-              >
-                <Image
-                  src="/images/ResearchGate_icon_SVG.svg.png"
-                  alt="ResearchGate"
-                  width={28}
-                  height={28}
-                  className="object-contain"
-                />
-              </a>
-
-              {/* Google Scholar */}
-              <a
-                href={profil.liens.scholar}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Google Scholar"
-                className="flex items-center justify-center rounded-sm transition-all duration-150"
-                style={{ width: 44, height: 44, background: "rgba(255,255,255,0.08)" }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = `${SAND}33`)}
-                onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.08)")}
-              >
-                <Image
-                  src="/images/Google_Scholar_logo.svg.png"
-                  alt="Google Scholar"
-                  width={28}
-                  height={28}
-                  className="object-contain"
-                />
-              </a>
-            </div>
-          </div>
-          {/* ── end info box ── */}
-
         </div>
+
+        {/* Portrait pleine hauteur */}
+        <div className="relative min-h-[460px] md:min-h-0 md:col-start-2 md:row-start-1 md:row-span-2">
+          <Image
+            src="/images/photo-nkodia-hardy2.jpg"
+            alt={profil.nom}
+            fill
+            sizes="(max-width: 768px) 100vw, 480px"
+            className="object-cover object-top"
+            priority
+          />
+          {/* Fondu sur le bord gauche : évite l'effet d'image collée */}
+          <div
+            aria-hidden="true"
+            className="absolute inset-0"
+            style={{
+              background: "linear-gradient(to right, #F3F0E9 0%, transparent 15%)",
+            }}
+          />
+        </div>
+
+        {/* Citation — bas de la colonne gauche, alignée sur le bas du portrait */}
+        <blockquote className="font-bitter italic text-lg md:text-xl leading-relaxed px-8 py-10 bg-vert text-encre-inv md:col-start-1 md:row-start-2">
+          {T(profil.citation)}
+        </blockquote>
       </div>
-    </section>
+    </header>
   );
 }

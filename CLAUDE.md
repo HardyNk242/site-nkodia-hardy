@@ -1,7 +1,17 @@
 # CLAUDE.md — Référence rapide du projet
 
 ## Règle absolue @hardy
-**Ne jamais changer la palette de couleurs ni le thème sombre du site.**
+**Ne jamais changer la palette de couleurs sans demande explicite de Hardy.**
+Le site est passé du thème sombre à la direction claire « Atlas tectonique »
+le 26 août 2026, sur demande explicite. La règle précédente (« ne jamais
+changer le thème sombre ») est caduque.
+
+**Contraste — la contrainte structurante.** L'accent existe en DEUX valeurs,
+et les confondre casse la lisibilité :
+- sur fond CLAIR → `corail` #A0561F (4,80:1 sur ivoire, 5,46:1 sur carte)
+- sur fond FONCÉ → `ocre-vif` #C8793B (4,70:1 sur anthracite)
+`corail` sur anthracite ne donne que 2,89:1. De même, tout texte posé sur une
+surface foncée doit utiliser `encre-inv` / `encre-inv-lt`, jamais `encre`.
 
 ---
 
@@ -24,18 +34,26 @@ Repo GitHub : `HardyNk242/site-nkodia-hardy` (branche `main` → déploiement Ve
 
 ---
 
-## Palette de couleurs (`tailwind.config.js`) — NE PAS MODIFIER
+## Palette « Atlas tectonique » (`tailwind.config.js`)
 ```js
-corail:      "#C2A88D"   // grès ensoleillé — accent principal (boutons, liens, barres)
-"corail-dk": "#A8906B"   // hover des boutons corail
-encre:       "#F4F1ED"   // calcaire blanc — texte principal
-"encre-lt":  "#A6A29C"   // texte secondaire / muted
-clair:       "#2A2B2A"   // basalte sombre — fond principal du body
-surface:     "#3A3A38"   // roche weatherée — fond des cartes
-muted:       "#A6A29C"   // alias encre-lt
-sombre:      "#1A1C1A"   // très sombre — footer, sections dark
+corail:         "#A0561F"  // ocre latéritique — accent SUR FOND CLAIR
+"corail-dk":    "#8A4818"  // hover
+"ocre-vif":     "#C8793B"  // accent SUR FOND FONCÉ + aplats décoratifs
+clair:          "#F3F0E9"  // ivoire minéral — fond principal du body
+encre:          "#303633"  // gris roche — texte principal
+"encre-lt":     "#5C6560"  // texte secondaire
+"encre-inv":    "#F3F0E9"  // texte sur surface foncée
+"encre-inv-lt": "#B9B3A8"  // texte secondaire sur surface foncée
+surface:        "#FFFFFF"  // cartes
+muted:          "#5C6560"  // alias encre-lt
+sombre:         "#1E2422"  // anthracite — navbar, footer, sections foncées
+vert:           "#244C43"  // vert profond — bandeaux d'accent (citation)
+sable:          "#D8C2A6"  // remplissages, JAMAIS du texte (1,51:1)
 ```
-`body { background: #2A2B2A; color: #F4F1ED; }` dans `globals.css`.  
+`body { background: #F3F0E9; color: #303633; }` dans `globals.css`.
+Environ 65 % de surfaces claires, 35 % de foncées (navbar, pied, bannières,
+encarts). Les bordures sur fond clair sont `border-black/N`, sur fond foncé
+`border-white/N`. `QuizInteractif` reste volontairement sombre : mode examen.  
 Opacités non-standard (`/6`, `/8`, `/12`, `/18`) ajoutées dans `tailwind.config.js → theme.extend.opacity`.
 
 ---
@@ -102,6 +120,9 @@ public/images/
   Actualités/                     ← Dossier racine des actualités
     Actualité_Fieldwork_2025-02-04/     ← 13 photos terrain Belgique-France fév. 2025
     Actualité_conference_geologica_belgica_2021/  ← 4 photos conférence sept. 2021
+  bannieres/                      ← Bannières SVG des Hero (recherches, engagement,
+                                     vulgarisation, equipe, cv) — aucune bannière vide
+  axes/                           ← Schémas des 4 axes de recherche (axe-01..04.svg)
   projets/                        ← Logos des projets (placeholder → remplacer)
     amorce-geo-logo.png           ← Logo AMORCE-GEO (à fournir)
   equipe-*.jpg                    ← Portraits équipe

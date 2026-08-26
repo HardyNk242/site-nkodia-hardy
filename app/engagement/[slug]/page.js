@@ -19,6 +19,7 @@ export default function ProjetDetail({ params }) {
       <Hero
         titre={projet.id.toUpperCase()}
         sousTitre={T({ fr: "Un projet de collaboration universitaire en géosciences en Afrique centrale", en: "A university collaboration project in geosciences in Central Africa" })}
+        image="/images/bannieres/engagement.svg"
       />
 
       <div className="max-w-content mx-auto px-5 py-16">
@@ -47,7 +48,7 @@ export default function ProjetDetail({ params }) {
         </section>
 
         {/* ── Vision ───────────────────────────────────────────────── */}
-        <section className="mb-14 bg-surface border border-white/8 p-8 rounded-sm">
+        <section className="mb-14 bg-surface border border-black/8 p-8 rounded-sm">
           <h2 className="font-oswald uppercase text-2xl mb-3">{T(tr.engagement.vision)}</h2>
           <span className="barre-corail" />
           <blockquote className="font-bitter italic text-lg text-encre/85 leading-relaxed max-w-3xl">

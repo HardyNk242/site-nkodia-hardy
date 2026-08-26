@@ -22,7 +22,11 @@ export default function Engagement() {
 
   return (
     <>
-      <Hero titre={T(tr.engagement.hero)} sousTitre={T(tr.engagement.sousTitre)} />
+      <Hero
+        titre={T(tr.engagement.hero)}
+        sousTitre={T(tr.engagement.sousTitre)}
+        image="/images/bannieres/engagement.svg"
+      />
 
       {/* ── SECTION 1 — PROJETS ─────────────────────────────────────── */}
       <section className="bg-clair">
@@ -32,7 +36,7 @@ export default function Engagement() {
             {projets.map((p) => (
               <article key={p.id} className="carte flex flex-col group overflow-hidden">
                 {/* Photo ou placeholder */}
-                <div className="relative h-36 bg-surface border-b border-white/8 overflow-hidden">
+                <div className="relative h-36 bg-surface border-b border-black/8 overflow-hidden">
                   {p.logo ? (
                     <Image
                       src={p.logo}
@@ -72,7 +76,7 @@ export default function Engagement() {
       </section>
 
       {/* ── SECTION 2 — INNOVATION PÉDAGOGIQUE ─────────────────────── */}
-      <section className="bg-surface border-y border-white/8">
+      <section className="bg-surface border-y border-black/8">
         <div className="max-w-content mx-auto px-5 py-16">
           <SectionTitre titre={T(tr.engagement.pedagogie)} />
           <ul className="space-y-6">
@@ -106,7 +110,7 @@ export default function Engagement() {
           <SectionTitre titre={T(tr.engagement.kongo)} />
           <div className="carte p-8 md:flex gap-8 items-start">
             {/* Logo placeholder */}
-            <div className="shrink-0 w-28 h-28 bg-surface border border-white/10 flex items-center justify-center rounded-sm mb-6 md:mb-0">
+            <div className="shrink-0 w-28 h-28 bg-surface border border-black/10 flex items-center justify-center rounded-sm mb-6 md:mb-0">
               <span className="font-oswald uppercase text-corail text-xs tracking-wide text-center px-2 leading-tight">
                 Kongo<br />Science
               </span>
@@ -129,7 +133,7 @@ export default function Engagement() {
       </section>
 
       {/* ── SECTION 4 — CONFÉRENCES ─────────────────────────────────── */}
-      <section className="bg-surface border-t border-white/8">
+      <section className="bg-surface border-t border-black/8">
         <div className="max-w-content mx-auto px-5 py-16">
           <SectionTitre titre={T(tr.engagement.conferences)} />
           <ul className="space-y-5">

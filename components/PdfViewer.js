@@ -17,7 +17,7 @@ export default function PdfViewer({ fileId }) {
           <span className="barre-corail !mb-0" />
         </div>
         {placeholder ? (
-          <span className="inline-flex items-center gap-2 border-2 border-white/15 text-encre/35 font-oswald uppercase tracking-wide text-sm px-5 py-2.5 cursor-not-allowed">
+          <span className="inline-flex items-center gap-2 border-2 border-white/15 text-encre-inv/45 font-oswald uppercase tracking-wide text-sm px-5 py-2.5 cursor-not-allowed">
             {T(tr.cours.telecharger)}
           </span>
         ) : (

@@ -12,7 +12,11 @@ export default function Equipe() {
 
   return (
     <>
-      <Hero titre={T(tr.equipe.hero)} sousTitre={T(tr.equipe.sousTitre)} />
+      <Hero
+        titre={T(tr.equipe.hero)}
+        sousTitre={T(tr.equipe.sousTitre)}
+        image="/images/bannieres/equipe.svg"
+      />
       <section className="max-w-content mx-auto px-5 py-16">
         <h2 className="titre-section">{T(tr.equipe.collaborateurs)}</h2>
         <span className="barre-corail" />

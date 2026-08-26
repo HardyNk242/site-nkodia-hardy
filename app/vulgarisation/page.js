@@ -38,7 +38,11 @@ export default function Vulgarisation() {
 
   return (
     <>
-      <Hero titre={T(tr.vulgarisation.hero)} sousTitre={T(tr.vulgarisation.sousTitre)} />
+      <Hero
+        titre={T(tr.vulgarisation.hero)}
+        sousTitre={T(tr.vulgarisation.sousTitre)}
+        image="/images/bannieres/vulgarisation.svg"
+      />
 
       {/* ── SECTION 1 — PRESSE ──────────────────────────────────────── */}
       <section id="presse" className="bg-clair">
@@ -85,7 +89,7 @@ export default function Vulgarisation() {
       </section>
 
       {/* ── SECTION 2 — VIDÉOS ──────────────────────────────────────── */}
-      <section id="videos" className="bg-surface border-y border-white/8">
+      <section id="videos" className="bg-surface border-y border-black/8">
         <div className="max-w-content mx-auto px-5 py-16">
           <SectionTitre titre={T(tr.vulgarisation.videos)} />
           <div className="grid gap-10 md:grid-cols-2">
@@ -116,13 +120,13 @@ export default function Vulgarisation() {
                 {T({ fr: "Voir la section Engagement →", en: "See Engagement section →" })}
               </Link>
             </li>
-            <li className="border-l-2 border-white/20 pl-5">
+            <li className="border-l-2 border-black/20 pl-5">
               <h3 className="font-oswald text-lg leading-snug text-encre/50">
                 {T({ fr: "Interventions dans les écoles et auprès du grand public", en: "Interventions in schools and with the general public" })}
               </h3>
               <p className="text-sm text-encre/40 mt-1 italic">{T(tr.vulgarisation.aCompleter)}</p>
             </li>
-            <li className="border-l-2 border-white/20 pl-5">
+            <li className="border-l-2 border-black/20 pl-5">
               <h3 className="font-oswald text-lg leading-snug text-encre/50">
                 {T({ fr: "Posts LinkedIn pédagogiques notables", en: "Notable educational LinkedIn posts" })}
               </h3>

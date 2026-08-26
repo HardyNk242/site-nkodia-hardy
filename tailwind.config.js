@@ -7,14 +7,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        corail:      "#C2A88D",   /* grès ensoleillé — accent principal   */
-        "corail-dk": "#A8906B",   /* grès foncé — hover actif             */
-        clair:       "#2A2B2A",   /* basalte sombre — fond principal       */
-        encre:       "#F4F1ED",   /* calcaire blanc — texte principal      */
-        "encre-lt":  "#A6A29C",   /* terre muette — texte secondaire       */
-        surface:     "#3A3A38",   /* roche weatherée — cartes / surfaces   */
-        muted:       "#A6A29C",
-        sombre:      "#1A1C1A",   /* très sombre — footer, dark sections   */
+        /* ── Direction « Atlas tectonique ». Contrastes verifies WCAG AA.
+           Sur fond CLAIR l'accent est `corail`; sur fond FONCE il faut
+           `ocre-vif` (corail n'y donne que 2,89:1).                      */
+        corail:         "#A0561F",  /* ocre latéritique — accent sur clair   */
+        "corail-dk":    "#8A4818",  /* hover                                 */
+        "ocre-vif":     "#C8793B",  /* accent sur fond foncé + aplats        */
+        clair:          "#F3F0E9",  /* ivoire minéral — fond principal       */
+        encre:          "#303633",  /* gris roche — texte principal          */
+        "encre-lt":     "#5C6560",  /* texte secondaire                      */
+        "encre-inv":    "#F3F0E9",  /* texte sur surface foncée              */
+        "encre-inv-lt": "#B9B3A8",  /* texte secondaire sur surface foncée   */
+        surface:        "#FFFFFF",  /* cartes                                */
+        muted:          "#5C6560",
+        sombre:         "#1E2422",  /* anthracite — navbar, pied, sections   */
+        vert:           "#244C43",  /* vert profond — sections d'accent      */
+        sable:          "#D8C2A6",  /* remplissages, jamais du texte         */
       },
       fontFamily: {
         oswald: ["var(--font-oswald)", "Impact", "sans-serif"],

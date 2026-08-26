@@ -17,11 +17,19 @@ function Bloc({ titre, children }) {
 }
 
 export default function CV() {
-  const { T } = useLang();
+  const { T, lang } = useLang();
+  /* Version longue (3 p.) et version courte (1 p.), dans la langue affichée. */
+  const suffixe = lang === "en" ? "EN" : "FR";
+  const cvLong = `/cv/CV_Nkodia_Hardy_${suffixe}.pdf`;
+  const cvCourt = `/cv/CV_Nkodia_Hardy_${suffixe}_court.pdf`;
 
   return (
     <>
-      <Hero titre={T(tr.cv.hero)} sousTitre={T(profil.titre)} />
+      <Hero
+        titre={T(tr.cv.hero)}
+        sousTitre={T(profil.titre)}
+        image="/images/bannieres/cv.svg"
+      />
       <section className="max-w-content mx-auto px-5 py-16 grid gap-12 md:grid-cols-[260px_1fr]">
         <aside>
           <div className="group overflow-hidden rounded-sm shadow-md">
@@ -36,7 +44,24 @@ export default function CV() {
               />
             </div>
           </div>
-          <div className="mt-5 bg-surface p-5 border border-white/8">
+          {/* Téléchargement du CV — version longue en premier */}
+          <div className="mt-5 bg-surface p-5 border border-black/8">
+            <p className="font-oswald uppercase text-sm tracking-wide text-corail mb-3">
+              {T({ fr: "Télécharger le CV", en: "Download the CV" })}
+            </p>
+            <a href={cvLong} download className="btn-corail w-full">
+              {T({ fr: "Version complète (PDF)", en: "Full version (PDF)" })}
+            </a>
+            <a
+              href={cvCourt}
+              download
+              className="lien-corail text-sm mt-3 inline-block"
+            >
+              {T({ fr: "Version courte, 1 page", en: "Short version, 1 page" })} ↓
+            </a>
+          </div>
+
+          <div className="mt-5 bg-surface p-5 border border-black/8">
             <p className="font-oswald uppercase text-sm tracking-wide text-corail mb-2">{T(tr.cv.contact)}</p>
             <p className="text-sm text-encre/75 leading-relaxed">{cv.infos}</p>
             <p className="text-sm mt-2 text-encre/75">{T(profil.institution)}</p>
@@ -83,7 +108,7 @@ export default function CV() {
           <Bloc titre={T(tr.cv.competences)}>
             <div className="flex flex-wrap gap-2">
               {cv.competences.map((c, i) => (
-                <span key={i} className="bg-surface border border-white/10 px-3 py-1.5 text-sm">{T(c)}</span>
+                <span key={i} className="bg-surface border border-black/10 px-3 py-1.5 text-sm">{T(c)}</span>
               ))}
             </div>
           </Bloc>

@@ -21,7 +21,11 @@ export default function Recherches() {
 
   return (
     <>
-      <Hero titre={T(tr.recherches.hero)} sousTitre={T(tr.recherches.sousTitre)} />
+      <Hero
+        titre={T(tr.recherches.hero)}
+        sousTitre={T(tr.recherches.sousTitre)}
+        image="/images/bannieres/recherches.svg"
+      />
       <section id="axes" className="max-w-content mx-auto px-5 py-16 scroll-mt-24">
         <h2 className="titre-section">{T(tr.recherches.thematiques)}</h2>
         <span className="barre-corail" />
@@ -43,7 +47,7 @@ export default function Recherches() {
                   className="object-cover"
                   unoptimized
                 />
-                <span className="absolute bottom-3 left-4 font-oswald uppercase text-xs tracking-[0.18em] text-corail">
+                <span className="absolute bottom-3 left-4 font-oswald uppercase text-xs tracking-[0.18em] text-ocre-vif">
                   {T(tr.recherches.axe)} {String(i + 1).padStart(2, "0")}
                 </span>
               </div>
@@ -53,7 +57,7 @@ export default function Recherches() {
 
                 {/* Sub-themes A / B / C — the numbered, scannable breakdown */}
                 {t.sousThemes?.length > 0 && (
-                  <ul className="mt-6 pt-5 border-t border-white/8 space-y-4" role="list">
+                  <ul className="mt-6 pt-5 border-t border-black/10 space-y-4" role="list">
                     {t.sousThemes.map((st) => (
                       <li key={st.lettre} className="flex gap-3">
                         <span
@@ -78,7 +82,7 @@ export default function Recherches() {
                 {/* Vers les publications de cet axe, plus bas sur la page */}
                 <a
                   href={`#axe-0${i + 1}`}
-                  className="mt-auto pt-5 border-t border-white/8 font-oswald uppercase text-sm tracking-wide text-corail hover:text-encre transition-colors duration-150 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-corail"
+                  className="mt-auto pt-5 border-t border-black/10 font-oswald uppercase text-sm tracking-wide text-corail hover:text-encre transition-colors duration-150 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-corail"
                 >
                   {compterPublications(i + 1)}{" "}
                   {T({ fr: "publications rattachées", en: "linked publications" })} →
@@ -88,9 +92,9 @@ export default function Recherches() {
           ))}
         </div>
 
-        <div className="mt-16 bg-sombre text-encre p-8 md:p-12 border border-white/8">
+        <div className="mt-16 bg-sombre text-encre-inv p-8 md:p-12 border border-white/10">
           <h3 className="font-oswald uppercase text-2xl">{T(tr.recherches.terrains)}</h3>
-          <span className="block w-16 h-1 bg-corail mt-3 mb-6" />
+          <span className="block w-16 h-1 bg-ocre-vif mt-3 mb-6" />
           <div className="grid gap-6 sm:grid-cols-3">
             {[
               [T(tr.recherches.terrain1n), T(tr.recherches.terrain1d)],
@@ -98,7 +102,7 @@ export default function Recherches() {
               [T(tr.recherches.terrain3n), T(tr.recherches.terrain3d)],
             ].map(([name, desc]) => (
               <div key={name}>
-                <p className="font-oswald uppercase text-corail">{name}</p>
+                <p className="font-oswald uppercase text-ocre-vif">{name}</p>
                 <p className="text-white/75 text-sm mt-1 leading-relaxed">{desc}</p>
               </div>
             ))}

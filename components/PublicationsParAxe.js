@@ -16,13 +16,17 @@ import { themesRecherche } from "@/data/site";
 import { publications } from "@/data/publications";
 
 
+/* Pastilles de type. Les couleurs Tailwind par defaut (ambre, violet,
+   sarcelle) echouaient au contraste — blanc sur amber-500 ne donnait que
+   2,15:1 — et sortaient de la palette. Toutes ramenees aux jetons du site,
+   toutes >= 4,5:1. */
 const couleurType = {
   Article: "bg-corail text-white",
-  Communication: "bg-sombre text-encre",
-  Livre: "bg-amber-600 text-white",
-  Thèse: "bg-violet-700 text-white",
-  Mémoire: "bg-violet-400 text-white",
-  "Jeu de données": "bg-teal-600 text-white",
+  Communication: "bg-sombre text-encre-inv",
+  Livre: "bg-vert text-white",
+  Thèse: "bg-encre text-encre-inv",
+  Mémoire: "bg-encre-lt text-white",
+  "Jeu de données": "bg-ocre-vif text-sombre",
 };
 
 /** Puce de filtre — un axe, « toutes » ou « hors axes ». */
@@ -99,7 +103,7 @@ export default function PublicationsParAxe() {
     <>
       <section
         id="publications"
-        className="max-w-content mx-auto px-5 py-16 scroll-mt-24 border-t border-white/8"
+        className="max-w-content mx-auto px-5 py-16 scroll-mt-24 border-t border-black/10"
       >
         <h2 className="titre-section">{T(tr.publications.hero)}</h2>
         <span className="barre-corail" />
@@ -171,7 +175,7 @@ export default function PublicationsParAxe() {
                         {it.type}
                       </span>
                       {it.badge && (
-                        <span className="self-start font-oswald uppercase text-xs tracking-wide px-3 py-1 bg-amber-500 text-white">
+                        <span className="self-start font-oswald uppercase text-xs tracking-wide px-3 py-1 bg-ocre-vif text-sombre">
                           {it.badge}
                         </span>
                       )}

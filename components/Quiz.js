@@ -81,9 +81,9 @@ export default function Quiz({ quiz, onClose }) {
     pourcentage >= 80 ? t.msgExcellent : pourcentage >= 50 ? t.msgGood : t.msgWork;
 
   return (
-    <div className="bg-surface w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-xl border border-white/10">
+    <div className="bg-surface w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-xl border border-black/15">
       {/* Barre supérieure */}
-      <div className="flex items-center justify-between bg-sombre text-encre px-5 py-3 sticky top-0">
+      <div className="flex items-center justify-between bg-sombre text-encre-inv px-5 py-3 sticky top-0">
         <div>
           <p className="font-oswald uppercase text-sm tracking-wide leading-tight">
             {lang === "fr" ? "Quiz" : "Quiz"} — {quiz.title[lang]}
@@ -144,11 +144,11 @@ export default function Quiz({ quiz, onClose }) {
             <ul className="space-y-2.5">
               {q.options[lang].map((opt, i) => {
                 let style =
-                  "border-white/15 hover:border-corail hover:bg-corail/10";
+                  "border-black/15 hover:border-corail hover:bg-corail/10";
                 if (selected !== null) {
                   if (i === q.answer) style = "border-green-500 bg-green-900/30";
                   else if (i === selected) style = "border-corail bg-corail/15";
-                  else style = "border-white/8 opacity-50";
+                  else style = "border-black/10 opacity-50";
                 }
                 return (
                   <li key={i}>
