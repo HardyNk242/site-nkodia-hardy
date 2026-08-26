@@ -40,11 +40,14 @@ Opacités non-standard (`/6`, `/8`, `/12`, `/18`) ajoutées dans `tailwind.confi
 
 ---
 
-## Navigation — 7 entrées (ordre fixe)
+## Navigation — 6 entrées (ordre fixe)
 ```
-Accueil | Publications | Recherches | Engagement | Vulgarisation | Équipe | CV
+Accueil | Recherches | Engagement | Vulgarisation | Équipe | CV
 ```
 `components/Navbar.js` — tableau `liens[]`. La page `/cours` existe toujours mais n'est plus dans le menu principal.
+**Publications a été fusionnée dans Recherches** : la liste complète est rendue par
+`components/PublicationsParAxe.js` en bas de `/recherches`, ancre `#publications`.
+`/publications` redirige en 308 vers `/recherches` (`next.config.js → redirects`).
 
 ---
 
@@ -53,8 +56,7 @@ Accueil | Publications | Recherches | Engagement | Vulgarisation | Équipe | CV
 ```
 app/
   page.js                        ← Accueil : hero + citation + 3 pubs + presse + vidéo + événements + actualités
-  publications/page.js           ← Liste complète des publications avec "En bref"
-  recherches/page.js             ← Thèmes de recherche
+  recherches/page.js             ← 4 axes + liste complète des publications (fusion)
   engagement/page.js             ← 4 sections : projets, pédagogie, Kongo Science, conférences
   engagement/[slug]/page.js      ← Détail d'un projet (consomme data/projets/[slug].json)
   vulgarisation/page.js          ← 3 sections : presse, vidéos YouTube, communication sociétale
@@ -77,6 +79,7 @@ components/
   Quiz.js            ← Quiz modal (inline, non surveillé)
   QuizInteractif.js  ← Quiz surveillé anti-triche + webhook Google Sheets
   PdfViewer.js       ← Visionneuse PDF embarquée
+  PublicationsParAxe.js ← Liste des publications + filtre par axe (rendue dans /recherches)
 
 data/
   site.js            ← Données principales : profil, publicationsRecentes, evenements, actualites, cv…

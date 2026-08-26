@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Hero from "@/components/Hero";
+import PublicationsParAxe from "@/components/PublicationsParAxe";
 import { useLang } from "@/contexts/LanguageContext";
 import { tr } from "@/data/translations";
 import { themesRecherche } from "@/data/site";
@@ -21,7 +22,7 @@ export default function Recherches() {
   return (
     <>
       <Hero titre={T(tr.recherches.hero)} sousTitre={T(tr.recherches.sousTitre)} />
-      <section className="max-w-content mx-auto px-5 py-16">
+      <section id="axes" className="max-w-content mx-auto px-5 py-16 scroll-mt-24">
         <h2 className="titre-section">{T(tr.recherches.thematiques)}</h2>
         <span className="barre-corail" />
         <p className="max-w-3xl text-encre/75 leading-relaxed mb-10">
@@ -74,9 +75,9 @@ export default function Recherches() {
                   </ul>
                 )}
 
-                {/* Vers les publications de cet axe */}
+                {/* Vers les publications de cet axe, plus bas sur la page */}
                 <a
-                  href={`/publications#axe-0${i + 1}`}
+                  href={`#axe-0${i + 1}`}
                   className="mt-auto pt-5 border-t border-white/8 font-oswald uppercase text-sm tracking-wide text-corail hover:text-encre transition-colors duration-150 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-corail"
                 >
                   {compterPublications(i + 1)}{" "}
@@ -104,6 +105,10 @@ export default function Recherches() {
           </div>
         </div>
       </section>
+
+      {/* Liste complète des publications, filtrable par axe. Anciennement la
+          page /publications, fusionnée ici pour éviter la redondance. */}
+      <PublicationsParAxe />
     </>
   );
 }

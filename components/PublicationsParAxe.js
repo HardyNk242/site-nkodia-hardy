@@ -1,8 +1,15 @@
 "use client";
 
+/**
+ * Liste complete des publications, filtrable par axe de recherche.
+ *
+ * Rendue en bas de /recherches : les axes et les publications vivent
+ * desormais sur une seule page. Les liens profonds #axe-0N et #hors-axes
+ * restent valables et amenent le lecteur directement a la liste filtree.
+ */
+
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Hero from "@/components/Hero";
 import { useLang } from "@/contexts/LanguageContext";
 import { tr } from "@/data/translations";
 import { themesRecherche } from "@/data/site";
@@ -36,19 +43,25 @@ function Puce({ actif, onClick, children }) {
   );
 }
 
-export default function Publications() {
+export default function PublicationsParAxe() {
   const { T } = useLang();
   /* null = toutes · 1-4 = un axe · "hors" = travaux hors programme */
   const [axeActif, setAxeActif] = useState(null);
 
-  /* Lien profond depuis /recherches : /publications#axe-03 */
+  /* Lien profond : /recherches#axe-03, ou clic sur une carte d'axe. */
   useEffect(() => {
     const lireHash = () => {
       const h = window.location.hash;
       const m = h.match(/^#axe-0?([1-9])$/);
-      if (m) setAxeActif(Number(m[1]));
-      else if (h === "#hors-axes") setAxeActif("hors");
-      else setAxeActif(null);
+      const cible = m ? Number(m[1]) : h === "#hors-axes" ? "hors" : null;
+      setAxeActif(cible);
+      /* #axe-0N ne designe aucun element du DOM : c'est donc a nous
+         d'amener le lecteur jusqu'a la liste. */
+      if (cible !== null) {
+        document
+          .getElementById("publications")
+          ?.scrollIntoView({ behavior: "smooth" });
+      }
     };
     lireHash();
     window.addEventListener("hashchange", lireHash);
@@ -84,11 +97,15 @@ export default function Publications() {
 
   return (
     <>
-      <Hero
-        titre={T(tr.publications.hero)}
-        sousTitre={T(tr.publications.sousTitre)}
-      />
-      <section className="max-w-content mx-auto px-5 py-16">
+      <section
+        id="publications"
+        className="max-w-content mx-auto px-5 py-16 scroll-mt-24 border-t border-white/8"
+      >
+        <h2 className="titre-section">{T(tr.publications.hero)}</h2>
+        <span className="barre-corail" />
+        <p className="max-w-3xl text-encre/75 leading-relaxed mb-10">
+          {T(tr.publications.sousTitre)}
+        </p>
         {/* Filtre par axe de recherche */}
         <div className="mb-10">
           <ul className="flex flex-wrap gap-2" role="list">
@@ -118,8 +135,8 @@ export default function Publications() {
               <p className="text-sm text-encre/70 leading-relaxed mt-1">
                 {T(axeCourant.resume)}
               </p>
-              <a href="/recherches" className="lien-corail text-sm mt-2 inline-block">
-                {T({ fr: "Détail de l'axe", en: "Theme details" })} →
+              <a href="#axes" className="lien-corail text-sm mt-2 inline-block">
+                {T({ fr: "Voir la fiche de l'axe", en: "See the theme card" })} ↑
               </a>
             </div>
           )}
@@ -127,7 +144,7 @@ export default function Publications() {
 
         {blocs.map((bloc) => (
           <div key={bloc.annee} className="mb-12">
-            <h2 className="font-oswald text-5xl text-corail font-bold">{bloc.annee}</h2>
+            <h3 className="font-oswald text-5xl text-corail font-bold">{bloc.annee}</h3>
             <span className="block w-full h-px bg-black/10 my-5" />
             <ul className="space-y-5">
               {bloc.items.map((it, i) => (
@@ -209,7 +226,9 @@ export default function Publications() {
                                   title={T(axe.titre)}
                                   onClick={() => {
                                     choisir(n);
-                                    window.scrollTo({ top: 0, behavior: "smooth" });
+                                    document
+                                      .getElementById("publications")
+                                      ?.scrollIntoView({ behavior: "smooth" });
                                   }}
                                   className="inline-block font-oswald uppercase text-[11px] tracking-wide px-2 py-1 border border-corail/35 text-corail hover:bg-corail hover:text-white transition-colors duration-150 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-corail"
                                 >

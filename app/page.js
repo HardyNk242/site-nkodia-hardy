@@ -100,7 +100,7 @@ export default function Accueil() {
               </article>
             ))}
           </div>
-          <Link href="/publications" className="lien-corail inline-block mt-8">
+          <Link href="/recherches#publications" className="lien-corail inline-block mt-8">
             {T(tr.home.voirTout)}
           </Link>
         </div>

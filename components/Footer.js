@@ -29,7 +29,7 @@ export default function Footer() {
           </p>
           <ul className="space-y-2 text-sm" role="list">
             {[
-              { href: "/publications", label: T(tr.nav.publications) },
+              { href: "/recherches#publications", label: T(tr.nav.publications) },
               { href: "/recherches",   label: T(tr.nav.recherches) },
               { href: "/cours",        label: T(tr.footer.cours) },
               { href: "/cv",           label: T(tr.footer.cv) },

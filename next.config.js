@@ -13,6 +13,15 @@ const nextConfig = {
     ],
   },
 
+  /* La page Publications a été fusionnée dans Recherches. Redirection
+     permanente pour ne pas casser les liens déjà partagés ou indexés.
+     Le fragment (#axe-03) est conservé par le navigateur. */
+  async redirects() {
+    return [
+      { source: "/publications", destination: "/recherches", permanent: true },
+    ];
+  },
+
   /* Security & caching headers */
   async headers() {
     return [

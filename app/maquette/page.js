@@ -303,7 +303,7 @@ export default function Maquette() {
                     {t.resume.fr}
                   </p>
                   <a
-                    href={`/publications#axe-0${i + 1}`}
+                    href={`/recherches#axe-0${i + 1}`}
                     className="mt-5 pt-4 border-t font-oswald uppercase text-sm tracking-wide"
                     style={{ borderColor: "#00000014", color: OCRE_TEXTE }}
                   >
